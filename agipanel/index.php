@@ -1,0 +1,1 @@
+<?php header('Location: https://www.agipanel.amrapali.ac.in');?>

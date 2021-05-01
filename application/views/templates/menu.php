@@ -1,0 +1,90 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- offcanvas-trigger-effects -->
+            <h2 class="logo" style="margin: 0; margin: -10px; padding: 0; line-height:46px; font-weight: 600">
+                <a class="navbar-brand" href="<?php echo site_url(); ?>">
+                    <img src="<?php echo base_url('assets/img/logo.png'); ?>?version=1.8" alt="Amrapali Logo" class="hidden-xs">
+                    <img src="<?php echo base_url('assets/img/logo-small.jpg'); ?>?version=1.4" alt="Amrapali logo" class="hidden-lg hiddn-md hidden-sm hidden-xl" style="margin-top:-10px;">
+                </a>
+            </h2>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="<?php if($menu_active==1){echo 'active';}?>"><a href="<?php echo site_url(); ?>">Home</a></li>
+
+                <?php foreach($menu_all['aboutus'] as $title => $path){?>
+                    <li class="<?php if($menu_active==2){echo 'active';}?>"><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                <?php } ?>
+
+                <li class="dropdown <?php if($menu_active==3){echo 'active';}?>"><a href="#" >Academics <b class="caret"></b></a>
+                    <!-- submenu-wrapper -->
+                    <div class="submenu-wrapper submenu-wrapper-topbottom">
+                        <div class="submenu-inner  submenu-inner-topbottom">
+                            <div class='col-sm-12' style='width: 400px; background: #000; padding:20px'>
+                                <div class='col-sm-8'>
+                                    <!--h3 style='color:#fff'>Faculty</h3-->
+                                    <h3 style='color:#fff'>Faculty</h3>
+                                    <ul class="dropdown-menu">
+                                        <?php foreach($menu_all['academics']['faculty'] as $title => $path){?>
+                                            <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                        <?php } ?>
+                                    </ul>    
+                                    
+                                    <ul class="dropdown-menu">
+                                        <?php foreach($menu_all['academics']['facilities'] as $title => $path){?>
+                                            <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                        <?php } ?>                                        
+                                    </ul>                                                                                                                                          
+                                </div>
+                                
+                            </div>                            
+                        </div><!-- /.submenu-inner -->
+                    </div> <!-- /.submenu-wrapper -->
+                </li>
+                <?php foreach($menu_all['admissions'] as $title => $path){?>
+                    <li class="<?php if($menu_active==4){echo 'active';}?>"><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                <?php } ?>
+                <?php foreach($menu_all['tnp'] as $title => $path){?>
+                    <li class="<?php if($menu_active==5){echo 'active';}?>"><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                <?php } ?>
+                <?php foreach($menu_all['pics'] as $title => $path){?>
+                    <li class="<?php if($menu_active==6){echo 'active';}?>"><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                <?php } ?>
+                <?php foreach($menu_all['alumni_menu'] as $title => $path){?>
+                    <li class="<?php if($menu_active==7){echo 'active';}?>"><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                <?php } ?>
+                
+                <?php if(count($menu_all['contactus']) == 1){?>
+                    <?php foreach($menu_all['contactus'] as $title => $path){?>
+                        <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                    <?php } ?>
+                <?php } else { ?>
+                    <li class="dropdown <?php if($menu_active==8){echo 'active';}?>"><a href="#" >Contact Us <b class="caret"></b></a>
+                        <!-- submenu-wrapper -->
+                        <div class="submenu-wrapper submenu-wrapper-topbottom">
+                            <div class="submenu-inner  submenu-inner-topbottom">
+                                <ul class="dropdown-menu">
+                                    <?php foreach($menu_all['contactus'] as $title => $path){?>
+                                        <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                    <?php } ?>
+                                </ul>
+                            </div><!-- /.submenu-inner -->
+                        </div> <!-- /.submenu-wrapper -->
+                    </li>
+                <?php } ?>
+                <?php foreach($menu_all['erplogin'] as $title => $path){?>
+                    <li><a href="<?php echo $path; ?>" target="_blank" style='color: #ffff00; font-size: 11px; background-color: rgba(105, 71, 2, 0.4); border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; font-family: verdana;'><?php echo $title; ?></a></li>
+                <?php } ?>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+</nav>
