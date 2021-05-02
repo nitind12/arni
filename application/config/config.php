@@ -19,7 +19,7 @@ date_default_timezone_set('Asia/Kolkata');
 | environments.
 |
 */
-$config['base_url'] = 'http://localhost/arni/';
+$config['base_url'] = 'http://localhost/arni';
 /*
 |--------------------------------------------------------------------------
 | Index File
