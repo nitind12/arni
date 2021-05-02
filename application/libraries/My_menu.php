@@ -11,8 +11,8 @@ class My_menu {
         // Academics
         $menu['academics'] = array(
             'faculty' => array(
-                "Faculty of Technology &amp; Computer Applications" => 'faculty/ftca/about',
-                "Faculty of Commerce &amp; Business Management" => 'faculty/fcbm/about',
+                "School or Art & Humanities" => '',
+                "School of Technology" => 'faculty/fcbm/about',
                 "Faculty of Hospitality Management" => 'faculty/fhm/about',
                 "Faculty of Pharmacy & Sciences" => 'faculty/fps/about',
                 "Faculty of Education" => 'faculty/fe/about',
