@@ -114,26 +114,7 @@
                         <div class="content-wrapper">
                             <section class="intro-wrapper"> 
                                 <div class="row"> 
-                                    <div class="col-lg-7 col-md-8">
-                                        <!--marquee direction="up" behavior="alternate" scrolldelay="2000" scrollamount="50">
-                                            <h6 style="bakground: #ffff00 !important; color: #0000ff">
-                                                <a href="https://kuadmission.com/home/examinations.php" target="_blank" style="color: #0000ff">
-                                                    Online Application for Even Semester Examination 2020 for Professional Courses [ BBA, BCA, BHM, B.Com, B.Ed.] Regular/Back and Passout Students
-                                                </a>
-                                            </h6>
-                                        </marquee-->
-                                        <!--a href="<?php echo base_url('assets/img/new-year-greetings.jpg');?>" style="margin-top:-50px; background: #000090; border-radius: 5px; padding:5px; color: #fff"  target="_blank">New Year Greetings from Secretary, Arni Group Of Institutes</a-->
-                                        <h1></h1>
-                                        <!--a href="https://forms.gle/UwskckP3wqNJsiUq7" target="_blank"><img src="<?php //echo base_url('assets/img/skill.jpg');?>?version=1.2" title="Register yourself for free Skill Development Programme" style="width: 100%"/></a>
-                                        <h3 style="border: #550000 solid 1px; text-align: center; font-family: Arial; font-size: 15px">Offering Free Training Modules for<br><span style="color: #0000ff">Hotel Management</span>, <span style="color: #009000">Engineering & Computer Applications</span> AND <span style="color: #900000">Management Studies</span></h3-->
-                                        <h5 style="background: #ffff00; border-radius: 5px; opacity: .8; color: #000000; padding: 5px 5px">
-                                            <b>Covid-19 Awareness</b>
-                                            <ol style="padding: 0px 10px; list-style: none">
-                                                <li style="padding: 5px 0px"><img src="assets/img/hand.png" style="width: 20px; margin: 0px 3px" /><a href="https://www.youtube.com/watch?v=uHB3WJsLJ8s&feature=youtu.be" target="_blank" style="color: #000044">Practical tips to take care of your Mental Health during the Stay In</a></li>
-                                                <li style="padding: 5px 0px"><img src="assets/img/hand.png" style="width: 20px; margin: 0px 3px" /><a href="https://www.mohfw.gov.in/pdf/MindingourmindsduringCoronaeditedat.pdf" target="_blank" style="color: #000044">Minding our minds during the COVID-19</a></li>
-                                                <li style="padding: 5px 0px"><img src="assets/img/hand.png" style="width: 20px; margin: 0px 3px" /><a href="https://www.youtube.com/watch?v=iuKhtSehp24&feature=youtu.be" target="_blank" style="color: #000044">Various Health Experts on how to manage Mental health & Well Being during COVID-19 outbreak</a></li>
-                                            </ol>
-                                        </h5>
+                                    <div class="col-lg-7 col-md-8"> 
                                         <h1></h1>
                                         <h1 class="wow fadeInDown">Amongst the Top Ranked University of Himanchal Pradesh</h1>
                                         <h3 class="wow fadeInDown">We call ourself a University ready for the REAL WORLD</h3>

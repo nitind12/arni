@@ -2163,7 +2163,7 @@ ul.joblist-link li a:hover {
     float: none;
     width: 100%;
     box-shadow: none;
-    background: rgba(0, 0, 0, .8)
+    background: rgba(0, 0, 2, .5)
 }
 
 .nav.navbar-nav li ul.dropdown-menu li a {

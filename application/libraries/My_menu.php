@@ -31,8 +31,8 @@ class My_menu {
         );
 
         // Training & Placements
-        $menu['tnp'] = array(
-            "Training &amp; Placements" => "placements"
+        $menu['exam'] = array(
+            "Examination" => "placements"
         );
 
         // Gallery
@@ -49,11 +49,11 @@ class My_menu {
         $menu['contactus'] = array(
             "Contact Us" => "contactus",
         );
-        
-        $menu['erplogin'] = array(
-            "AGI LMS" => "https://www.amrapali.ac.in/lms",
-        );
 
+        $menu['erplogin'] = array(
+            "LOGIN" => 'login',
+        );
+        
         return $menu;
     }
 

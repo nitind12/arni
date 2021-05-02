@@ -981,7 +981,7 @@ class Agi extends CI_Controller {
     function alumni($page='x'){
         $data_['meta'] = $this->metainfo_for_web('alumni', $page); 
 
-        $data_['menu_active'] =2;
+        $data_['menu_active'] =7;
         $data_['menu_all'] = $this->my_menu->site_menu();        
         $data_['alumni'] = $this->ouralumni();
         $data_['title'] = $page;

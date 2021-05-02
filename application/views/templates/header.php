@@ -95,7 +95,7 @@
         <!-- animate CSS -->
         <link href="<?php echo base_url('assets/css/animate.css'); ?>?ver=1.0" rel="stylesheet">
         <!-- Custom CSS -->
-        <link href="<?php echo base_url('assets/css/style.css'); ?>?ver=2.5" rel="stylesheet">
+        <link href="<?php echo base_url('assets/css/style.css'); ?>?ver=2.8" rel="stylesheet">
         <!-- Responsive CSS -->
         <link href="<?php echo base_url('assets/css/responsive.css'); ?>?ver=1.1" rel="stylesheet">
         
