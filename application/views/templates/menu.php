@@ -10,7 +10,7 @@
             <!-- offcanvas-trigger-effects -->
             <h2 class="logo" style="margin: 0; margin: -12px; padding: 0; line-height:50px; font-weight: 600">
                 <a class="navbar-brand" href="<?php echo site_url(); ?>">
-                    <img src="<?php echo base_url('assets/arniImage/logo.png'); ?>?version=1.8" alt="Arni Logo" class="hidden-xs" style="width: 165px">
+                    <img src="<?php echo base_url('assets/arniImage/logo.png'); ?>?version=1.8" alt="Arni Logo" class="hidden-xs" style="width: 205px">
                     <img src="<?php echo base_url('assets/arniImage/logo_small.jpg'); ?>?version=1.4" alt="Arni logo" class="hidden-lg hiddn-md hidden-sm hidden-xl" style="margin-top:-10px; width: 57px">
                 </a>
             </h2>
@@ -22,7 +22,7 @@
                 <li class="<?php if($menu_active==1){echo 'active';}?>"><a href="<?php echo site_url(); ?>">Home</a></li>
 
                 <?php foreach($menu_all['aboutus'] as $title => $path){?>
-                    <li class="<?php if($menu_active==2){echo 'active';}?>"><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                    <li class="<?php if($menu_active==2){echo 'active';}?>"><a href="<?php //echo site_url($path); ?>"><?php echo $title; ?></a></li>
                 <?php } ?>
 
                 <li class="dropdown <?php if($menu_active==3){echo 'active';}?>"><a href="#" >Academics <b class="caret"></b></a>
@@ -35,13 +35,13 @@
                                     <h3 style='color:#fff'>Faculty</h3>
                                     <ul class="dropdown-menu">
                                         <?php foreach($menu_all['academics']['faculty'] as $title => $path){?>
-                                            <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                            <li><a href="<?php // echo site_url($path); ?>"><?php echo $title; ?></a></li>
                                         <?php } ?>
                                     </ul>    
                                     
                                     <ul class="dropdown-menu">
                                         <?php foreach($menu_all['academics']['facilities'] as $title => $path){?>
-                                            <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                            <li><a href="<?php // echo site_url($path); ?>"><?php echo $title; ?></a></li>
                                         <?php } ?>                                        
                                     </ul>                                                                                                                                          
                                 </div>
@@ -51,21 +51,21 @@
                     </div> <!-- /.submenu-wrapper -->
                 </li>
                 <?php foreach($menu_all['admissions'] as $title => $path){?>
-                    <li class="<?php if($menu_active==4){echo 'active';}?>"><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                    <li class="<?php if($menu_active==4){echo 'active';}?>"><a href="<?php // echo site_url($path); ?>"><?php echo $title; ?></a></li>
                 <?php } ?>
                 <?php foreach($menu_all['exam'] as $title => $path){?>
-                    <li class="<?php if($menu_active==5){echo 'active';}?>"><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                    <li class="<?php if($menu_active==5){echo 'active';}?>"><a href="<?php // echo site_url($path); ?>"><?php echo $title; ?></a></li>
                 <?php } ?>
                 <?php foreach($menu_all['pics'] as $title => $path){?>
-                    <li class="<?php if($menu_active==6){echo 'active';}?>"><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                    <li class="<?php if($menu_active==6){echo 'active';}?>"><a href="<?php // echo site_url($path); ?>"><?php echo $title; ?></a></li>
                 <?php } ?>
                 <?php foreach($menu_all['alumni_menu'] as $title => $path){?>
-                    <li class="<?php if($menu_active==7){echo 'active';}?>"><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                    <li class="<?php if($menu_active==7){echo 'active';}?>"><a href="<?php // echo site_url($path); ?>"><?php echo $title; ?></a></li>
                 <?php } ?>
                 
                 <?php if(count($menu_all['contactus']) == 1){?>
                     <?php foreach($menu_all['contactus'] as $title => $path){?>
-                        <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                        <li><a href="<?php // echo site_url($path); ?>"><?php echo $title; ?></a></li>
                     <?php } ?>
                 <?php } else { ?>
                     <li class="dropdown <?php if($menu_active==8){echo 'active';}?>"><a href="#" >Contact Us <b class="caret"></b></a>
@@ -74,7 +74,7 @@
                             <div class="submenu-inner  submenu-inner-topbottom">
                                 <ul class="dropdown-menu">
                                     <?php foreach($menu_all['contactus'] as $title => $path){?>
-                                        <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                        <li><a href="<?php // echo site_url($path); ?>"><?php echo $title; ?></a></li>
                                     <?php } ?>
                                 </ul>
                             </div><!-- /.submenu-inner -->

@@ -329,10 +329,11 @@ blockquote::before {
     .navbar {
         padding: 0;
         border-bottom: 0;
-        background: -webkit-linear-gradient(top, #010066, rgba(0, 0, 0, 0));
+        /*background: -webkit-linear-gradient(top, #010066, rgba(0, 0, 0, 0));
         background: -o-linear-gradient(top, #010066, rgba(0, 0, 0, 0));
         background: -moz-linear-gradient(top, #010066, rgba(0, 0, 0, 0));
-        background: linear-gradient(to bottom, #010066, rgba(0, 0, 0, 0));
+        background: linear-gradient(to bottom, #010066, rgba(0, 0, 0, 0));*/
+        background: #010066;
         -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
         transition: background .5s ease-in-out, padding .5s ease-in-out
@@ -357,7 +358,7 @@ blockquote::before {
     color: #fff;
     text-transform: capitalize;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 40px;
     font-weight: 500
 }
 
