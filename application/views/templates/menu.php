@@ -8,10 +8,10 @@
                 <span class="icon-bar"></span>
             </button>
             <!-- offcanvas-trigger-effects -->
-            <h2 class="logo" style="margin: 0; margin: -10px; padding: 0; line-height:46px; font-weight: 600">
+            <h2 class="logo" style="margin: 0; margin: -12px; padding: 0; line-height:50px; font-weight: 600">
                 <a class="navbar-brand" href="<?php echo site_url(); ?>">
-                    <img src="<?php echo base_url('assets/img/logo.png'); ?>?version=1.8" alt="Amrapali Logo" class="hidden-xs">
-                    <img src="<?php echo base_url('assets/img/logo-small.jpg'); ?>?version=1.4" alt="Amrapali logo" class="hidden-lg hiddn-md hidden-sm hidden-xl" style="margin-top:-10px;">
+                    <img src="<?php echo base_url('assets/arniImage/logo_small.jpg'); ?>?version=1.8" alt="Arni Logo" class="hidden-xs">
+                    <img src="<?php echo base_url('assets/arniImage/logo_small.jpg'); ?>?version=1.4" alt="Arni logo" class="hidden-lg hiddn-md hidden-sm hidden-xl" style="margin-top:-10px;">
                 </a>
             </h2>
         </div>
