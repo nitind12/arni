@@ -5,5 +5,5 @@
 		<li><a href="<?php echo _blog_;?>" title="<?php echo _blog_title;?>" target="_blank"><i class="fa fa-bold" style="font-size:20px;"></i></a></li>
 		<li><a href="<?php echo _insta_;?>" title="<?php echo _insta_title;?>" target="_blank"><i class="fa fa-instagram" style="font-size:20px;"></i></a></li>
 		<li><a href="<?php echo _in_;?>" title="<?php echo _in_title;?>" target="_blank" title="share on linkedin"><i class="fa fa-linkedin" style="font-size:20px;"></i></a></li>
-		<li><a href="<?php echo _telegram_;?>" title="<?php echo _telegram_title;?>" target="_blank" title="share on linkedin"><i class="fa fa-telegram" style="font-size:20px;"></i></a></li>
+		
 </ul>

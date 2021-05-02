@@ -15,31 +15,31 @@
 
                         <!--li><a href="<?PHP //echo site_url('Agi/whyAmrapali'); ?>">Why us</a></li-->
 
-                        <li><a href="<?PHP echo site_url('facilities/about'); ?>">Facilities</a></li>
+                        <li><a href="<?PHP // echo site_url('facilities/about'); ?>">Facilities</a></li>
                         
-                        <li><a href="<?PHP echo site_url('gallery/activities'); ?>">Activities</a></li>
+                        <li><a href="<?PHP // echo site_url('gallery/activities'); ?>">Activities</a></li>
 
-                        <li><a href="<?PHP echo site_url('antiRagging'); ?>">Anti-Ragging</a></li>
+                        <li><a href="<?PHP // echo site_url('antiRagging'); ?>">Anti-Ragging</a></li>
 
-                        <li><a href="<?PHP echo 'https://docs.google.com/forms/d/e/1FAIpQLScCbqIFSl-UCr9Emll9xOGKd3XdMecRuZEZGkFcyBN8ialpPg/viewform'; ?>" target="_blank">Grievance Section</a></li>
+                        <li><a href="<?PHP // echo 'https://docs.google.com/forms/d/e/1FAIpQLScCbqIFSl-UCr9Emll9xOGKd3XdMecRuZEZGkFcyBN8ialpPg/viewform'; ?>" target="_blank">Grievance Section</a></li>
 
-                        <li><?PHP echo anchor('students-Feedback', "Student's Feedback"); ?></li>
+                        <li><?PHP // echo anchor('students-Feedback', "Student's Feedback"); ?></li>
 
-                        <!--li><?PHP echo anchor('#', "Teacher's Feedback"); ?></li-->
+                        <!--li><?PHP // echo anchor('#', "Teacher's Feedback"); ?></li-->
 
-                        <li><?PHP echo anchor('placements/overview', 'Training & Placement'); ?></li>
+                        <li><?PHP // echo anchor('placements/overview', 'Training & Placement'); ?></li>
 
-                        <li><?PHP echo anchor('approvals', 'Approvals &amp; Affiliations'); ?></li>
+                        <li><?PHP // echo anchor('approvals', 'Approvals &amp; Affiliations'); ?></li>
                         
-                        <li><?php echo anchor('mendatory-disclosure','Mendatory Disclosures');?></li>
+                        <li><?php // echo anchor('mendatory-disclosure','Mendatory Disclosures');?></li>
 
-                        <li><?PHP echo anchor('career', 'Career@Amrapali'); ?></li>
+                        <li><?PHP // echo anchor('career', 'Career@Amrapali'); ?></li>
 
                         <li><a href="https://forms.eduqfix.com/aiasonlineform/add" target="_blank" style="color:#33FFF9">Pay Fees Online (HDFC)</a></li>
 
                         <li><a href="https://www.onlinesbi.com/sbicollect/icollecthome.htm?corpID=644273" target="_bank" style="color:yellow">Pay Fees Online (SBI)</a></li>
 
-                        <li><a href="https://www.amrapali.ac.in/lms" target="_blank">AGI Learning Management System</a></li>
+                        <li><a href="https://www.arni.in/lms" target="_blank">AGI Learning Management System</a></li>
 
                     </ul>
 
@@ -55,13 +55,13 @@
 
                     <ul class="wow fadeInDown">                        
 
-                        <li><a href="https://e-brochures.amrapali.ac.in/ftca" target="_blank">Technology &amp; Computer Applications</a></li>
+                        <li><!--a href="https://e-brochures.arni.in/ftca" target="_blank"-->Technology &amp; Computer Applications</a></li>
 
-                        <li><a href="https://e-brochures.amrapali.ac.in/fhm" target="_blank">Hospitality Management<a/></li>
+                        <li><!--a href="https://e-brochures.arni.in/fhm" target="_blank"-->Hospitality Management<a/></li>
 
-                        <li><a href="https://e-brochures.amrapali.ac.in/fcbm" target="_blank">Commerce &amp; Business Management</a></li>
+                        <li><!--a href="https://e-brochures.arni.in/fcbm" target="_blank"-->Commerce &amp; Business Management</a></li>
 
-                        <li><a href="https://e-brochures.amrapali.ac.in/fps" target="_blank">Pharmacy</a></li>
+                        <li><!--a href="https://e-brochures.arni.in/fps" target="_blank"-->Pharmacy</a></li>
 
                     </ul>
 
@@ -71,13 +71,13 @@
 
                     <ul class="wow fadeInDown">
 
-                        <li><a href="<?PHP echo base_url('assets/dwnlds/common/affidavit.pdf'); ?>" target="_blank">Anti-Ragging Format</a></li>
+                        <li><a href="<?PHP // echo base_url('assets/dwnlds/common/affidavit.pdf'); ?>" target="_blank">Anti-Ragging Format</a></li>
 
-                        <li><a href="<?PHP echo base_url('assets/dwnlds/common/Library Form_Faculty.pdf'); ?>" target="_blank">Library Membership Form (<span style="color: #ffff00">Faculty</span>)</a></li>
+                        <li><a href="<?PHP // echo base_url('assets/dwnlds/common/Library Form_Faculty.pdf'); ?>" target="_blank">Library Membership Form (<span style="color: #ffff00">Faculty</span>)</a></li>
 
-                        <li><a href="<?PHP echo base_url('assets/dwnlds/common/Library Form_Student.pdf'); ?>" target="_blank">Library Membership Form (<span style="color: #ffff00">Student</span>)</a></li>
+                        <li><a href="<?PHP // echo base_url('assets/dwnlds/common/Library Form_Student.pdf'); ?>" target="_blank">Library Membership Form (<span style="color: #ffff00">Student</span>)</a></li>
 
-                        <li><a href="<?PHP echo base_url('assets/dwnlds/common/FDP_ApplicationForm.pdf'); ?>" target="_blank">FDP Application Form</a></li>
+                        <li><a href="<?PHP // echo base_url('assets/dwnlds/common/FDP_ApplicationForm.pdf'); ?>" target="_blank">FDP Application Form</a></li>
 
                     </ul>
 
@@ -95,27 +95,17 @@
 
                         <b>For Admission:</b><br>
 
-                        Mobile: (+91)-9837302005, (+91)-9759670200, <br /> 
+                        Contact: (+91)-18008918962<br><br>
 
-                        (+91)-9759670300, (+91)-9759670400, <br />
-
-                        (+91)-9759670500.<br><br>
-
-                        Email: &#097;&#100;&#109;&#105;&#115;&#115;&#105;&#111;&#110;&#064;&#097;&#109;&#114;&#097;&#112;&#097;&#108;&#105;&#046;&#097;&#099;&#046;&#105;&#110; <br /><br />
+                        Email:admission@arni.in <br /><br />
 
                         <b>For Placement:</b><br>
 
                         Mobile:<br>
 
-                        For B. Tech: (+91)-7500226007 <br />
+                        Contact: (+91)-18008918962<br><br>
 
-                        For MBA: (+91)-8477999500 <br />
-
-                        For MCA: (+91)-9759255613 <br />
-
-                        For HM: (+91)-9927041565 <br /><br>
-
-                        Email: &#112;&#108;&#097;&#099;&#101;&#109;&#101;&#110;&#116;&#064;&#097;&#109;&#114;&#097;&#112;&#097;&#108;&#105;&#046;&#097;&#099;&#046;&#105;&#110;
+                        Email: placement@arni.in
 
                     </address>  
 
@@ -137,33 +127,18 @@
 
                     <address>
 
-                        <strong>Amrapali Group of Institutes</strong><br>
+                        <strong>Arni University</strong><br>
 
-                        Shiksha Nagar, Lamachaur, Haldwani, 263139, Nainital, Uttarakhand <br /><br />
+                        Kathgarh,Tehsil Indora, Distt. Kangra,Himachal Pradesh Pin-176401 <br /><br />
 
-                        <abbr title="Phone">P:</abbr> (+91)-5946-238202-03-04 <br />
+                        <span style="color:#8EDDFF; font-size:1.4em">Toll-Free: 18008918962 </span><br /><br />
 
-                        <span style="color:#8EDDFF; font-size:1.4em">Toll-Free: 1800 180 4027 </span><br /><br />
-
-                        Email: &#113;&#117;&#101;&#114;&#121;&#064;&#097;&#109;&#114;&#097;&#112;&#097;&#108;&#105;&#046;&#097;&#099;&#046;&#105;&#110;
+                        Email: mail@arni.in
 
                     </address>
 
                     <hr>
-
-                    <!--address>
-
-                        <h4 style="color:#f2f2f2">North East Outreach Cell @ Silchar</h4>
-
-                        <b><i>- An information center of Amrapali Group Of Institutes</i></b><br><br>       
-
-                        G- 86, Near BATAYAAN, Ground floor, Goldigi Mall, Nazir Patty, Silchar District: Cachar, Assam 788001 <br>
-
-         Contact Number: 07060016494
-
-                                        </address-->
-
-                                                                     
+                                                                   
 
                 </div><!-- /.footer-widget -->
 
@@ -189,7 +164,7 @@
 
                 <div class="copyright wow fadeInDown">
 
-                    <p><a>Copyright &copy; 2018 Amrapali Group of Institutes, All Rights Reserved.</a>  Developed & maintained by: Faculty of Computer Science & Applications, Amrapali Group of Institutes, Haldwani </p>
+                    <p><a>Copyright &copy; 2021 Arni University, All Rights Reserved.</a>  Developed & maintained by: Teamfreelancers.com </p>
 
                 </div><!-- /.copyright -->
 
@@ -351,7 +326,7 @@
 
       <div class="modal-body">
 
-            <img src="<?php echo base_url('assets/notice-1.jpg'); ?>" alt="Amrapali COVID-19 Notice" title="Amrapali COVID-19 Notice">
+            <img src="<?php // echo base_url('assets/notice-1.jpg'); ?>" alt="Amrapali COVID-19 Notice" title="Amrapali COVID-19 Notice">
 
       </div>
 
@@ -437,16 +412,16 @@
 <!-- Sticky Footer -->
 
 <div class="sticky_footer">
-    <a href="https://e-brochures.amrapali.ac.in/AGI" target="_blank" style="color: #f0f0f0">E-Brochure</a> <span style="color: #707070">|</span> 
+    <!--a href="https://e-brochures.arni.in/AGI" target="_blank" style="color: #f0f0f0"-->E-Brochure</a> <span style="color: #707070">|</span> 
 
-    <a href="https://api.whatsapp.com/send?phone=919759670200&text=Hi%20Amrapali,%20I%20would%20like%20to%20inquire%20about" style="color: #f0f0f0">WhatsApp</a> <span style="color: #707070">|</span>
+    <!--a href="https://api.whatsapp.com/send?phone=18008918962&text=Hi%20Amrapali,%20I%20would%20like%20to%20inquire%20about" style="color: #f0f0f0"-->WhatsApp</a> <span style="color: #707070">|</span>
 
-    <!--a href="<?php echo base_url('registeronline/applynow');?>" style="color: #f0f0f0" target="_blank">Apply online</a> <span style="color: #707070">|</span-->
+    <!--a href="<?php  echo base_url('registeronline/applynow');?>" style="color: #f0f0f0" target="_blank">Apply online</a> <span style="color: #707070">|</span-->
     <!--span class="applynow" target="_blank" style="cursor: pointer;color: #f0f0f0">Apply online</span><span style="color: #707070">|</span-->
 
-    <a href="<?php echo site_url('admissions/whyus#enquiry');?>" style="color: #f0f0f0">Enquire</a> <span style="color: #707070">|</span>
+    <a href="<?php  echo site_url('admissions/whyus#enquiry');?>" style="color: #f0f0f0">Enquire</a> <span style="color: #707070">|</span>
 
-    <a href="tel: +916396847002" style="color: #f0f0f0">Call us</a>
+    <a href="tel: +18008918962" style="color: #f0f0f0">Call us</a>
 
 </div>
 

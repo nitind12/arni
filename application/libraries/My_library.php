@@ -203,7 +203,7 @@ class My_library {
         $data_['contact'] = 'office@amrapali.ac.in, query@amrapali.ac.in, admission@amrapali.ac.in';
         switch($clg){
             case 'home':
-                $data_['title'] = 'Amrapali Best Professional Institute in Nanital | Top Ranked Institutes';
+                $data_['title'] = 'Arni University';
                 $data_['abstract'] = 'Top Institute of Northern India, Top Rated Institute of Uttarakhand';
                 $data_['keywords'] = 'Top Ranked Institute Uttarakhand,Best Institute Haldwani, Nainital, engineering college';
                 $data_['distribution'] = 'local';

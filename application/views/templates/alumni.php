@@ -16,7 +16,7 @@
 <div class="row">                         
     <div class="col-xs-12 col-md-9 col-sm-8">
         <h2 class=" wow fadeInDown">Alumni Testimonials
-            <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('alumni/connect-programme'); ?>">Check More</a>
+            <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php //echo site_url('alumni/connect-programme'); ?>">Check More</a>
         </h2>
         <div id="css-testimonial-carousel1" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
