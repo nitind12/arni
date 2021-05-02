@@ -339,7 +339,7 @@ blockquote::before {
         transition: background .5s ease-in-out, padding .5s ease-in-out
     }
     .no-csstransitions .navbar-default {
-        background: rgba(0, 0, 0, .8)
+        background: #010066;
     }
     .top-nav-collapse {
         padding: 0;
@@ -349,8 +349,8 @@ blockquote::before {
 
 @media(max-width:767px) {
     .navbar-default {
-        background: rgba(0, 0, 0, .8);
-        border-color: rgba(0, 0, 0, .8)
+        background: #010066;
+        border-color: #010066;
     }
 }
 
