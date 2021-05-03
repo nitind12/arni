@@ -42,7 +42,7 @@ p {
 }
 
 a {
-    color: #fcbb3c;
+    color: #e67e22;
     text-decoration: none;
     transition: all .3s ease 0s
 }
@@ -70,7 +70,7 @@ hr {
 
 .btn-primary {
     color: #fff;
-    background-color: #fcbb3c;
+    background-color: #e67e22;
     border-color: #fba90a
 }
 
@@ -117,7 +117,7 @@ hr {
 }
 
 .btn-link {
-    color: #fcbb3c
+    color: #e67e22
 }
 
 .btn-link:hover {
@@ -221,7 +221,7 @@ blockquote::before {
     top: -5px;
     left: 26px;
     font-size: 36px;
-    color: #fcbb3c
+    color: #e67e22
 }
 
 .form-control {
@@ -232,7 +232,7 @@ blockquote::before {
 }
 
 .form-control:focus {
-    border-color: #fcbb3c;
+    border-color: #e67e22;
     box-shadow: none
 }
 
@@ -334,24 +334,24 @@ blockquote::before {
         background: -moz-linear-gradient(top, #010066, rgba(0, 0, 0, 0));
         background: linear-gradient(to bottom, #010066, rgba(0, 0, 0, 0));*/
        /* background: #010066;*/
-       background: orangered;
+       background: #e67e22;
         -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
         transition: background .5s ease-in-out, padding .5s ease-in-out
     }
     .no-csstransitions .navbar-default {
-        background: orangered;
+        background: #e67e22;
     }
     .top-nav-collapse {
         padding: 0;
-        background: orangered;
+        background: #e67e22;
     }
 }
 
 @media(max-width:767px) {
     .navbar-default {
-        background:  orangered;
-        border-color: orangered;
+        background:  #e67e22;
+        border-color: #e67e22;
     }
 }
 
@@ -391,7 +391,7 @@ blockquote::before {
 
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
-    background-color: #fcbb3c;
+    background-color: #e67e22;
     border: 2px solid transparent
 }
 
@@ -469,7 +469,7 @@ h1.logo {
 }
 
 .service-wrapper .media-heading a:hover {
-    color: #fcbb3c
+    color: #e67e22
 }
 
 .service-wrapper .icon {
@@ -567,7 +567,7 @@ h1.logo {
 .nav-tabs>li.active>a:hover,
 .nav-tabs>li>a:hover {
     color: #fff;
-    background: #fcbb3c;
+    background: #e67e22;
     border: 0
 }
 
@@ -710,8 +710,8 @@ h1.logo {
     width: 22px;
     height: 7px;
     margin: 0 5px 0 0;
-    background-color: #fcbb3c;
-    border: 1px solid #fcbb3c
+    background-color: #e67e22;
+    border: 1px solid #e67e22
 }
 
 .testimonial-wrapper .carousel-indicators li {
@@ -803,7 +803,7 @@ ul.partner-logo li img {
     line-height: 30px;
     font-weight: 700;
     margin: 30px 0;
-    color: #fcbb3c
+    color: #e67e22
 }
 
 .price small {
@@ -854,7 +854,7 @@ ul.partner-logo li img {
 .subcsribe-text::after {
     content: "";
     position: absolute;
-    background: #fcbb3c;
+    background: #e67e22;
     width: 94px;
     height: 2px;
     left: 0;
@@ -1350,7 +1350,7 @@ ul.joblist-link li a:hover {
 .blog-post-wrapper .entry-title a:hover,
 .blog-post-wrapper .the-author a,
 .blog-post-wrapper .the-category a {
-    color: #fcbb3c !important
+    color: #e67e22 !important
 }
 
 .blog-post-wrapper .post-thumbnail {
@@ -1365,7 +1365,7 @@ ul.joblist-link li a:hover {
 
 #blog-post-carousel .carousel-control:focus,
 #blog-post-carousel .carousel-control:hover {
-    color: #fcbb3c;
+    color: #e67e22;
     opacity: 1
 }
 
@@ -1488,7 +1488,7 @@ ul.joblist-link li a:hover {
 .pagination>.active>span,
 .pagination>.active>span:focus,
 .pagination>.active>span:hover {
-    color: #fcbb3c;
+    color: #e67e22;
     background-color: transparent;
     border-color: transparent
 }
@@ -1497,7 +1497,7 @@ ul.joblist-link li a:hover {
 .pagination>li>a:hover,
 .pagination>li>span:focus,
 .pagination>li>span:hover {
-    color: #fcbb3c;
+    color: #e67e22;
     background-color: transparent;
     border-color: transparent
 }
@@ -1535,9 +1535,9 @@ ul.joblist-link li a:hover {
 .pagination>li:first-child>span:hover,
 .pagination>li:last-child>a:hover,
 .pagination>li:last-child>span:hover {
-    color: #fcbb3c;
+    color: #e67e22;
     background-color: transparent;
-    border-color: #fcbb3c
+    border-color: #e67e22
 }
 
 .pagination-wrap .counter {
@@ -1557,7 +1557,7 @@ ul.joblist-link li a:hover {
 
 .pager li>a:focus,
 .pager li>a:hover {
-    background-color: #fcbb3c;
+    background-color: #e67e22;
     color: #fff;
     border: 2px solid transparent
 }
@@ -1616,7 +1616,7 @@ ul.joblist-link li a:hover {
 }
 
 .sidebar-wrapper .widget ul li a:hover {
-    color: #fcbb3c
+    color: #e67e22
 }
 
 .sidebar-wrapper .widget.widget_search {
@@ -1632,7 +1632,7 @@ ul.joblist-link li a:hover {
 }
 
 .widget_search form button:hover i {
-    color: #fcbb3c
+    color: #e67e22
 }
 
 .widget_search form button:focus {
@@ -1735,7 +1735,7 @@ ul.joblist-link li a:hover {
 
 #filter li a.active,
 #filter li a:hover {
-    background: #fcbb3c;
+    background: #e67e22;
     border: 2px solid transparent;
     color: #fff
 }
@@ -1806,7 +1806,7 @@ ul.joblist-link li a:hover {
 
 .portfolio-links>a:hover {
     background: rgba(255, 255, 255, .3);
-    color: #fcbb3c;
+    color: #e67e22;
     border: 2px solid transparent
 }
 
@@ -1858,7 +1858,7 @@ ul.joblist-link li a:hover {
 
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span {
-    background: #fcbb3c
+    background: #e67e22
 }
 
 .contact-us-wrapper {
@@ -1889,7 +1889,7 @@ ul.joblist-link li a:hover {
 }
 
 .mini-contact a:hover {
-    color: #fcbb3c
+    color: #e67e22
 }
 
 .map-wrapper {
@@ -1952,7 +1952,7 @@ ul.joblist-link li a:hover {
     font-family: FontAwesome;
     content: "\f192";
     font-size: 10px;
-    color: #fcbb3c;
+    color: #e67e22;
     position: absolute;
     top: 3.5px;
     left: 0
@@ -2055,7 +2055,7 @@ ul.joblist-link li a:hover {
 }
 
 .typography-page-wrapper ul li:before {
-    color: #fcbb3c
+    color: #e67e22
 }
 
 .typography-page-tab {
@@ -2111,7 +2111,7 @@ ul.joblist-link li a:hover {
 
 #off-canvas-close-btn:focus,
 #off-canvas-close-btn:hover {
-    color: #fcbb3c;
+    color: #e67e22;
     outline: 0
 }
 
@@ -2119,7 +2119,7 @@ ul.joblist-link li a:hover {
     text-transform: uppercase;
     color: #fff;
     font-weight: 500;
-    background: rgba(0, 0, 0, .25);
+    background: rgba(230, 126, 34, .9);
     padding: 1em 1em 1em 1.2em
 }
 
@@ -2144,7 +2144,7 @@ ul.joblist-link li a:hover {
 .offcanvas-menu ul li.active a {
    /* background: rgba(0, 0, 0, .2);*/
     box-shadow: inset 0 -1px transparent;
-    color: #fcbb3c
+    color: #e67e22
 }
 
 #toTop {
@@ -2165,7 +2165,7 @@ ul.joblist-link li a:hover {
     float: none;
     width: 100%;
     box-shadow: none;
-    background:rgba(255,69,0,.0);
+    background:rgba(230,126,34,.0);
     /*background: rgba(0, 0, 2, .5)*/
 }
 
@@ -2186,7 +2186,7 @@ ul.joblist-link li a:hover {
 .dropdown-menu>.active>a,
 .dropdown-menu>.active>a:focus,
 .dropdown-menu>.active>a:hover {
-    color: #fcbb3c !important;
+    color: #e67e22 !important;
     background-color: transparent
 }
 
@@ -2316,7 +2316,7 @@ li.dropdown.menu-animating>.submenu-sub-wrapper {
 
 .hero-slide .carousel-caption .phone {
     font-size: 30px;
-    color: #fcbb3c;
+    color: #e67e22;
     text-shadow: 1px 1px 2px #000;
     -webkit-animation-delay: .1s;
     animation-delay: .1s

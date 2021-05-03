@@ -29,7 +29,7 @@
                     <!-- submenu-wrapper -->
                     <div class="submenu-wrapper submenu-wrapper-topbottom">
                         <div class="submenu-inner  submenu-inner-topbottom">
-                            <div class='col-sm-12' style='width: 400px; background: rgba(255,69,0,.9); padding:20px'>
+                            <div class='col-sm-12' style='width: 400px; background: rgba(230,126,34,.9); padding:20px'>
                                 <div class='col-sm-8'>
                                     <!--h3 style='color:#fff'>Faculty</h3-->
                                     <h3 style='color:#fff'>Faculty</h3>
@@ -57,7 +57,7 @@
                     <!-- submenu-wrapper -->
                     <div class="submenu-wrapper submenu-wrapper-topbottom">
                         <div class="submenu-inner  submenu-inner-topbottom">
-                            <div class='col-sm-12' style='width: auto; background: rgba(255,69,0,.9); padding:20px'>
+                            <div class='col-sm-12' style='width: auto; background: rgba(230,126,34,.9); padding:20px'>
                                 <div class='col-sm-8'>
                                     <!--h3 style='color:#fff'>Faculty</h3-->
                                     <ul class="dropdown-menu">

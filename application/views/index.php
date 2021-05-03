@@ -269,7 +269,7 @@
                                             <div class="media-body">
                                                 <h3 class="media-heading"><a href="<?php //echo site_url('faculty/fcbm/courses'); ?>">School of Commerce &amp; Business Management</a></h3>
                                                 <p>Journalism & Mass Communication<br>Business Studies<br>Commerce</p>
-                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php// echo site_url('faculty/fcbm/courses'); ?>">Know More</a>
+                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php //echo site_url('faculty/fps/courses'); ?>">Know More</a>
                                             </div> <!-- /.media-body -->
                                         </div> <!-- /.media -->
                                     </div> <!-- /.col-md-6 -->
