@@ -115,7 +115,6 @@
                             <section class="intro-wrapper"> 
                                 <div class="row"> 
                                     <div class="col-lg-7 col-md-8"> 
-                                        <h1></h1>
                                         <h1 class="wow fadeInDown">Leading Indian University of higher education.</h1>
                                         <h3 class="wow fadeInDown">Bringing Ambition to Life</h3>
                                         <p class="wow fadeInDown">At Arni, we don't just teach theory. Our experiential learning and interdisciplinary orientation is our strength. Learn with us & live your own ideas professionally.</p>
