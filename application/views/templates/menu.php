@@ -10,7 +10,7 @@
             <!-- offcanvas-trigger-effects -->
             <h2 class="logo" style="margin: 0; margin: -12px; padding: 0; line-height:50px; font-weight: 600">
                 <a class="navbar-brand" href="<?php echo site_url(); ?>">
-                    <img src="<?php echo base_url('assets/arniImage/logo.png'); ?>?version=1.8" alt="Arni Logo" class="hidden-xs" style="width: 205px">
+                    <img src="<?php echo base_url('assets/arniImage/logo_blue.jpg'); ?>?version=1.8" alt="Arni Logo" class="hidden-xs" style="width: 205px">
                     <img src="<?php echo base_url('assets/arniImage/logo_small.jpg'); ?>?version=1.4" alt="Arni logo" class="hidden-lg hiddn-md hidden-sm hidden-xl" style="margin-top:-10px; width: 57px">
                 </a>
             </h2>
@@ -29,7 +29,7 @@
                     <!-- submenu-wrapper -->
                     <div class="submenu-wrapper submenu-wrapper-topbottom">
                         <div class="submenu-inner  submenu-inner-topbottom">
-                            <div class='col-sm-12' style='width: 400px; background: #002; padding:20px'>
+                            <div class='col-sm-12' style='width: 400px; background: rgba(255,69,0,.9); padding:20px'>
                                 <div class='col-sm-8'>
                                     <!--h3 style='color:#fff'>Faculty</h3-->
                                     <h3 style='color:#fff'>Faculty</h3>

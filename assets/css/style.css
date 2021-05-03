@@ -333,38 +333,39 @@ blockquote::before {
         background: -o-linear-gradient(top, #010066, rgba(0, 0, 0, 0));
         background: -moz-linear-gradient(top, #010066, rgba(0, 0, 0, 0));
         background: linear-gradient(to bottom, #010066, rgba(0, 0, 0, 0));*/
-        background: #010066;
+       /* background: #010066;*/
+       background: orangered;
         -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
         transition: background .5s ease-in-out, padding .5s ease-in-out
     }
     .no-csstransitions .navbar-default {
-        background: #010066;
+        background: orangered;
     }
     .top-nav-collapse {
         padding: 0;
-        background: #010066;
+        background: orangered;
     }
 }
 
 @media(max-width:767px) {
     .navbar-default {
-        background: #010066;
-        border-color: #010066;
+        background:  orangered;
+        border-color: orangered;
     }
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #fff;
+    color: #010066;
     text-transform: capitalize;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 40px;
     font-weight: 500
 }
 
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
-    color: #fcbb3c;
+    color: #fff;
     background-color: transparent
 }
 
@@ -374,7 +375,7 @@ blockquote::before {
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>.open>a:focus,
 .navbar-default .navbar-nav>.open>a:hover {
-    color: #fcbb3c;
+    color: #fff;
     background-color: transparent
 }
 
@@ -411,13 +412,13 @@ h1.logo {
     border: 3px solid #e3e3e3;
     border-radius: 5px;
     background: #fff;
-    z-index: 100
+    z-index: 100;
 }
 
 .intro-wrapper {
     background: url(../arniImage/intro-bg.jpg?ver=1.3) no-repeat center center;
     background-size: cover;
-    padding: 60px
+    padding: 30px 60px;
 }
 
 .intro-wrapper h1 {
@@ -2141,7 +2142,7 @@ ul.joblist-link li a:hover {
 
 .offcanvas-menu ul li a:hover,
 .offcanvas-menu ul li.active a {
-    background: rgba(0, 0, 0, .2);
+   /* background: rgba(0, 0, 0, .2);*/
     box-shadow: inset 0 -1px transparent;
     color: #fcbb3c
 }
@@ -2164,13 +2165,14 @@ ul.joblist-link li a:hover {
     float: none;
     width: 100%;
     box-shadow: none;
-    background: rgba(0, 0, 2, .5)
+    background:rgba(255,69,0,.0);
+    /*background: rgba(0, 0, 2, .5)*/
 }
 
 .nav.navbar-nav li ul.dropdown-menu li a {
     padding: 7px 20px;
-    font-size: 13px;
-    color: #fff;
+    font-size: 14px;
+    color: #000;
     line-height: 20px;
     text-transform: capitalize
 }
@@ -2178,7 +2180,7 @@ ul.joblist-link li a:hover {
 .nav.navbar-nav li ul.dropdown-menu li a:focus,
 .nav.navbar-nav li ul.dropdown-menu li a:hover {
     background: 0 0;
-    color: #fcbb3c
+    color: #fff
 }
 
 .dropdown-menu>.active>a,
