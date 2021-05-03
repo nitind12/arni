@@ -11,12 +11,15 @@ class My_menu {
         // Academics
         $menu['academics'] = array(
             'faculty' => array(
-                "School or Art & Humanities" => '',
-                "School of Technology" => 'faculty/fcbm/about',
-                "Faculty of Hospitality Management" => 'faculty/fhm/about',
-                "Faculty of Pharmacy & Sciences" => 'faculty/fps/about',
-                "Faculty of Education" => 'faculty/fe/about',
-                "Our Mentors" => 'mentors'
+                "School of Art & Humanities" => '#',
+                "School of Technology" => '#',
+                "School of Commerce & Business Management" => '#',
+                "School of Pharmacy" => '#',
+                "School of Computer Application" => '#',
+                "School of Tourism & Hospitality Management" => '#',
+                "School of Physical Science" => '#',
+                "School of Skill Development & Vocational Studies" => '#',
+                "Our Mentors" => '#'
             ),
             'facilities' => array(
                 "Library" => 'library',
@@ -32,7 +35,14 @@ class My_menu {
 
         // Training & Placements
         $menu['exam'] = array(
-            "Examination" => "placements"
+            "Examination" => array(
+                "Results" => '#',
+                "Circular/ Notices " => '#',
+                "Datesheet" => "#",
+                "Online Education" => '#',
+                "Online Exam" => '#',
+                "Student Login" => '#'
+            ),
         );
 
         // Gallery

@@ -69,12 +69,12 @@
                left: 0;
                bottom: 0;
                width: 100%;
-               background-color: #000000;
+               background-color: #e67e22;
                color: white;
                text-align: center;
                z-index: 9999999;
-               opacity: .9;
-               border-top: #f0f0f0 solid 1px;
+               opacity: 1;
+               border-top: #7e4117 solid 1px;
             }
         </style>
         <script type="text/javascript">

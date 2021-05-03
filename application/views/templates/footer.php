@@ -23,23 +23,6 @@
 
                         <li><a href="<?PHP // echo 'https://docs.google.com/forms/d/e/1FAIpQLScCbqIFSl-UCr9Emll9xOGKd3XdMecRuZEZGkFcyBN8ialpPg/viewform'; ?>" target="_blank">Grievance Section</a></li>
 
-                        <li><?PHP // echo anchor('students-Feedback', "Student's Feedback"); ?></li>
-
-                        <!--li><?PHP // echo anchor('#', "Teacher's Feedback"); ?></li-->
-
-                        <li><?PHP // echo anchor('placements/overview', 'Training & Placement'); ?></li>
-
-                        <li><?PHP // echo anchor('approvals', 'Approvals &amp; Affiliations'); ?></li>
-                        
-                        <li><?php // echo anchor('mendatory-disclosure','Mendatory Disclosures');?></li>
-
-                        <li><?PHP // echo anchor('career', 'Career@Amrapali'); ?></li>
-
-                        <li><a href="https://forms.eduqfix.com/aiasonlineform/add" target="_blank" style="color:#33FFF9">Pay Fees Online (HDFC)</a></li>
-
-                        <li><a href="https://www.onlinesbi.com/sbicollect/icollecthome.htm?corpID=644273" target="_bank" style="color:yellow">Pay Fees Online (SBI)</a></li>
-
-                        <li><a href="https://www.arni.in/lms" target="_blank">AGI Learning Management System</a></li>
 
                     </ul>
 
@@ -108,12 +91,6 @@
                         Email: placement@arni.in
 
                     </address>  
-
-                    <div class="social-link">
-
-                        <?PHP $this->load->view('templates/socialMedia'); ?>
-
-                    </div>  
 
                 </div>
 
@@ -352,29 +329,7 @@
 
 <style>
 
-    .aiwhatsapp{
-
-     position: fixed; right:-114px; top: 50%; z-index: 9999
-
-    }
-
-    .aiapply{
-
-     position: fixed; right:-72px; top: 62%; z-index: 9999
-
-    }
-
-    .admission_{
-
-     position: fixed; right:-5px; top: 43%; z-index: 9999
-
-    }
-
-    .socialmedia-right{
-
-    position: fixed; height: auto; right:-3px; top: 10%; background: #ffffff; padding: 5px; border-top-left-radius: 6px; border-bottom-left-radius: 6px; border: #fcbb3c solid 0px; border-right: #fcbb3c solid 0px; box-shadow: -1px 1px 3px #888888; z-index: 9999
-
-    }
+    
 
     .aienquiry{
 
@@ -412,15 +367,11 @@
 <!-- Sticky Footer -->
 
 <div class="sticky_footer">
-    <!--a href="https://e-brochures.arni.in/AGI" target="_blank" style="color: #f0f0f0"-->E-Brochure</a> <span style="color: #707070">|</span> 
+    <a href="https://e-brochures.arni.in" target="_blank" style="color: #f0f0f0">E-Brochure</a> <span style="color: #7e4117">|</span> 
 
-    <!--a href="https://api.whatsapp.com/send?phone=18008918962&text=Hi%20Amrapali,%20I%20would%20like%20to%20inquire%20about" style="color: #f0f0f0"-->WhatsApp</a> <span style="color: #707070">|</span>
+    <a href="https://api.whatsapp.com/send?phone=18008918962&text=Hi%20Arni,%20I%20would%20like%20to%20inquire%20about" style="color: #f0f0f0"-->WhatsApp</a> <span style="color: #7e4117">|</span>
 
-    <!--a href="<?php  echo base_url('registeronline/applynow');?>" style="color: #f0f0f0" target="_blank">Apply online</a> <span style="color: #707070">|</span-->
-    <!--span class="applynow" target="_blank" style="cursor: pointer;color: #f0f0f0">Apply online</span><span style="color: #707070">|</span-->
-
-    <a href="<?php  echo site_url('admissions/whyus#enquiry');?>" style="color: #f0f0f0">Enquire</a> <span style="color: #707070">|</span>
-
+    <a href="<?php  echo site_url('#');?>" style="color: #f0f0f0">Enquire</a> <span style="color: #7e4117">|</span>
     <a href="tel: +18008918962" style="color: #f0f0f0">Call us</a>
 
 </div>
@@ -555,64 +506,10 @@
 
         });
 
-        
-
-        $('.aiwhatsapp').hover(function(){
-
-             $('.aiwhatsapp').css('right', '-15px');
-
-        }, function() {
-
-            $('.aiwhatsapp').css('right', '-100px');
-
-        });
-
-        
-
-        
-
-        $('.aiapply').hover(function(){
-
-             $('.aiapply').css('right', '-5px');
-
-        }, function() {
-
-            $('.aiapply').css('right', '-70px');
-
-        });
-
-        
-
-        $('.admission_').hover(function(){
-
-             $('.admission_').css('right', '0px');
-
-        }, function() {
-
-            $('.admission_').css('right', '-5px');
-
-        });
-
-        
-
-        $('.aienquiry').hover(function(){
-
-             $('.aienquiry').css('right', '-5px');
-
-        }, function() {
-
-            $('.aienquiry').css('right', '-70px');
-
-        });
     });
     
 
 </script>
-
-<?php $this->load->view('templates/socialMediaRight'); ?>
-
-<!--div class="admission_ applynow" target="_blank" style="cursor: pointer"><img src="<?php echo base_url('assets/img/admission-right.png');?>?version=1.6" style="width: 42px"></div-->
-<!--div class="admission_ applynow" target="_blank" style="cursor: pointer"><a href="<?php //echo site_url('registeronline/applynow');?>"><img src="<?php //echo base_url('assets/img/admission-right.png');?>?version=1.6" style="width: 42px"></a></div-->
 
 <!-- wow.min.js -->
 
@@ -655,8 +552,23 @@
 <script src="<?php echo base_url('assets/js/main.js'); ?>?ver=8.9"></script>
 
 <!--script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(103437)</script-->
-<script src="https://extraaedgeresources.blob.core.windows.net/demo/amrapali/Chatbot/js/chat.js"> </script>
-<script src="https://eequeuestorage.blob.core.windows.net/staticfiles/amrapali/ee-form-widget/form-1/widget.js"></script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5ff52a3dc31c9117cb6bd856/1eraqq22f';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
+
+<!-- Social Media Links -->
+<?php $this->load->view('templates/sm'); ?>
+<!-- End of Social Media Links -->
 
 
 </body>

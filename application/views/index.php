@@ -116,9 +116,9 @@
                                 <div class="row"> 
                                     <div class="col-lg-7 col-md-8"> 
                                         <h1></h1>
-                                        <h1 class="wow fadeInDown">Amongst the Top Ranked University of Himanchal Pradesh</h1>
-                                        <h3 class="wow fadeInDown">We call ourself a University ready for the REAL WORLD</h3>
-                                        <p class="wow fadeInDown">At Arni, we don't just teach theory. We teach you how to put theory into practice. Learn with us so that you can take your ideas and make them REAL.</p>
+                                        <h1 class="wow fadeInDown">Leading Indian University of higher education.</h1>
+                                        <h3 class="wow fadeInDown">Bringing Ambition to Life</h3>
+                                        <p class="wow fadeInDown">At Arni, we don't just teach theory. Our experiential learning and interdisciplinary orientation is our strength. Learn with us & live your own ideas professionally.</p>
 
                                         <div class="typography-page-tab" role="tabpanel" style="height: auto; min-height: 350px">
                                             <!-- Nav tabs -->
