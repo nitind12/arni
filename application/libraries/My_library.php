@@ -179,7 +179,7 @@ class My_library {
             break;
             default: 
                 $data['desc_'] = 'Amrapali is the top ranked and private institute for B.ED course in Haldwani, Uttarakhand.  Visit our website, to know fee structure, eligibility and many more';
-                $data['title'] = 'Amrapali Group of Institutes | Nainital Best Private Institute';
+                $data['title'] = 'Arni University';
         }
     return $data;
     }

@@ -20,9 +20,9 @@
         <div class="collapse navbar-collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li class="<?php if($menu_active==1){echo 'active';}?>"><a href="<?php echo site_url(); ?>">Home</a></li>
-
+                
                 <?php foreach($menu_all['aboutus'] as $title => $path){?>
-                    <li class="<?php if($menu_active==2){echo 'active';}?>"><a href="<?php //echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                    <li class="<?php if($menu_active==2){echo 'active';}?>"><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
                 <?php } ?>
 
                 <li class="dropdown <?php if($menu_active==3){echo 'active';}?>"><a href="#" >Academics <b class="caret"></b></a>

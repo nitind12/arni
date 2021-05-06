@@ -26,6 +26,8 @@ class Agi extends CI_Controller {
         $this->load->view('index', $data_);
         $this->load->view('templates/footer');
     }
+
+
     function error(){
         redirect('');
     }
@@ -59,7 +61,7 @@ class Agi extends CI_Controller {
         $data_['meta'] = $this->metainfo_for_web('about', $page);
         $data_['menu_active'] =2;
         $data_['menu_all'] = $this->my_menu->site_menu();        
-        $data_['alumni'] = $this->ouralumni();
+        
         $data_['titleMain'] = "About Us";
         $data_['active'] = $page;
 
