@@ -220,7 +220,7 @@
                                     <h2 class="section-title wow fadeInDown" style="color:#f2f2f2">Video Tour</h2>
                                     <div class="info-in-short">                                        
                                         <div class="member-info">                                            
-                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jHauc0qb0_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/jHauc0qb0_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                         </div>                                        
                                     </div>
                                 </div>
