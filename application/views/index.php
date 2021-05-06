@@ -217,17 +217,10 @@
                                 </div>
 
                                 <div class="col-md-6">
-                                    <h2 class="section-title wow fadeInDown" style="color:#f2f2f2">Rankings</h2>
+                                    <h2 class="section-title wow fadeInDown" style="color:#f2f2f2">Video Tour</h2>
                                     <div class="info-in-short">                                        
                                         <div class="member-info">                                            
-                                            <ul class="check-circle" style="font-size:14px;text-align: justify;">
-                                                <li>Ranked amongst top 10 the best private institute of Hotel Management in India by Drishti Outlook Survey 2018, 2019</li>
-                                                <li>Ranked amongst top private institutes by Hansa Research Survey 2016, 2017, 2018 & 2019 published in The Week magazine. </li>
-                                                <li>Top Ranked Hotel Management Institute in State for last nine years GHRDC</li>
-                                                <li>Amongst Top Ranked Emerging Engineering College in India Higher Education Survey</li>
-                                                <li>Awarded Best Institute of Academic Excellence in Uttarakhand Worldwide Achiever Survey</li>
-                                                
-                                            </ul>
+                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jHauc0qb0_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                         </div>                                        
                                     </div>
                                 </div>
@@ -261,18 +254,7 @@
                                         </div> <!-- /.media -->
                                     </div> <!-- /.col-md-6 -->
                                     
-                                    <div class="col-md-6 wow fadeInRight">
-                                        <div class="media">
-                                            <a class="media-left" href="<?php //echo site_url('faculty/fcbm/courses'); ?>">
-                                                <img src="<?php echo base_url(). "assets/arniImage/fcbm1.jpg"?>" title="FCBM" alt="FCBM" style="max-width: 120px;" class="img-responsive">
-                                            </a>
-                                            <div class="media-body">
-                                                <h3 class="media-heading"><a href="<?php //echo site_url('faculty/fcbm/courses'); ?>">School of Commerce &amp; Business Management</a></h3>
-                                                <p>Journalism & Mass Communication<br>Business Studies<br>Commerce</p>
-                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php //echo site_url('faculty/fps/courses'); ?>">Know More</a>
-                                            </div> <!-- /.media-body -->
-                                        </div> <!-- /.media -->
-                                    </div> <!-- /.col-md-6 -->
+                                   
 
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
@@ -343,6 +325,18 @@
                                                 <h3 class="media-heading"><a href="<?php //echo site_url('faculty/fe/courses'); ?>">School of Skill Development & Vocational Studies</a></h3>
                                                 <p>Skill Development & Vocational Studies </p>
                                                 <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php //echo site_url('faculty/fe/courses'); ?>">Know More</a>
+                                            </div> <!-- /.media-body -->
+                                        </div> <!-- /.media -->
+                                    </div> <!-- /.col-md-6 -->
+                                    <div class="col-md-6 wow fadeInRight">
+                                        <div class="media">
+                                            <a class="media-left" href="<?php //echo site_url('faculty/fcbm/courses'); ?>">
+                                                <img src="<?php echo base_url(). "assets/arniImage/fcbm1.jpg"?>" title="FCBM" alt="FCBM" style="max-width: 120px;" class="img-responsive">
+                                            </a>
+                                            <div class="media-body">
+                                                <h3 class="media-heading"><a href="<?php //echo site_url('faculty/fcbm/courses'); ?>">School of Commerce &amp; Business Management</a></h3>
+                                                <p>Journalism & Mass Communication<br>Business Studies<br>Commerce</p>
+                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php //echo site_url('faculty/fps/courses'); ?>">Know More</a>
                                             </div> <!-- /.media-body -->
                                         </div> <!-- /.media -->
                                     </div> <!-- /.col-md-6 -->
