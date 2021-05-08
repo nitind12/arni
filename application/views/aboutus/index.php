@@ -94,19 +94,8 @@
                     <div style="clear: both;"><br></div>
                     <div class="container">
                         <div class="content-wrapper">
-                            <section class="">
-                                    <!--nav class="topnav">
-                                        <div class="container">
-                                            <ul class="nav navbar-nav">
-                                                <li><a href="#" class="active">Why Arni? </a></li>
-                                                <li><a href="#">Governance</a></li>
-                                                <li><a href="#">Management's Talk</a></li>
-                                                <li><a href="#">University Committee</a></li>
-                                            </ul>
-                                        </div>
-                                    </nav-->
-<?php $this->load->view('templates/submenu'); ?>
-                                </center>
+                            <section class="" style="display: inline;">
+                                <?php $this->load->view('templates/submenu'); ?>
                             </section>
                             <section class="trusted-client-wrapper">
                                 
