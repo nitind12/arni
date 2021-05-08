@@ -68,10 +68,10 @@ class Agi extends CI_Controller {
         if($page == 'governance' || $page == 'governance#'){
             $data_['inner_page'] = 'governance';
             $data_['breadcrumb'] = 'About us / Governance';
-        } else if($page == 'managementboard' || $page == 'managementboard#'){
-            $data_['inner_page'] = 'managementtalk';
+        } else if($page == 'management' || $page == 'management#'){
+            $data_['inner_page'] = 'management';
             $data_['breadcrumb'] = 'About us / Management Talk';
-        } else if($page == 'ceomessage' || $page == 'ceomessage#'){
+        } else if($page == 'committee' || $page == 'committee#'){
             $data_['inner_page'] = 'committee';
             $data_['breadcrumb'] = 'About us / University Committee';
         } else {
