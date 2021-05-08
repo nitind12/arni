@@ -5,7 +5,7 @@ class My_menu {
     function site_menu() {
         // About Us
         $menu['aboutus'] = array(
-            "About Us" => 'about',
+            "About Us" => 'about/aboutus',
         );
 
         // Academics

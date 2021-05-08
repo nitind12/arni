@@ -65,21 +65,18 @@ class Agi extends CI_Controller {
         $data_['titleMain'] = "About Us";
         $data_['active'] = $page;
 
-        if($page == 'vmv' || $page == 'vmv#'){
-            $data_['inner_page'] = 'vmv';
-            $data_['breadcrumb'] = 'About us / Vission, Mission & Values';
+        if($page == 'governance' || $page == 'governance#'){
+            $data_['inner_page'] = 'governance';
+            $data_['breadcrumb'] = 'About us / Governance';
         } else if($page == 'managementboard' || $page == 'managementboard#'){
-            $data_['inner_page'] = 'managementboard';
-            $data_['breadcrumb'] = 'About us / Management Board';
+            $data_['inner_page'] = 'managementtalk';
+            $data_['breadcrumb'] = 'About us / Management Talk';
         } else if($page == 'ceomessage' || $page == 'ceomessage#'){
-            $data_['inner_page'] = 'ceomessage';
-            $data_['breadcrumb'] = 'About us / CEO Message';
-        } else if($page == 'futurevision' || $page == 'futurevision#'){
-            $data_['inner_page'] = 'futurevision';
-            $data_['breadcrumb'] = 'About us / Vission 2025';
+            $data_['inner_page'] = 'committee';
+            $data_['breadcrumb'] = 'About us / University Committee';
         } else {
             $data_['inner_page'] = 'aboutus';
-            $data_['breadcrumb'] = 'About us';
+            $data_['breadcrumb'] = 'About us / Why Arni?';
         }
 
         $this->load->view('templates/header', $data_);
