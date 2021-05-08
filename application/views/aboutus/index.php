@@ -95,7 +95,7 @@
                     <div class="container">
                         <div class="content-wrapper">
                             <section class="">
-                                    <nav class="topnav">
+                                    <!--nav class="topnav">
                                         <div class="container">
                                             <ul class="nav navbar-nav">
                                                 <li><a href="#" class="active">Why Arni? </a></li>
@@ -104,6 +104,8 @@
                                                 <li><a href="#">University Committee</a></li>
                                             </ul>
                                         </div>
+                                    </nav-->
+<?php $this->load->view('templates/submenu'); ?>
                                 </center>
                             </section>
                             <section class="trusted-client-wrapper">
