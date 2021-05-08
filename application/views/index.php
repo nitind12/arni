@@ -1,57 +1,34 @@
 <style>
-    .member-info a{
-        color: #0c5981;
-        font-weight: bold;
-    }
-    .member-info a:hover{
-        color: #ffa200;
-    }
-    ul.check-circle li {
-        display: list-item;
-        position: relative;
-        line-height: 28px;
-        padding-left: 25px;
-        color:#8b4b05;
-    }
-    hr{
-        border:1px solid #aaaaaa;
-    }
+.member-info a{
+    color: #0c5981;
+    font-weight: bold;
+}
+.member-info a:hover{
+    color: #ffa200;
+}
+ul.check-circle li {
+    display: list-item;
+    position: relative;
+    line-height: 28px;
+    padding-left: 25px;
+    color:#8b4b05;
+}
+hr{
+    border:1px solid #aaaaaa;
+}
 </style>
-<?php
-    /*
-    $slider_ = array(
-        'bg1.jpg'=>'Arni University',
-        'bg2.jpg'=>'Arni University',
-        'bg3.jpg'=>'Arni University',
-        'bg4.jpg'=>'Arni University',
-        'bg5.jpg'=>'Arni University',
-        'bg6.jpg'=>'Arni University',
-        'bg7.jpg'=>'Arni University',
-        'bg8.jpg'=>'Arni University'
-    );
-*/
-    
-?>
-<!--script>
-    function addfavlink(loc, dispname, siteurl){
-         var shl = WScript.CreateObject("WScript.Shell");
-        var shor = shl.CreateShortcut(loc + "" + dispname + ".URL");
-        shor.TargetPath = siteurl;
-        shor.save();
-    }
-</script-->
+
+
 <body>
-<?php $this->load->view('tagmanager'); ?>
     <div id="st-container" class="st-container">
         <div class="st-pusher">
             <div class="st-content">
                 <div class="st-content-inner">
-                    <header><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                    <header>
                         <?php $this->load->view('templates/menu'); ?>
                     </header>
-
-                        <!-- AGI Video-->
-                        <header style="overflow: hidden; position: relative; height: auto">
+                    <!-- AGI Video-->
+                    <header style="overflow: hidden; position: relative; height: auto">
                             <div class="video-test"style="position: sticky; overflow: hidden; min-height: 25%; height: 100%">
                               <video preload="auto" style="width:100%; height:auto;" autoplay="autoplay" loop="loop" muted="">
                                 <source src="<?php echo base_url('assets/arniVideo.mp4');?>" type="video/mp4">
@@ -61,14 +38,13 @@
                             <div style="position: absolute; z-index: 999999"></div>
                         </header>
                         <!--AGI Video -->
-                        
-                    </div>
                     <!-- #x-corp-carousel-->
-                    <div style="clear: both;"><br></div>
+
+
                     <div class="container">
                         <div class="content-wrapper">
                             <section class="intro-wrapper"> 
-                                <div class="row"> 
+                            <div class="row"> 
                                     <div class="col-lg-7 col-md-8"> 
                                         <h1 class="wow fadeInDown">Leading Indian University of higher education.</h1>
                                         <h3 class="wow fadeInDown">Bringing Ambition to Life</h3>
@@ -302,14 +278,14 @@
                                 <script src="<?php echo base_url().'assets/1/thumbnail-slider.js'?>" type="text/javascript"></script>
 
                                 <h2 class="section-title wow fadeInDown">Our Recruiters
-                                    <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('ArniRecruiters');?>">See More Recruiters</a>
+                                    <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('Agi/amrapaliRecruiters');?>">See More Recruiters</a>
                                 </h2>
 
                                 <div id="thumbnail-slider">
                                     <div class="inner">
                                         <ul>
                                     <?PHP for ($loop = 1; $loop <= 45; $loop++) { ?>
-                                        <li class="wow zoomIn"><img class="img-responsive thumb" src="<?PHP echo base_url() . 'assets/img/cmpLogos/' . $loop . '.png'; ?>" alt="Arni Recruiters Logo"></li> 
+                                        <li class="wow zoomIn"><img class="img-responsive thumb" src="<?PHP echo base_url() . 'assets/img/cmpLogos/' . $loop . '.png'; ?>" alt="Amrapali Recruiters Logo"></li> 
                                     <?PHP } ?>
                                 </ul>  
                                     </div>
@@ -378,23 +354,9 @@
                                         </div><!-- /.item -->
                                     </div><!-- /.carousel-inner -->
                                 </div><!-- /.carousel -->
-                            </section><!-- /.testimonial-wrapper -->                                
+                            </section><!-- /.testimonial-wrapper -->                                 
 
                             <div class="advantages-wrapper">
                                 <?php $this->load->view('templates/alumni') ?>                               
                             </div><!-- /.content-wrapper -->
                         </div><!-- /.container -->
-                        
-                        
-                        <!-- Modal -->
-<!--div id="myModal3" class="modal fade in" role="dialog" style="display: block;">
-  <div class="modal-dialog" style="background: transparent">
-    <div class="modal-content" style="background: transparent;-webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border: #000000 solid 0px">
-      <div class="modal-body" style="background: transparent">
-        <img src = "<?php //echo base_url('assets/img/2.jpg');?>?version=3.0" />
-      </div>
-    </div>
-
-  </div>
-</div-->
-                        
