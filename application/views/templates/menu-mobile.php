@@ -11,7 +11,7 @@
                 <li><a href="#">About <i class="fa fa-arrow-down"></i></a>
                     <ul style="background: #444444">                        
                         <?php foreach($menu_all['aboutus'] as $title => $path){?>
-                            <li><a href="<?php // echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                            <li><a href="<?php  echo site_url($path); ?>"><?php echo $title; ?></a></li>
                         <?php } ?>
                     </ul>
                 </li>
