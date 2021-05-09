@@ -294,8 +294,8 @@ hr{
                             </section>
 
                             <section class="testimonial-wrapper">
-                                <h2 class="section-title">What our Recruiters Say about us
-                                    <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php //echo site_url('RecruitersTestimonials'); ?>">Check More</a>
+                                <h2 class="section-title">Management's Talk
+                                    <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('about/management');?>">Read More</a>
                                 </h2>
                                 <div id="css-testimonial-carousel" class="carousel slide" data-ride="carousel">
                                     <!-- Indicators -->
@@ -303,7 +303,9 @@ hr{
                                         <li data-target="#css-testimonial-carousel" data-slide-to="0" class="active"></li>
                                         <li data-target="#css-testimonial-carousel" data-slide-to="1"></li>
                                         <li data-target="#css-testimonial-carousel" data-slide-to="2"></li>
-                                        <li data-target="#css-testimonial-carousel" data-slide-to="3"></li>                                        
+                                        <li data-target="#css-testimonial-carousel" data-slide-to="3"></li>  
+                                        <li data-target="#css-testimonial-carousel" data-slide-to="4"></li>
+                                        <li data-target="#css-testimonial-carousel" data-slide-to="5"></li>                                      
                                     </ol>
 
                                     <!-- Wrapper for slides -->
@@ -313,11 +315,11 @@ hr{
                                                 <div class="col-md-12 col-sm-7">
                                                     <div class="client-testimonial">
                                                         <p>
-                                                            <img align="right" class="img-responsive" style="max-width: 120px;margin:10px 20px;" src="<?PHP echo base_url() . 'assets/img/recruiters/AndrewKaushik.jpg'; ?>" alt="Arni Recruiters">
-                                                            I have been associated with the institute for past 3 years now and each time the interaction has been very professional. The students from the institute are well-versed with the basics of hospitality industry and are well trained on personality enhancement. The credit deinitely goes to the faculty members who has been imparting the knowledge to the students. The response from the institute is very prompt.
-                                                            I look forward to the fruitful continued professional association with the Institute and wish all the students and faculty success for the upcoming years.
+                                                            <img align="left" style="max-width: 200px; margin:10px 10px;" src="<?PHP echo base_url() . 'assets/arniImage/mgmt/vivek.jpg'; ?>" alt="Arni Management" class="img-fluid rounded">
+                                                            Universities of higher learning have always played an important role in the social and economic development of nations. With the quantum of human knowledge increasing at a rapid pace, the role of Arni University as centre of learning, teaching, research and excellence has become more critical. Arni takes a holistic view of education and inspires and empowers students through knowledge and skills to partake fully in the economic development of the country.
                                                         </p>
-                                                        <span class="client-name">Yamini Bhakri</span>, <span class="client-org">Human Resources Manager, The Hyatt </span>
+                                                        
+                                                        <span class="client-name">Mr. Vivek Singh</span>, <span class="client-org">Chancellor</span>
                                                     </div>
                                                 </div><!-- /.col-md-8 -->                                                      
                                             </div><!-- /.row -->
@@ -326,8 +328,12 @@ hr{
                                             <div class="row">
                                                 <div class="col-md-12 col-sm-7">
                                                     <div class="client-testimonial">
-                                                        <p><img hspace="10" align="right" class="img-responsive" style="max-width: 120px;margin:10px 20px;" src="<?PHP echo base_url() . 'assets/img/recruiters/AndrewKaushik.jpg'; ?>" alt="Arni Recruiters"> Karvy Stock Broking has conducted an on-campus drive at Arni Group of Institutes and we have seen experienced set of very professional and wellgroomed candidates for our recruitment. The institution has a good talent pool of fresh minds that have been trained to become industry ready in state of the art infrastructure with a very high focus on technical capability as well as soft skills of students.</p>
-                                                        <span class="client-name">Parvez Shaikh</span>, <span class="client-org">AGM – Training, Karvy, Hyderabad </span>
+                                                        <p>
+                                                            <img align="left" style="max-width: 200px; margin:10px 10px;" src="<?PHP echo base_url() . 'assets/arniImage/mgmt/manish.jpg'; ?>" alt="Arni Management" class="img-fluid rounded">
+                                                            ARNI University makes every effort to make its curriculum world class and deliver it in the most effective manner. It constantly scans the developments taking place in the business world and in the society and responds to the same by preparing professional talent that is able to meet the challenges that present themselves.
+                                                        </p>
+                                                        
+                                                        <span class="client-name">Dr. Manish Kumar</span>, <span class="client-org">CEO</span>
                                                     </div>
                                                 </div><!-- /.col-md-8 -->   
                                             </div><!-- /.row -->
@@ -336,8 +342,12 @@ hr{
                                             <div class="row">
                                                 <div class="col-md-12 col-sm-7">
                                                     <div class="client-testimonial">
-                                                        <p><img hspace="10" align="right" class="img-responsive" style="max-width: 120px;margin:10px 20px;" src="<?PHP echo base_url() . 'assets/img/recruiters/AndrewKaushik.jpg'; ?>" alt="Arni Recruiters">Students of Arni have become an essential part of SmartData. For past many years we have been hiring MCA students on various technical profiles and selections have always proved right for our company. Smart Data would like to acknowledge all the students of Faculty of Computer Science & Applications for a great recruiting season. We saw high calibre of intellect and discipline in the team that represented the institute and we are happy to continue this association in future</p>
-                                                        <span class="client-name">Ms. Anuradha Chawla</span>, <span class="client-org">Vice President – Operations, Smart Data Inc</span>
+                                                    <p>
+                                                            <img align="left" style="max-width: 200px; margin:10px 10px;" src="<?PHP echo base_url() . 'assets/arniImage/mgmt/kalyan.png'; ?>" alt="Arni Management" class="img-fluid rounded">
+                                                            He has more than 23 years of service in teaching and academic administration. Prior joining Arni University, he was with, Professor and Dean, KK University, School of Commerce and Management from Feb. 2020 to Oct. 2020. He has Ph.D. and Masters in Business Administration from F.M.University, Odisha and Master in Journalism and Mass Communication from Utkal University, Odisha.
+                                                        </p>
+                                                        
+                                                        <span class="client-name">Prof. Kalyan K. Sahoo</span>, <span class="client-org">Vice Chancellor</span>
                                                     </div>
                                                 </div><!-- /.col-md-8 -->
                                             </div><!-- /.row -->
@@ -346,8 +356,42 @@ hr{
                                             <div class="row">
                                                 <div class="col-md-12 col-sm-7">
                                                     <div class="client-testimonial">
-                                                        <p><img hspace="10" align="right" class="img-responsive" style="max-width: 120px;margin:10px 20px;" src="<?PHP echo base_url() . 'assets/img/recruiters/AndrewKaushik.jpg'; ?>" alt="Arni Recruiters"> We ventured an on- campus placement drive with the students of Arni for the first time. We are always on a lookout for passionate coders and our hiring process is very stringent and continued for weeks with varied levels of difficulties. We would be very pleased to be associated with the institute for a long time to come and add to our bouquet of passionate coding experts that will take Allure Inc. to unprecedented heights.</p>   
-                                                        <span class="client-name">Mr. Suresh Shinde</span>, <span class="client-org">Chief Technology Officer,Allure Inc., Goa</span>
+                                                    <p>
+                                                            <img align="left" style="max-width: 200px; margin:10px 10px;" src="<?PHP echo base_url() . 'assets/arniImage/mgmt/rajinder.png'; ?>" alt="Arni Management" class="img-fluid rounded">
+                                                            What I believe is that Youth will become the future leaders. My people at ARNI and I, believe in the tagline "A university by the youth, for the youth".<br>
+
+We believe that education and the educators are the strongest pillars of a society. At ARNI we provide a world class infrastructure that brings students capability and creativity to a great extent. We are working towards the goal that Arni is the "University of Future".
+                                                        </p>
+                                                        
+                                                        <span class="client-name">Col. Rajinder Kumar</span>, <span class="client-org">Pro Vice Chancellor</span>
+                                                    </div>
+                                                </div><!-- /.col-md-8 -->
+                                            </div><!-- /.row -->
+                                        </div><!-- /.item -->
+                                        <div class="item">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-7">
+                                                    <div class="client-testimonial">
+                                                    <p>
+                                                            <img align="left" style="max-width: 200px; margin:10px 10px;" src="<?PHP echo base_url() . 'assets/arniImage/mgmt/jaiman.jpg'; ?>" alt="Arni Management" class="img-fluid rounded">
+                                                            Welcome to our institution Arni University which signifies the first ray of the rising sun. It is a matter of sheer pride and joy to state that our University is situated in a pristine location surrounded by amazing scenic natural beauty representing the serene state of Himachal Pradesh. The bank of outrageously beautiful Beas River amidst green Forests is a wonderful backdrop for our campus.
+                                                        </p>
+                                                        
+                                                        <span class="client-name">Dr. Jaiman Preet Kaur</span>, <span class="client-org">DEAN ACADEMIC</span>
+                                                    </div>
+                                                </div><!-- /.col-md-8 -->
+                                            </div><!-- /.row -->
+                                        </div><!-- /.item -->
+                                        <div class="item">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-7">
+                                                    <div class="client-testimonial">
+                                                    <p>
+                                                            <img align="left" style="max-width: 200px; margin:10px 10px;" src="<?PHP echo base_url() . 'assets/arniImage/mgmt/sarika.jpg'; ?>" alt="Arni Management" class="img-fluid rounded">
+                                                            The Arni University, Himachal Pradesh has envisioned itself to become a well-known name in Research and Development (R&D) activities. The University’s research program is built to explore the interdisciplinary potential of the faculty and researchers especially with respect to industry and societal aspect of Himachal Pradesh and nearby areas.
+                                                        </p>
+                                                        
+                                                        <span class="client-name">Prof. (Dr.) Sarika Sharma</span>, <span class="client-org">Dean R&D</span>
                                                     </div>
                                                 </div><!-- /.col-md-8 -->
                                             </div><!-- /.row -->
