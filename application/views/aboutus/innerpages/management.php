@@ -29,7 +29,6 @@
                                                 <p>We also feel that it is not only the knowledge or degrees alone that produce good citizens, but also the culture, ethos, values and conducive environment which adds to the leadership skills and personality as much as the knowledge. Accordingly, we have designed and nurtured the learning and teaching process by hiring or partnering with, the best talents / experts available in the country.</p>
                                                 <p>It is my proud privilege to formally welcome all fresh students to the Arni University and I hope that they all will be immensely benefitted by joining us. I would like to assure everyone that we are fully dedicated to provide quality accredited career focused education to our students. To achieve this, an immersive curriculum in our University, supported by industry, has been developed to prepare our students pragmatically with an aim to create a 'Centre of Excellence'. I am absolutely determined and clear in my mind that we will achieve our set goals.</p>
                                                 <p>We thank everyone for taking interest in our University.</p>
-                                            
                                             </div>
                                         </div>
                                     </div>
