@@ -1,62 +1,102 @@
-    <body>
-        <div id="st-container" class="st-container">
-            <div class="st-pusher">
-                <div class="st-content">
-                    <div class="st-content-inner">
-                        <header>
-                            <?php $this->load->view('templates/menu'); ?>
-                        </header>
+<style>
+    .member-info a{
+        color: #0c5981;
+        font-weight: bold;
+    }
+    .member-info a:hover{
+        color: #ffa200;
+    }
+    ul.check-circle li {
+        display: list-item;
+        position: relative;
+        line-height: 28px;
+        padding-left: 25px;
+        color:#8b4b05;
+    }
+    hr{
+        border:1px solid #aaaaaa;
+    }
+</style>
+<?php
+    
+    $slider_ = array(
+        'P4.jpg'=>$title,
+        'P1.jpg'=> $title,
+        'P2.jpg'=>$title,
+        'P3.jpg'=>$title
+    );
 
-                        <section class="page-header-wrapper">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="page-header">
-                                            <h1><?php echo $title;?></h1>
-                                        </div>
-                                        <ol class="breadcrumb">
-                                            <li><a href="<?php echo site_url('agi');?>">Home</a></li>
-                                            <li><a href="#">Academics</a></li>
-                                            <li class="active"><?php echo $title;?></li>
-                                        </ol>
+    
+?>
+<!--script>
+    function addfavlink(loc, dispname, siteurl){
+         var shl = WScript.CreateObject("WScript.Shell");
+        var shor = shl.CreateShortcut(loc + "" + dispname + ".URL");
+        shor.TargetPath = siteurl;
+        shor.save();
+    }
+</script-->
+<body>
+<?php $this->load->view('tagmanager'); ?>
+    <div id="st-container" class="st-container">
+        <div class="st-pusher">
+            <div class="st-content">
+                <div class="st-content-inner">
+                    <header><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                        <?php $this->load->view('templates/menu'); ?>
+                    </header>
+
+                    
+                        <div id="x-corp-carousel" class="carousel slide hero-slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#x-corp-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#x-corp-carousel" data-slide-to="1"></li>
+                            <li data-target="#x-corp-carousel" data-slide-to="2"></li>
+                            <li data-target="#x-corp-carousel" data-slide-to="3"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <?php $loop1 = 0; $sliderno = mt_rand(0,count($slider_)-1);?>
+                            <?php foreach($slider_ as $img=>$item){?>
+                            <div class="item<?php if($loop1 == $sliderno) echo ' active';?>">
+                                <img src="<?php echo base_url('assets/arniImage/schools/'.$page.'/'.$img); ?>?version=2.2" alt="<?php echo $item; ?>">
+                                <!--Slide Image-->
+
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <small class="animated fadeIn">CALL US TODAY (Toll Free)</small>
+                                        <div class="phone animated lightSpeedIn">18008918962</div>
+                                        <h1 class="animated lightSpeedIn hidden-xs" style="font-size:40px!important;"><?php echo $item; ?></h1>                                            
                                     </div>
-                                </div><!-- /.row -->
-                            </div><!-- /.container-fluid -->
-                        </section>
+                                    <!--.carousel-caption-->
+                                </div>
+                                <!--.container-->
+                            </div>
+                            <!--.item-->
+                            <?php $loop1++;?>
+                            <?php } ?>
+                        </div>
+                        <!--.carousel-inner-->
 
-
-                        <div class="container">
-                            <div class="content-wrapper">
-                                <div class="inner-content">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-md-9 col-sm-8">
-                                            <article class="blog-post-wrapper single-article">
-                                                <?php $this->load->view('templates/ticker-news');?>
-                                                <header class="entry-header">                                                    
-                                                    <h2 class="entry-title"><a href="#"><?php echo $title;?></a></h2>
-                                                </header><!-- /.entry-header -->                                                
-                                                <div class="entry-content" style="overflow: hidden">
-                                                    <img src="<?php echo base_url('assets/img/fdp.jpg'); ?>" class="img-responsive " alt="">   
-                                                    <p align="justify">                                                                        
-                                                        <blockquote>
-                                                            "To cope with a challenging world, any entity must develop the capacity of shifting and changing - of developing new skills and attitudes; in short the capacity of learning."
-                                                            <span style="color:#993300">A De Guess: 'The Living Company'</span>
-                                                        </blockquote>
-                                                    </p>                                                   
-                                                    <p>
-                                                        Truth and facts cannot be taught; they need to be learnt. Faculty members, who constitute Amrapali's intellectual power, are the primary source of information, guidance and motivation for the students. They regularly attend Faculty Development Programmes, Workshops, Seminars etc. to keep themselves abreast of new tools, techniques and methodologies of teaching.
-                                                    </p>
-                                                    <p>Amrapali Institute encourages and organises motivation camps, workshops and Facuty Development Programmes for faculty and staff members. In recent past, several of them have attended workshops and various courses conducted by UGC, AICTE, UCOST, DST, BHU, Kumaun University and other reputed organisations such as IIM-Kozhikode, IISc-Bangalore, IBM-Bangalore, IIM-Ahmedabad, Lucknow University, Pantnagar University, MDI-Gurgaon, IIT-Roorkee, IIT-Delhi, GIS-Allahabad etc.
-                                                    </p>
-                                                </div><!-- /.entry-content -->
-                                            </article>                                            
-                                        </div><!-- /.col-md-9 -->
-
-                                        <div class="col-xs-12 col-md-3 col-sm-4" align="center">
-                                            <?php $this->load->view('templates/quick-links');?>                                            
-                                            <?php $this->load->view('templates/alumni-img-scroll');?>
-                                        </div><!-- /.col-md-3 -->
-                                    </div><!-- /.row -->
-                                </div><!-- /.inner-content -->
-                            </div><!-- /.content-wrapper -->
-                        </div><!-- /.container -->
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#x-corp-carousel" role="button" data-slide="prev">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#x-corp-carousel" role="button" data-slide="next">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- #x-corp-carousel-->
+                    <div style="clear: both;"><br></div>
+                    <div class="container">
+                        <div class="content-wrapper">
+                            <section class="" style="display: inline;">
+                                <?php $this->load->view('templates/submenu'); ?>
+                            </section>
+                            <?php $this->load->view('academics/faculty/'.$inner_page); ?>                                                           
+                        </div>
+                    </div>

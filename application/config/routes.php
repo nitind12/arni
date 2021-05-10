@@ -68,6 +68,18 @@ $route['Arni/(:any)'] = 'RC';
 
 $route['about/(:any)'] = 'Arni/about/$1';
 
+$route['art-and-humanities'] = 'Arni/academics/art_and_humanities';
+$route['technology'] = 'Arni/academics/technology';
+$route['commerce-and-business-management'] = 'Arni/academics/commerce_and_business_management';
+$route['pharmacy'] = 'Arni/academics/pharmacy';
+$route['tourism-and-hospitality-management'] = 'Arni/academics/tourism_and_hospitality_management';
+$route['computer-application'] = 'Arni/academics/computer_application';
+$route['life-and-allied-science'] = 'Arni/academics/life_and_allied_science';
+$route['physical-science'] = 'Arni/academics/physical_science';
+$route['skill-development-and-vocational-studies'] = 'Arni/academics/skill_development_and_vocational_studies';
+$route['technology'] = 'Arni/academics/technology';
+$route['mentor'] = 'Arni/academics/mentor';
+
 /*  redirection for 301 */
 /* -------------------- */
 

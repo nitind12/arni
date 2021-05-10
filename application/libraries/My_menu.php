@@ -11,15 +11,16 @@ class My_menu {
         // Academics
         $menu['academics'] = array(
             'faculty' => array(
-                "School of Art & Humanities" => '#',
-                "School of Technology" => '#',
-                "School of Commerce & Business Management" => '#',
-                "School of Pharmacy" => '#',
-                "School of Computer Application" => '#',
-                "School of Tourism & Hospitality Management" => '#',
-                "School of Physical Science" => '#',
-                "School of Skill Development & Vocational Studies" => '#',
-                "Our Mentors" => '#'
+                "School of Art & Humanities" => 'art-and-humanities',
+                "School of Technology" => 'technology',
+                "School of Commerce & Business Management" => 'commerce-and-business-management',
+                "School of Pharmacy" => 'pharmacy',
+                "School of Computer Application" => 'computer-application',
+                "School of Life and Allied Science" => 'life-and-allied-science',
+                "School of Tourism & Hospitality Management" => 'tourism-and-hospitality-management',
+                "School of Physical Science" => 'physical-science',
+                "School of Skill Development & Vocational Studies" => 'skill-development-and-vocational-studies',
+                "Our Mentors" => 'mentor'
             ),
             'facilities' => array(
                 "Library" => 'library',

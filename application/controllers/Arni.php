@@ -77,24 +77,65 @@ class Arni extends CI_Controller {
         $data_['menu_all'] = $this->my_menu->site_menu();        
         $data_['submenu'] = $this->my_menu->submenu('about');
         $data_['titleMain'] = "About Us";
-        $data_['active'] = $page;
-
-        if($page == 'governance' || $page == 'governance#'){
-            $data_['inner_page'] = 'governance';
-            $data_['breadcrumb'] = 'About us / Governance';
-        } else if($page == 'management' || $page == 'management#'){
-            $data_['inner_page'] = 'management';
-            $data_['breadcrumb'] = 'About us / Management Talk';
-        } else if($page == 'committee' || $page == 'committee#'){
-            $data_['inner_page'] = 'committee';
-            $data_['breadcrumb'] = 'About us / University Committee';
+        $data_['active'] = 'academics';
+        $data_['page'] = $page;
+        
+        if($page == 'art_and_humanities' || $page == 'art_and_humanities#'){
+            $clg = "School of Art and Humanities";
+            $data_['inner_page'] = 'art_and_humanities';
+            $data_['title'] = 'School of Art and Humanities';
+            $data_['breadcrumb'] = 'Academics / School of Art and Humanities';
+        } else if($page == 'technology' || $page == 'technology#'){
+            $clg = "School of Technology";
+            $data_['inner_page'] = 'technology';
+            $data_['title'] = $clg;
+            $data_['breadcrumb'] = 'Academics / ' . $clg;
+        } else if($page == 'commerce_and_business_management' || $page == 'commerce_and_business_management#'){
+            $clg = "School of Commerce and Business Management";
+            $data_['inner_page'] = 'commerce_and_business_management';
+            $data_['title'] = $clg;
+            $data_['breadcrumb'] = 'Academics / '. $clg;
+        } else if($page == 'pharmacy' || $page == 'pharmacy#'){
+            $clg = "School of Pharmacy";
+            $data_['inner_page'] = 'pharmacy';
+            $data_['title'] = $clg;
+            $data_['breadcrumb'] = 'Academics / ' . $clg;
+        } else if($page == 'tourism_and_hospitality_management' || $page == 'tourism_and_hospitality_management#'){
+            $clg = "School of Tourism and Hospitality Management";
+            $data_['inner_page'] = 'tourism_and_hospitality_management';
+            $data_['title'] = $clg;
+            $data_['breadcrumb'] = 'Academics / ' . $clg;
+        } else if($page == 'computer_application' || $page == 'computer_application#'){
+            $clg = "School of Computer Application";
+            $data_['inner_page'] = 'computer_application';
+            $data_['title'] = $clg;
+            $data_['breadcrumb'] = 'Academics / ' . $clg;
+        } else if($page == 'life_and_allied_science' || $page == 'life_and_allied_science#'){
+            $clg = "School of Life and Allied Science";
+            $data_['inner_page'] = 'life_and_allied_science';
+            $data_['title'] = $clg;
+            $data_['breadcrumb'] = 'Academics / ' . $clg;
+        } else if($page == 'physical_science' || $page == 'physical_science#'){
+            $clg = 'School of Physical Science';
+            $data_['inner_page'] = 'physical_science';
+            $data_['title'] = $clg;
+            $data_['breadcrumb'] = 'Academics / ' . $clg;
+        } else if($page == 'skill_development_and_vocational_studies' || $page == 'skill_development_and_vocational_studies#'){
+            $clg = 'School of Skill Development and Vocational Studies';
+            $data_['inner_page'] = 'skill_development_and_vocational_studies';
+            $data_['title'] = $clg;
+            $data_['breadcrumb'] = 'Academics / ' . $clg;
+        } else if($page == 'mentor' || $page == 'mentor#'){
+            $clg = 'Mentor';
+            $data_['inner_page'] = 'mentor';
+            $data_['title'] = $clg;
+            $data_['breadcrumb'] = 'Academics / ' . $clg;
         } else {
-            $data_['inner_page'] = 'aboutus';
-            $data_['breadcrumb'] = 'About us / Why Arni?';
+            redirect('academics/technology');
         }
 
         $this->load->view('templates/header', $data_);
-        $this->load->view('aboutus/index', $data_);
+        $this->load->view('academics/fdp', $data_);
         $this->load->view('templates/footer');
     }
 

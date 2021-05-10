@@ -35,7 +35,7 @@
                                     <h3 style='color:#fff'>Faculty</h3>
                                     <ul class="dropdown-menu">
                                         <?php foreach($menu_all['academics']['faculty'] as $title => $path){?>
-                                            <li><a href="<?php // echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                            <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
                                         <?php } ?>
                                     </ul>    
                                     
