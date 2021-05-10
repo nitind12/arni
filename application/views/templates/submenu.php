@@ -1,14 +1,11 @@
 <div class="topnav" id="myTopnav">
-
-  <a href="<?php echo site_url('about/aboutus');?>" <?php if($active == 'aboutus'){ echo 'class="active"'; } ?>>Why Arni?</a>
-  <a href="<?php echo site_url('about/governance');?>" <?php if($active == 'governance'){ echo 'class="active"'; } ?>>Governance</a>
-  <a href="<?php echo site_url('about/management');?>" <?php if($active == 'management'){ echo 'class="active"'; } ?>>Management's Talk</a>
-  <a href="<?php echo site_url('about/committee');?>" <?php if($active == 'committee'){ echo 'class="active"'; } ?>>University Committee</a>
+<?php foreach ($submenu as $item => $value) { ?>
+  <a href="<?php echo site_url($value[0]);?>" <?php if($active == $value[1]){ echo 'class="active"'; } ?>><?php echo $item; ?></a>
+<?php } ?>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
-  </a>
+  </a> 
 </div>
-
 <script>
 function myFunction() {
   var x = document.getElementById("myTopnav");

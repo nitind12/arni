@@ -67,4 +67,28 @@ class My_menu {
         return $menu;
     }
 
+    function submenu($page = 'x'){
+        switch ($page) {
+            case 'about':
+                $data = $this->about();
+                break;
+            
+            default:
+                # code...
+                break;
+        }
+
+        return $data;
+    }
+
+    function about(){
+        /* [["menu item" => array(str1, str2)]] where {str1} is the path and {str2} is the active menu*/
+        return array(
+            "Why Arni?"             => array("about/aboutus", "aboutus"),
+            "Governance"            => array("about/governance", "governance"),
+            "Management's Talk"     => array("about/management", "management"),
+            "University Committee"  => array("about/committee", "committee") 
+        );
+    }
+
 }
