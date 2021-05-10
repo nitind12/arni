@@ -73,8 +73,35 @@ class My_menu {
             case 'about':
                 $data = $this->about();
                 break;
-            case 'about':
-                $data = $this->academics();
+            case 'art_and_humanities':
+                $data = $this->art_and_humanities();
+                break;
+            case 'technology':
+                $data = $this->technology();
+                break;
+            case 'commerce_and_business_management':
+                $data = $this->commerce_and_business_management();
+                break;
+            case 'pharmacy':
+                $data = $this->pharmacy();
+                break;
+            case 'tourism_and_hospitality_management':
+                $data = $this->tourism_and_hospitality_management();
+                break;
+            case 'computer_application':
+                $data = $this->computer_application();
+                break;
+            case 'life_and_allied_science':
+                $data = $this->life_and_allied_science();
+                break;
+            case 'physical_science':
+                $data = $this->physical_science();
+                break;
+            case 'skill_development_and_vocational_studies':
+                $data = $this->skill_development_and_vocational_studies();
+                break;
+            case 'mentor':
+                $data = $this->mentor();
                 break;
             default:
                 # code...
@@ -98,6 +125,105 @@ Explaination for the format of the below functions --
     }
 
     function art_and_humanities(){
+        return array(
+            "Home" => array("", ""),
+            "About" => array("", ""),
+            "Department" => array("", ""),
+            "Syllabus" => array("", ""),
+            "Events" => array("", ""),
+            "Contact" => array("", ""),
+        );
+    }
+
+    function technology(){
+        return array(
+            "Home" => array("", ""),
+            "About" => array("", ""),
+            "Department" => array("", ""),
+            "Syllabus" => array("", ""),
+            "Events" => array("", ""),
+            "Contact" => array("", ""),
+        );
+    }
+
+    function commerce_and_business_management(){
+        return array(
+            "Home" => array("", ""),
+            "About" => array("", ""),
+            "Department" => array("", ""),
+            "Syllabus" => array("", ""),
+            "Events" => array("", ""),
+            "Contact" => array("", ""),
+        );
+    }
+
+    function pharmacy(){
+        return array(
+            "Home" => array("", ""),
+            "About" => array("", ""),
+            "Department" => array("", ""),
+            "Syllabus" => array("", ""),
+            "Events" => array("", ""),
+            "Contact" => array("", ""),
+        );
+    }
+
+    function tourism_and_hospitality_management(){
+        return array(
+            "Home" => array("", ""),
+            "About" => array("", ""),
+            "Department" => array("", ""),
+            "Syllabus" => array("", ""),
+            "Events" => array("", ""),
+            "Contact" => array("", ""),
+        );
+    }
+
+    function computer_application(){
+        return array(
+            "Home" => array("", ""),
+            "About" => array("", ""),
+            "Department" => array("", ""),
+            "Syllabus" => array("", ""),
+            "Events" => array("", ""),
+            "Contact" => array("", ""),
+        );
+    }
+
+    function life_and_allied_science(){
+        return array(
+            "Home" => array("", ""),
+            "About" => array("", ""),
+            "Department" => array("", ""),
+            "Syllabus" => array("", ""),
+            "Events" => array("", ""),
+            "Contact" => array("", ""),
+        );
+    }
+
+    function physical_science(){
+        return array(
+            "Home" => array("", ""),
+            "About" => array("", ""),
+            "Department" => array("", ""),
+            "Syllabus" => array("", ""),
+            "Events" => array("", ""),
+            "Contact" => array("", ""),
+        );
+    }
+
+    function skill_development_and_vocational_studies(){
+        return array(
+            "Home" => array("", ""),
+            "About" => array("", ""),
+            "Department" => array("", ""),
+            "Syllabus" => array("", ""),
+            "Events" => array("", ""),
+            "Contact" => array("", ""),
+        );
+    }
+
+    function mentor(){
         return array(
             "Home" => array("", ""),
             "About" => array("", ""),
