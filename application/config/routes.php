@@ -68,22 +68,6 @@ $route['Arni/(:any)'] = 'RC';
 
 $route['about/(:any)'] = 'Arni/about/$1';
 
-//$route['events/(:any)'] = 'RC';
-//$route['Events/(:any)'] = 'RC';
-
-// Events
-
-
-// ------
-
-
-
-/* ----------------- */
-
-/* For Footer Hyperlinks */
-$route['facilities/(:any)'] = 'Agi/facilities/$1';
-/* --------------------- */
-
 /*  redirection for 301 */
 /* -------------------- */
 
