@@ -72,7 +72,9 @@ class My_menu {
             case 'about':
                 $data = $this->about();
                 break;
-            
+            case 'about':
+                $data = $this->academics();
+                break;
             default:
                 # code...
                 break;
@@ -81,13 +83,27 @@ class My_menu {
         return $data;
     }
 
+/*
+Explaination for the format of the below functions --
+    [["menu item" => array(str1, str2)]] where {str1} is the path and {str2} is the active menu
+*/
     function about(){
-        /* [["menu item" => array(str1, str2)]] where {str1} is the path and {str2} is the active menu*/
         return array(
             "Why Arni?"             => array("about/aboutus", "aboutus"),
             "Governance"            => array("about/governance", "governance"),
             "Management's Talk"     => array("about/management", "management"),
             "University Committee"  => array("about/committee", "committee") 
+        );
+    }
+
+    function art_and_humanities(){
+        return array(
+            "Home" => array("", ""),
+            "About" => array("", ""),
+            "Department" => array("", ""),
+            "Syllabus" => array("", ""),
+            "Events" => array("", ""),
+            "Contact" => array("", ""),
         );
     }
 

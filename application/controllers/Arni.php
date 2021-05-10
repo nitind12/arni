@@ -10,6 +10,7 @@ class Arni extends CI_Controller {
         parent::__construct();
         $this->load->model('Web_model', 'wm');
     }
+
     function index() {    
         $data_['meta'] = $this->metainfo_for_web('home', 'home');
         
@@ -31,8 +32,8 @@ class Arni extends CI_Controller {
     function error(){
         redirect('');
     }
-    function metainfo_for_web($clg='x', $page='x'){
-        $metadata__ = $this->my_library->heading_for_page_($clg, $page);
+    function metainfo_for_web($menu='x', $page='x'){
+        $metadata__ = $this->my_library->heading_for_page_($menu, $page);
             $data_['abstract']      = $metadata__['abstract'];
             $data_['contact']       = $metadata__['contact'];
             $data_['keywords']      = $metadata__['keywords'];
@@ -69,6 +70,53 @@ class Arni extends CI_Controller {
         $this->load->view('aboutus/index', $data_);
         $this->load->view('templates/footer');
     }
-// ---- End of About Us Menu 
 
+    function academics($page = 'x'){
+        $data_['meta'] = $this->metainfo_for_web('academics', $page);
+        $data_['menu_active'] =2;
+        $data_['menu_all'] = $this->my_menu->site_menu();        
+        $data_['submenu'] = $this->my_menu->submenu('about');
+        $data_['titleMain'] = "About Us";
+        $data_['active'] = $page;
+
+        if($page == 'governance' || $page == 'governance#'){
+            $data_['inner_page'] = 'governance';
+            $data_['breadcrumb'] = 'About us / Governance';
+        } else if($page == 'management' || $page == 'management#'){
+            $data_['inner_page'] = 'management';
+            $data_['breadcrumb'] = 'About us / Management Talk';
+        } else if($page == 'committee' || $page == 'committee#'){
+            $data_['inner_page'] = 'committee';
+            $data_['breadcrumb'] = 'About us / University Committee';
+        } else {
+            $data_['inner_page'] = 'aboutus';
+            $data_['breadcrumb'] = 'About us / Why Arni?';
+        }
+
+        $this->load->view('templates/header', $data_);
+        $this->load->view('aboutus/index', $data_);
+        $this->load->view('templates/footer');
+    }
+
+// Common Methods
+    function commondata(){
+        $data_['activeblogs'] = $this->wm->get_active_blogs();
+        $data_['rnews_'] = $this->wm->get_most_recent_news();
+        $data_['upcoming'] = $this->wm->get_most_recent_upcoming();
+        $data_['announcements'] = $this->wm->get_most_recent_announcements(); 
+        $data_['alumniProfile']= $this->wm->get_all_alumniProfile_distinct();
+
+        return $data_;
+    }
+
+    function ouralumni($clg = ''){ // Need this at every page with news headings
+        if($clg != ''){
+            $data_['alumniProfile']= $this->wm->get_all_alumniProfile($clg);
+        } else {
+            $data_['alumniProfile']= $this->wm->get_all_alumniProfile_distinct_general();
+        }
+        $data_['rnews_'] = $this->wm->get_most_recent_news();
+        return $data_;
+    }
+// End of Common Methods
 }

@@ -156,186 +156,55 @@ class My_library {
 
         return $data;
     }
-    function getTitleForAdmissions($page){
-        if($page == 'applynow'){
-            $data['title'] = 'Online Admission Form - ' . date('Y') . ' | Top Private Institute in Nanital';
-            $data['desc_'] = 'To take admission, simply fill Pre-Admission online form for all the courses in Amrapali. Best institute of Academic Excellence in Uttarakhand';
-        } else {
-            $data['title'] = 'Amrapali Online Admission Open | Best College  in Nanital';
-            $data['desc_'] = 'Amrapali online admissions open for all the professional courses. Just fill the form and our councilor will contact you. Join Top Ranked Institute of Nainital!';
-        }
-        return $data;
-    }
 
-    function getTitleforAbout($page){
-        switch ($page){
-            case 'vmv':
-                $data['desc_'] = 'Know about Amrapali – best private institute in Nainital. Our mission is to create centric learning environment where every student can achieve their full potential.';
-                $data['title'] = 'Vision, Mission & Values – Amrapali | Top Ranked Institute Of Nainital';
-            break;
-            case 'managementboard':
-                $data['desc_'] = 'The stirring leadership of Amrapali Group’s Management creates a learning environment with illustrious faculty, brilliant students, & proactive collaborations.';
-                $data['title'] = 'Amrapali Board of Management | Best Private Institute in Nainital';
-            break;
-            default: 
-                $data['desc_'] = 'Amrapali is the top ranked and private institute for B.ED course in Haldwani, Uttarakhand.  Visit our website, to know fee structure, eligibility and many more';
-                $data['title'] = 'Arni University';
+    function findTitle($page = 'x'){
+        switch ($page) {
+            case 'art-and-humanities':
+                $title = "School of Art &amp; Humanities";
+                break;
+            
+            default:
+                $title = "Arni University";
+                break;
         }
-    return $data;
     }
-    function getTitleforMentors($page){
-        switch ($page){
-            case 'mentors':
-                $data['desc_'] = 'Amrapali - best Private educational institute of Nanital have professionally qualified, experienced, motivated and highly committed team of faculty members. To know more, visit us.';
-                $data['title'] = 'Amrapali Mentors | Best Private Educational Institute Near Uttarakhand';
-            break;
-            case 'capital':
-                $data['desc_'] = 'Amrapali - best private educational institute in Uttarakhand have quallified and experienced faculty members. Explore our page and get a list of all the teachers course wise.';
-                $data['title'] = 'Amrapali Faculty | Best Private Educational Institute Near Uttarakhand';
-            break;
-            default: 
-                $data['desc_'] = 'Amrapali is the top ranked and private institute for B.ED course in Haldwani, Uttarakhand.  Visit our website, to know fee structure, eligibility and many more';
-                $data['title'] = 'Amrapali Mentors | Best Private Educational Institute Near Uttarakhand';
-        }
-    return $data;
-    }
-    function heading_for_page_($clg, $page){
-        $data_['contact'] = 'office@amrapali.ac.in, query@amrapali.ac.in, admission@amrapali.ac.in';
-        switch($clg){
+    function heading_for_page_($menu, $page){
+        $data_['contact'] = 'office@arni.in, query@aarni.in, admission@arni.in';
+        switch($menu){
             case 'home':
                 $data_['title'] = 'Arni University';
-                $data_['abstract'] = 'Top Institute of Northern India, Top Rated Institute of Uttarakhand';
-                $data_['keywords'] = 'Top Ranked Institute Uttarakhand,Best Institute Haldwani, Nainital, engineering college';
+                $data_['abstract'] = 'Top University of Northern India, Top Rated University of Himanchal';
+                $data_['keywords'] = 'Top Ranked University Himanchal Pradesh,Best Institute Kathgarh, Kangra, engineering college';
                 $data_['distribution'] = 'local';
-                $data_['author'] = 'AITS, AIHM, FCBM, AIPS, AIAS';
-                $data_['description'] = 'Amrapali –best professional institute near Nainital has been ranked as the top private institute offering graduate & post graduate courses BBA, BTech, BCA, BHM, MBA, MCA';
+                $data_['author'] = 'Arni University';
+                $data_['description'] = 'Arni –best professional university near Indora has been ranked as the top private university offering graduate & post graduate courses Arts, Technology, Commerce, Computer Science, Tourism, Physical Science and Vocational Courses';
             break;
 
             case 'about':
-                $data_['title'] = $this->getTitleforAbout($page)['title'];
-                $data_['abstract'] = 'Completed 21 years of excellence, and is a higly rated group of Institutes of Uttarakhand';
-                $data_['keywords'] = 'Top engineering,Management,Hotel Management Pharmacy College Nainital';
+                $data_['title'] = 'About Us';
+                $data_['abstract'] = 'Completed 12 years of excellence, and is a higly rated group of Uniervsities of Himanchal Pradesh';
+                $data_['keywords'] = 'Top engineering,Management,Hotel Management, Tourism, Pharmacy Unievrsity Kangra';
                 $data_['distribution'] = 'local';
-                $data_['author'] = 'AITS, AIHM, FCBM, AIPS, AIAS';
-                $data_['description'] = $this->getTitleforAbout($page)['desc_'];
+                $data_['author'] = 'Arni University';
+                $data_['description'] = "Arni University (AU) came into existence by an Act No.23 of 2009 of Government of Himachal Pradesh and approved by the UGC, vide Notification No- F No 8-5/2010(CPP-1/PU), dated 03 Mar 2010, under Section 2 (f) of UGC Act, 1956 with the objective to promote inter-disciplinary Higher Education and Research in the needy areas of Himachal Pradesh, Punjab and J&K.";
             break;
 
-            case 'admissions':
-                $data_['title'] = $this->getTitleForAdmissions($page)['title'];
-                $data_['abstract'] = "Completed 21 years of excellence, and is a higly rated group of Institutes of Uttarakhand";
-                $data_['keywords'] = 'Scholarships,Education Loan, EMI,Transport Facility, Hostel Facility';
+            case 'academics': // Art and Humanities
+                $data_['title'] = $this->findTitle($page);
+                $data_['abstract'] = 'Completed 12 years of excellence, and is a higly rated group of Uniervsities of Himanchal Pradesh';
+                $data_['keywords'] = 'Top engineering,Management,Hotel Management, Tourism, Pharmacy Unievrsity Kangra';
                 $data_['distribution'] = 'local';
-                $data_['author'] = 'AITS, AIHM, FCBM, AIPS, AIAS';
-                $data_['description'] = $this->getTitleForAdmissions($page)['desc_'];
+                $data_['author'] = 'Art and Humanities, Arni University';
+                $data_['description'] = "Arni School of Arts & Humanties Humanities focuses on all aspects related to culture and creative life including most disciplines outside exact Sciences.";
             break;
 
-            case 'ftca':
-                $data_['title'] = $this->getTitleforFaculty($clg, $page)['title'];
-                $data_['abstract'] = "Completed 21 years of excellence, and is a higly rated group of Institutes of Uttarakhand";
-                $data_['description'] = 'A leading Institute in Uttarakhand for B.Tech, Polytechhnic, BCA, MCA,Top Ranked BCA, Best Engineering College In Haldwani, Nainital, Uttarakhand';
-                $data_['keywords'] = 'Top ranked Engineering College in Uttarakhand,  JEEP best Institute, engineering college';
-                $data_['distribution'] = 'local';
-                $data_['author'] = 'AITS, AIAS';
-            break;
-
-            case 'fcbm':
-                $data_['title'] = $this->getTitleforFaculty($clg, $page)['title'];
-                $data_['abstract'] = "Completed 21 years of excellence, and is a higly rated group of Institutes of Uttarakhand";
-                $data_['description'] = 'Top Ranked Institute of Uttarakhand for MBA, BBA, B. Com (Honours),Best MB Institute Uttrakahand, Best BBA Institute, Haldwani, Uttrakhand';
-                $data_['keywords'] = 'Top MBA Institute, BBA Institute,B.COM(H), MBA Uttarakhand';
-                $data_['distribution'] = 'local';
-                $data_['author'] = 'FCBM, AITS, AIAS';
-            break;
-            case 'fhm':
-                $data_['title'] = $this->getTitleforFaculty($clg, $page)['title'];
-                $data_['abstract'] = "Completed 21 years of excellence, and is a higly rated group of Institutes of Uttarakhand";
-                $data_['description'] = 'Top Ranked Hotel Management Institute Uttarakahand for BHMCT,BHM,DHMCT,DHM,Best Hotel Management Institute Uttarakhand, LeadingHotel Management Institute';
-                $data_['keywords'] = 'Top Hotel Management Institute,Uttarakhand India, Haldwani, Nainital';
-                $data_['distribution'] = 'local';
-                $data_['author'] = 'AIHM, AIAS';
-            break;
-            case 'fps':
-                $data_['title'] = $this->getTitleforFaculty($clg, $page)['title'];
-                $data_['abstract'] = "Completed 21 years of excellence, and is a higly rated group of Institutes of Uttarakhand";
-                $data_['description'] = 'Highly rated Pharmacy Institute for B.Pharm, D. Pharm';
-                $data_['keywords'] = 'Reputed college of Pharmacy, Ranked college of Pharmacy in Uttarakhand';
-                $data_['distribution'] = 'local';
-                $data_['author'] = 'AIPS';
-            break;
-
-            case 'fe':
-                $data_['title'] = $this->getTitleforFaculty($clg, $page)['title'];
-                $data_['abstract'] = "Completed 21 years of excellence, and is a higly rated group of Institutes of Uttarakhand";
-                $data_['description'] = 'Reputed private Institute in Nainital Uttarakhand offering course in Education i.e. B.Ed.';
-                $data_['keywords'] = 'Best Private College In Uttarakhand, B. Ed., Education';
-                $data_['distribution'] = 'local';
-                $data_['author'] = 'AIAS';
-            break;
-            
-            case 'mentors':
-                $data_['title'] = $this->getTitleforMentors($page)['title'];
-                $data_['abstract'] = 'Top Institute of Northern India, Top Rated Institute of Uttarakhand';
-                $data_['keywords'] = 'Best Mentors, Top Ranked Institute Uttarakhand,Best Institute Haldwani, Nainital';
-                $data_['distribution'] = 'local';
-                $data_['author'] = 'AITS, AIHM, FCBM, AIPS, AIAS';
-                $data_['description'] = $this->getTitleforMentors($page)['desc_'];
-            break;
-            case 'placements':
-                $data_['title'] = 'Amrapali Best Placement Institute in Haldwani, Uttarakhand';
-                $data_['abstract'] = "Completed 21 years of excellence, and is a higly rated group of Institutes of Uttarakhand";
-                $data_['keywords'] = 'Placements, Placed, Best placements';
-                $data_['distribution'] = 'local';
-                $data_['author'] = 'AITS, AIHM, FCBM, AIPS, AIAS';
-                $data_['description'] = 'Amrapali known as the best placement institute near Dehradun, Uttarakhand with track record of 95% placements in most of its courses. Join Today!';
-            break;
-            case 'alumni':
-                $data_['title'] = 'Amrapali Alumni Testimonials & Form | Best College in Nanital';
-                $data_['abstract'] = "Completed 21 years of excellence, and is a higly rated group of Institutes of Uttarakhand";
-                $data_['keywords'] = 'Alumni, Old Students, Students';
-                $data_['distribution'] = 'local';
-                $data_['author'] = 'AITS, AIHM, FCBM, AIPS, AIAS';
-                $data_['description'] = 'See what our alumni say about the best professional institute of Nanital. Join Alumni connect Program to strengthen the relation.';
-            break;
-            case 'gallery':
-                $data_['title'] = 'Life at Amrapali – Photo Gallery, Videos | Private Institute in Nanital';
-                $data_['abstract'] = "Completed 21 years of excellence, and is a higly rated group of Institutes of Uttarakhand";
-                $data_['keywords'] = 'Gallery, photo, album, life at amrapali';
-                $data_['distribution'] = 'local';
-                $data_['author'] = 'AITS, AIHM, FCBM, AIPS, AIAS';
-                $data_['description'] = 'Check out all the latest events and activities images of all the courses in Amrapali – best private educational institute near Nanital, Uttarakhand. Join Today!';
-            break;
-            case 'contactus':
-                $data_['title'] = 'Contact Us | Best Professional Institute of Nainital';
-                $data_['abstract'] = "Completed 21 years of excellence, and is a higly rated group of Institutes of Uttarakhand";
-                $data_['keywords'] = 'Contact us, phone, mobile, email, address';
-                $data_['distribution'] = 'local';
-                $data_['author'] = 'AITS, AIHM, FCBM, AIPS, AIAS';
-                $data_['description'] = 'Looking for the Best Professional Institute near Nainital? Join Amrapali Group of Institutes. Contact us today for detailed information about our courses!';
-            break;
-            case 'anti-ragging':
-                $data_['title'] = 'Anti Ragging Policy | Best Professional Institute of Nainital';
-                $data_['abstract'] = "Completed 21 years of excellence, and is a higly rated group of Institutes of Uttarakhand";
-                $data_['keywords'] = 'Anti ragging, open environment, secure environment';
-                $data_['distribution'] = 'local';
-                $data_['author'] = 'AITS, AIHM, FCBM, AIPS, AIAS';
-                $data_['description'] = 'Amrapali strongly condemn any kind of ragging. We have an active and vigilant Anti Ragging enforcement team to protect students against this crime';
-            break;
-            case 'career':
-                $data_['title'] = 'Careers and Jobs | Job Opportunities - Amrapali Institute';
-                $data_['abstract'] = "Completed 21 years of excellence, and is a higly rated group of Institutes of Uttarakhand";
-                $data_['keywords'] = 'Career, Recruitment, best place to work';
-                $data_['distribution'] = 'local';
-                $data_['author'] = 'AITS, AIHM, FCBM, AIPS, AIAS';
-                $data_['description'] = 'Give a kick-start to your career with the leaders! Get your dream job at Amrapali Group of Institutes - the Best Private Educational Institute near Uttarakhand!';
-            break;
             default:
-                $data_['title'] = 'Amrapali Best Professional Institute in Nanital | Top Ranked Institutes';
-                $data_['abstract'] = 'Completed 21 years of excellence, and is a higly rated group of Institutes of Uttarakhand';
-                $data_['contact'] = 'office@amrapali.ac.in, query@amrapali.ac.in, admission@amrapali.ac.in';
-                $data_['keywords'] = 'Best Private College In Uttarakhand, Amoungst Top Private Institute In Uttarakhand, Best Private Institute in Nainital, amongst Best Private Institute In India, amongst Top private college in India';
+                $data_['title'] = 'Arni University';
+                $data_['abstract'] = 'Top University of Northern India, Top Rated University of Himanchal';
+                $data_['keywords'] = 'Top Ranked University Himanchal Pradesh,Best Institute Kathgarh, Kangra, engineering college';
                 $data_['distribution'] = 'local';
-                $data_['author'] = 'AITS, AIHM, FCBM, AIPS, AIAS';
-                $data_['description'] = 'Amrapali Group of Institutes is a top private Institute in Nainital Uttarakhand offering courses like B.Tech, BCA, BBA, B.Com (H), MBA, MCA, BHMCT, BHM, DHMCT, B.Pharm, D.Pharm, Polytechnic, 1 yr. Diploma and B.Ed.';
+                $data_['author'] = 'Arni University';
+                $data_['description'] = 'Arni –best professional university near Indora has been ranked as the top private university offering graduate & post graduate courses Arts, Technology, Commerce, Computer Science, Tourism, Physical Science and Vocational Courses';
         }
     return $data_;
     }
