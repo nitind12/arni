@@ -73,7 +73,7 @@ class Arni extends CI_Controller {
 
     function academics($page = 'x'){
         $data_['meta'] = $this->metainfo_for_web('academics', $page);
-        $data_['menu_active'] =2;
+        $data_['menu_active'] =3;
         $data_['menu_all'] = $this->my_menu->site_menu();        
         $data_['submenu'] = $this->my_menu->submenu($page);
         $data_['titleMain'] = "About Us";

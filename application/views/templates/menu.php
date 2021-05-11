@@ -66,7 +66,6 @@
                                         <?php } ?>
                                     </ul>                                                                                                                                     
                                 </div>
-                                
                             </div>                            
                         </div><!-- /.submenu-inner -->
                     </div> <!-- /.submenu-wrapper -->
