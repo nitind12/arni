@@ -182,7 +182,7 @@ class Arni extends CI_Controller {
 
 function contact() {    
     $data_['meta'] = $this->metainfo_for_web('home', 'home');
-    $data_['menu_active'] =1;
+    $data_['menu_active'] =8;
     $data_['menu_all'] = $this->my_menu->site_menu();
    
     $this->load->view('templates/header', $data_);

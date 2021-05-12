@@ -77,24 +77,8 @@
                 <?php foreach($menu_all['alumni_menu'] as $title => $path){?>
                     <li class="<?php if($menu_active==7){echo 'active';}?>"><a href="<?php // echo site_url($path); ?>"><?php echo $title; ?></a></li>
                 <?php } ?>
-                
-                <?php if(count($menu_all['contactus']) == 1){?>
-                    <?php foreach($menu_all['contactus'] as $title => $path){?>
-                        <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
-                    <?php } ?>
-                <?php } else { ?>
-                    <li class="dropdown <?php if($menu_active==8){echo 'active';}?>"><a href="#" >Contact Us <b class="caret"></b></a>
-                        <!-- submenu-wrapper -->
-                        <div class="submenu-wrapper submenu-wrapper-topbottom">
-                            <div class="submenu-inner  submenu-inner-topbottom">
-                                <ul class="dropdown-menu">
-                                    <?php foreach($menu_all['contactus'] as $title => $path){?>
-                                        <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
-                                    <?php } ?>
-                                </ul>
-                            </div><!-- /.submenu-inner -->
-                        </div> <!-- /.submenu-wrapper -->
-                    </li>
+                <?php foreach($menu_all['contactus'] as $title => $path){?>
+                    <li class="<?php if($menu_active==8){echo 'active';}?>"><a href="<?php  echo site_url($path); ?>"><?php echo $title; ?></a></li>
                 <?php } ?>
                 <?php foreach($menu_all['erplogin'] as $title => $path){?>
                     <li><a href="<?php echo $path; ?>" target="_blank" style='color: #ffff00; font-size: 11px; font-family: verdana;'><?php echo $title; ?></a></li>
