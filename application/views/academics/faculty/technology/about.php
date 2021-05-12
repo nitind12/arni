@@ -9,7 +9,7 @@
                                         <h6><?php echo $breadcrumb; ?></h6>
                                         <h2 class="section-title wow fadeInDown" ><?php echo $title;?></h2>
                                         <div class="col-md-12" style="border: #fff solid 0px">
-                                            <p>Arni School of Arts & Humanties Humanities focuses on all aspects related to culture and creative life including most disciplines outside exact Sciences.</p>
+                                            <p>An engineering degree equips you with the skills of creation. You have a broad range of practical abilities which can be utilized across a wide range of industries and sectors.</p>
                                             <p><i>It sharpens your quantitative and analytical skills, there are many disciplines within the field of engineering, with potentially very different career paths.</i></p>                                        
                                         </div><!-- /.col-md-4 -->                               
                                     </div>

@@ -9,7 +9,7 @@
                                         <h6><?php echo $breadcrumb; ?></h6>
                                         <h2 class="section-title wow fadeInDown" ><?php echo $title;?></h2>
                                         <div class="col-md-12" style="border: #fff solid 0px">
-                                            <p>Arni School of Arts & Humanties Humanities focuses on all aspects related to culture and creative life including most disciplines outside exact Sciences.</p>
+                                            <p>Arni School of Physical Science Physical Science research, also called pure research or fundamental research, is a type of scientific research with the aim of improving scientific theories for better understanding and prediction of natural or other phenomena.</p>
                                             <p><i>It sharpens your quantitative and analytical skills, there are many disciplines within the field of engineering, with potentially very different career paths.</i></p>                                        
                                         </div><!-- /.col-md-4 -->                               
                                     </div>

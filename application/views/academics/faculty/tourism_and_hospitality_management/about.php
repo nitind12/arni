@@ -9,8 +9,7 @@
                                         <h6><?php echo $breadcrumb; ?></h6>
                                         <h2 class="section-title wow fadeInDown" ><?php echo $title;?></h2>
                                         <div class="col-md-12" style="border: #fff solid 0px">
-                                            <p>Arni School of Arts & Humanties Humanities focuses on all aspects related to culture and creative life including most disciplines outside exact Sciences.</p>
-                                            <p><i>It sharpens your quantitative and analytical skills, there are many disciplines within the field of engineering, with potentially very different career paths.</i></p>                                        
+                                            <p>Arni School Of Tourism & Hospitality Management Management degrees give students a broad foundation in topics relating to business, finance, economics and marketing. </i></p>                                        
                                         </div><!-- /.col-md-4 -->                               
                                     </div>
                                     <div class="col-md-5">
