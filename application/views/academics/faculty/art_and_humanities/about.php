@@ -41,7 +41,30 @@
                                 </div>
 
                                 <h2 class="section-title-dark wow fadeInDown" align="center">Courses</h2>
-                                <div class="panel-group col-md-6" id="accordion">
+                                <?php $idcreator = 1; ?>
+                                <?php foreach ($departments as $dept) { ?>
+                                <div class="panel-group col-md-6" id="accordion<?php echo $idcreator;?>">
+                                    <div class="panel panel-primary">
+                                        <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion<?php echo $idcreator;?>" data-target="#collapse<?php echo $idcreator;?>">
+                                            <?php echo $dept->DEPARTMENT; ?></a>
+                                           </h4>
+                                        </div>
+                                        <div id="collapse<?php echo $idcreator;?>" class="panel-collapse collapse in">
+                                            <ul class = "list-group">
+                                                <?php foreach($school_courses as $course){?>
+                                                    <?php if($dept->DID == $course->DEPARTMENT){?>
+                                                    <li class = "list-group-item"><?php echo $course->COURSE;?></li>
+                                                    <?php }?>
+                                                <?php } ?>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <?php $idcreator++;?>
+                                <?php }?>
+                                <!--div class="panel-group col-md-6" id="accordion">
                                     <div class="panel panel-primary">
                                         <div class="panel-heading">
                                         <h4 class="panel-title">
@@ -118,7 +141,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
+                                </div-->
 
                                 <div style="clear:both"></div>
                             </section>

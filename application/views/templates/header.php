@@ -58,36 +58,7 @@
         <link href="<?php echo base_url('assets/css/ticker.css'); ?>?ver=1.1" rel="stylesheet">
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        
-        <link rel="apple-touch-icon" sizes="57x57" href="<?PHP echo base_url() . 'icon/apple-icon-57x57.png'; ?>">
-        <link rel="apple-touch-icon" sizes="60x60" href="<?PHP echo base_url() . 'icon/apple-icon-60x60.png'; ?>">
-        <link rel="apple-touch-icon" sizes="72x72" href="<?PHP echo base_url() . 'icon/apple-icon-72x72.png'; ?>">
-        <link rel="apple-touch-icon" sizes="76x76" href="<?PHP echo base_url() . 'icon/apple-icon-76x76.png'; ?>">
-        <link rel="apple-touch-icon" sizes="114x114" href="<?PHP echo base_url() . 'icon/apple-icon-114x114.png'; ?>">
-        <link rel="apple-touch-icon" sizes="120x120" href="<?PHP echo base_url() . 'icon/apple-icon-120x120.png'; ?>">
-        <link rel="apple-touch-icon" sizes="144x144" href="<?PHP echo base_url() . 'icon/apple-icon-144x144.png'; ?>">
-        <link rel="apple-touch-icon" sizes="152x152" href="<?PHP echo base_url() . 'icon/apple-icon-152x152.png'; ?>">
-        <link rel="apple-touch-icon" sizes="180x180" href="<?PHP echo base_url() . 'icon/apple-icon-180x180.png'; ?>">
-        <link rel="icon" type="image/png" sizes="192x192"  href="<?PHP echo base_url() . 'icon/android-icon-192x192.png'; ?>">
-        <link rel="icon" type="image/png" sizes="32x32" href="<?PHP echo base_url() . 'icon/favicon-32x32.png'; ?>">
-        <link rel="icon" type="image/png" sizes="96x96" href="<?PHP echo base_url() . 'icon/favicon-96x96.png'; ?>">
-        <link rel="icon" type="image/png" sizes="16x16" href="<?PHP echo base_url() . 'icon/favicon-16x16.png'; ?>">
-        <link rel="manifest" href="<?PHP echo base_url() . 'icon/manifest.json'; ?>">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="<?PHP echo base_url() . 'icon/ms-icon-144x144.png'; ?>">
-        <meta name="theme-color" content="#ffffff">
 
-        <meta name="twitter:card" content="Amrapali Group of Institutes, Haldwani, Top Ranked Institute Uttarakhand,Best Institute Haldwani, Nainital" />        
-        <meta name="twitter:site" content="@agihld" />
-        <meta name="twitter:title" content="Amrapali Group of Institutes, Haldwani, Top Ranked Institute Uttarakhand,Best Institute Haldwani, Nainital" />
-        <meta name="twitter:creator" content="@agihld" />
-        <meta name="twitter:description" content="Amrapali Group of Institutes is a top ranked Institute in Nainital, Uttarakhand, offering BHMCT, BHM. B.Tech, B.Pharm, D.Pharm, BBA, BCA, B.Com, Polytechnic" />
-        <meta name="twitter:image" content="https://www.amrapali.ac.in/icon/favicon-96x96.png" >
-        <meta property="og:url" content="https://www.amrapali.ac.in" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="AMRAPALI GROUP OF INSTITUTES, HALDWANI" />
-        <meta property="og:description" content="Amrapali Group of Institutes is a top ranked Institute in Nainital, Uttarakhand, offering BHMCT, BHM. B.Tech, B.Pharm, D.Pharm, BBA, BCA, B.Com, Polytechnic" />
-        <meta property="og:image" content="https://www.amrapali.ac.in/icon/favicon-96x96.png" />
         <style>
             .vticker{
                 // border: 1px solid red;                              
@@ -105,20 +76,4 @@
                 background: #0086B3;
             }
         </style>
-
-        <!--link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/offline-js/0.7.19/themes/offline-theme-slide.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/offline-js/0.7.19/themes/offline-language-english.min.css" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/offline-js/0.7.19/offline.min.js"></script-->
-        
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-WBXRG7S');</script>
-        <!-- End Google Tag Manager -->
-        
-        <!-- Google Adsense Script -->
-        <script data-ad-client="ca-pub-3285315947452357" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- End of Google Adsense Script -->
     </head>

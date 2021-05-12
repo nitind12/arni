@@ -1334,6 +1334,7 @@ At AGI, we don't just teach theory. We teach you how to put theory into practice
         //echo $this->db->last_query();
     }
     
+    
     function get_active_notifications() {
         $this->db->order_by('ID', 'desc');
         $this->db->where('DATE_FORMAT(DATE_START, "%Y-%m-%d")<=', date('Y-m-d'));
@@ -1348,13 +1349,15 @@ At AGI, we don't just teach theory. We teach you how to put theory into practice
     function get_today_feeded_notifications(){
         $this->db->where('DATE_FORMAT(DATE_START, "%Y-%m-%d")=', date('Y-m-d'));
         $query = $this->db->get('notices');
+        //echo $this->db->last_query();
         return $query->num_rows();
     }
     function get_3_days_feeded_notifications(){
-        echo $ydt_ = date('d.m.Y',strtotime("-1 days"));
+        $ydt_ = date('Y-m-d',strtotime("-1 days"));
         //$this->db->where('DATE_FORMAT(DATE_START, "%Y-%m-%d")<=', date('Y-m-d'));
         $this->db->where('DATE_FORMAT(DATE_START, "%Y-%m-%d")=', 'DATE_FORMAT('.$ydt_.',"%Y-%m-%d")');
         $query = $this->db->get('notices');
+        //echo $this->db->last_query();
         return $query->num_rows();
         
     }

@@ -9,11 +9,11 @@ class Arni extends CI_Controller {
     function __construct(){
         parent::__construct();
         $this->load->model('Web_model', 'wm');
+        $this->load->model('Arni_model', 'arni');
     }
 
     function index() {    
         $data_['meta'] = $this->metainfo_for_web('home', 'home');
-        
         $data_['menu_active'] =1;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['commondata_'] = $this->commondata();
@@ -21,7 +21,7 @@ class Arni extends CI_Controller {
         $data_['activity_'] = $this->wm->get_activities();
         $data_['all_alumni'] = $this->my_alumni->fetch_all_alumni();
         $data_['all_notices'] = $this->wm->get_active_notifications();
-        //$data_['notice_today'] = $this->wm->get_3_days_feeded_notifications();
+        $data_['notice_today'] = $this->wm->get_3_days_feeded_notifications();
         $data_['notice_today'] = $this->wm->get_today_feeded_notifications();
         $this->load->view('templates/header', $data_);
         $this->load->view('index', $data_);
@@ -82,6 +82,8 @@ class Arni extends CI_Controller {
         $data_['subpage'] = $submenu;
         
         if($page == 'art_and_humanities' || $page == 'art_and_humanities#'){
+            $data_['departments'] = $this->arni->school_wise_departments(1);
+            $data_['school_courses'] = $this->arni->school_wise_course_offered(1);
             $clg = "School of Art and Humanities";
             $data_['inner_page'] = $page;
             $data_['title'] = 'School of Art and Humanities';
