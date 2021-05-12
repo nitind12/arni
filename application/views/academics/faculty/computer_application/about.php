@@ -9,7 +9,7 @@
                                         <h6><?php echo $breadcrumb; ?></h6>
                                         <h2 class="section-title wow fadeInDown" ><?php echo $title;?></h2>
                                         <div class="col-md-12" style="border: #fff solid 0px">
-                                            <p>Arni School of Arts & Humanties Humanities focuses on all aspects related to culture and creative life including most disciplines outside exact Sciences.</p>
+                                            <p>Arni School Of Computer Application Basic research, also called pure research or fundamental research, is a type of scientific research with the aim of improving scientific theories for better understanding and prediction of natural or other phenomena.</p>
                                             <p><i>It sharpens your quantitative and analytical skills, there are many disciplines within the field of engineering, with potentially very different career paths.</i></p>                                        
                                         </div><!-- /.col-md-4 -->                               
                                     </div>
@@ -39,86 +39,7 @@
                                         </div><!--/.col-sm-2 -->
                                     </div><!-- /.col-md-4 -->  
                                 </div>
-
-                                <h2 class="section-title-dark wow fadeInDown" align="center">Courses</h2>
-                                <div class="panel-group col-md-6" id="accordion">
-                                    <div class="panel panel-primary">
-                                        <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                                            English</a>
-                                           </h4>
-                                        </div>
-                                        <div id="collapse1" class="panel-collapse collapse in">
-                                            <ul class = "list-group">
-                                                <li class = "list-group-item">MA(Eng)</li>
-                                                <li class = "list-group-item">M.Phil English</li>
-                                                <li class = "list-group-item">Ph.D English</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-primary">
-                                        <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                                           Education</a>
-                                        </h4>
-                                        </div>
-                                        <div id="collapse2" class="panel-collapse collapse in">
-                                            <ul class = "list-group">
-                                                <li class = "list-group-item">MA (Economics)</li>
-                                                <li class = "list-group-item">MA (Education)</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-primary">
-                                        <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
-                                            Fashion Design</a>
-                                        </h4>
-                                        </div>
-                                        <div id="collapse5" class="panel-collapse collapse in">
-                                            <ul class = "list-group">
-                                                <li class = "list-group-item">B.Design (Fashion)</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel-group col-md-6" id="accordion">
-                                    <div class="panel panel-primary">
-                                        <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                                            Journalism & Mass Communication</a>
-                                        </h4>
-                                        </div>
-                                        <div id="collapse3" class="panel-collapse collapse in">
-                                            <ul class = "list-group">
-                                                <li class = "list-group-item">BA</li>
-                                                <li class = "list-group-item">BA (Journalism and Mass Communication)</li>
-                                                <li class = "list-group-item">MA (Journalism & Mass Communication)</li>
-                                                <li class = "list-group-item">Ph.D Mass Communication</li>
-                                                <li class = "list-group-item">Ph.D General Arts</li>
-                                                <li class = "list-group-item">Ph.D Economics</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-primary">
-                                        <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
-                                            Psychology</a>
-                                        </h4>
-                                        </div>
-                                        <div id="collapse5" class="panel-collapse collapse in">
-                                            <ul class = "list-group">
-                                                <li class = "list-group-item">MA (Psychology)</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                                <?php $this->load->view('academics/faculty/course'); ?>
 
                                 <div style="clear:both"></div>
                             </section>

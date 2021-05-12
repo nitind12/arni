@@ -10,6 +10,7 @@ class Arni_model extends CI_Model {
     }
 
     function school_wise_course_offered($school = 'x'){
+        $this->db->order_by('a.COURSE');
     	$this->db->select('b.SNAME, c.DID, c.DEPARTMENT, a.COURSE');
     	$this->db->from('_arni_course_detail a');
     	$this->db->join('_arni_school b', 'a.SCHOOL = b.SID');
