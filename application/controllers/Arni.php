@@ -184,6 +184,8 @@ function contact() {
     $data_['meta'] = $this->metainfo_for_web('home', 'home');
     $data_['menu_active'] =8;
     $data_['menu_all'] = $this->my_menu->site_menu();
+    $data_['titleMain'] = "Contact Us";
+    $data_['breadcrumb'] = 'Contact us';
    
     $this->load->view('templates/header', $data_);
     $this->load->view('contact/index', $data_);
