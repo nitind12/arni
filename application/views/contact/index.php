@@ -161,13 +161,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-12" style="clear: both"></div>
-                                
-                                <div class="col-md-12" style="clear: both; padding: 10px 0px"></div>
-                           
                             <div style="clear:both"></div>
-
-                            
                         </section>                                                     
                         </div>
                     </div>
