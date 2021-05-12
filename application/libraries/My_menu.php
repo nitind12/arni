@@ -58,7 +58,7 @@ class My_menu {
 
         //Contact Us
         $menu['contactus'] = array(
-            "Contact Us" => "contactus",
+            "Contact Us" => "contact",
         );
 
         $menu['erplogin'] = array(

@@ -80,7 +80,7 @@
                 
                 <?php if(count($menu_all['contactus']) == 1){?>
                     <?php foreach($menu_all['contactus'] as $title => $path){?>
-                        <li><a href="<?php // echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                        <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
                     <?php } ?>
                 <?php } else { ?>
                     <li class="dropdown <?php if($menu_active==8){echo 'active';}?>"><a href="#" >Contact Us <b class="caret"></b></a>
@@ -89,7 +89,7 @@
                             <div class="submenu-inner  submenu-inner-topbottom">
                                 <ul class="dropdown-menu">
                                     <?php foreach($menu_all['contactus'] as $title => $path){?>
-                                        <li><a href="<?php // echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                        <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
                                     <?php } ?>
                                 </ul>
                             </div><!-- /.submenu-inner -->

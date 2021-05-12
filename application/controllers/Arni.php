@@ -179,4 +179,14 @@ class Arni extends CI_Controller {
         return $data_;
     }
 // End of Common Methods
+
+function contact() {    
+    $data_['meta'] = $this->metainfo_for_web('home', 'home');
+    $data_['menu_active'] =1;
+    $data_['menu_all'] = $this->my_menu->site_menu();
+   
+    $this->load->view('templates/header', $data_);
+    $this->load->view('contact/index', $data_);
+    $this->load->view('templates/footer');
+}
 }
