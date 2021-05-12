@@ -71,7 +71,7 @@ class Arni extends CI_Controller {
         $this->load->view('templates/footer');
     }
 
-    function academics($page = 'x'){
+    function academics($page = 'x', $submenu = 'about'){
         $data_['meta'] = $this->metainfo_for_web('academics', $page);
         $data_['menu_active'] =3;
         $data_['menu_all'] = $this->my_menu->site_menu();        
@@ -79,55 +79,56 @@ class Arni extends CI_Controller {
         $data_['titleMain'] = "About Us";
         $data_['active'] = 'academics';
         $data_['page'] = $page;
+        $data_['subpage'] = $submenu;
         
         if($page == 'art_and_humanities' || $page == 'art_and_humanities#'){
             $clg = "School of Art and Humanities";
-            $data_['inner_page'] = 'art_and_humanities';
+            $data_['inner_page'] = $page;
             $data_['title'] = 'School of Art and Humanities';
             $data_['breadcrumb'] = 'Academics / School of Art and Humanities';
         } else if($page == 'technology' || $page == 'technology#'){
             $clg = "School of Technology";
-            $data_['inner_page'] = 'technology';
+            $data_['inner_page'] = $page;
             $data_['title'] = $clg;
             $data_['breadcrumb'] = 'Academics / ' . $clg;
         } else if($page == 'commerce_and_business_management' || $page == 'commerce_and_business_management#'){
             $clg = "School of Commerce and Business Management";
-            $data_['inner_page'] = 'commerce_and_business_management';
+            $data_['inner_page'] = $page;
             $data_['title'] = $clg;
             $data_['breadcrumb'] = 'Academics / '. $clg;
         } else if($page == 'pharmacy' || $page == 'pharmacy#'){
             $clg = "School of Pharmacy";
-            $data_['inner_page'] = 'pharmacy';
+            $data_['inner_page'] = $page;
             $data_['title'] = $clg;
             $data_['breadcrumb'] = 'Academics / ' . $clg;
         } else if($page == 'tourism_and_hospitality_management' || $page == 'tourism_and_hospitality_management#'){
             $clg = "School of Tourism and Hospitality Management";
-            $data_['inner_page'] = 'tourism_and_hospitality_management';
+            $data_['inner_page'] = $page;
             $data_['title'] = $clg;
             $data_['breadcrumb'] = 'Academics / ' . $clg;
         } else if($page == 'computer_application' || $page == 'computer_application#'){
             $clg = "School of Computer Application";
-            $data_['inner_page'] = 'computer_application';
+            $data_['inner_page'] = $page;
             $data_['title'] = $clg;
             $data_['breadcrumb'] = 'Academics / ' . $clg;
         } else if($page == 'life_and_allied_science' || $page == 'life_and_allied_science#'){
             $clg = "School of Life and Allied Science";
-            $data_['inner_page'] = 'life_and_allied_science';
+            $data_['inner_page'] = $page;
             $data_['title'] = $clg;
             $data_['breadcrumb'] = 'Academics / ' . $clg;
         } else if($page == 'physical_science' || $page == 'physical_science#'){
             $clg = 'School of Physical Science';
-            $data_['inner_page'] = 'physical_science';
+            $data_['inner_page'] = $page;
             $data_['title'] = $clg;
             $data_['breadcrumb'] = 'Academics / ' . $clg;
         } else if($page == 'skill_development_and_vocational_studies' || $page == 'skill_development_and_vocational_studies#'){
             $clg = 'School of Skill Development and Vocational Studies';
-            $data_['inner_page'] = 'skill_development_and_vocational_studies';
+            $data_['inner_page'] = $page;
             $data_['title'] = $clg;
             $data_['breadcrumb'] = 'Academics / ' . $clg;
         } else if($page == 'mentor' || $page == 'mentor#'){
             $clg = 'Mentor';
-            $data_['inner_page'] = 'mentor';
+            $data_['inner_page'] = $page;
             $data_['title'] = $clg;
             $data_['breadcrumb'] = 'Academics / ' . $clg;
         } else {

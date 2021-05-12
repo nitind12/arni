@@ -97,6 +97,6 @@
                             <section class="" style="display: inline;">
                                 <?php $this->load->view('templates/submenu'); ?>
                             </section>
-                            <?php $this->load->view('academics/faculty/'.$inner_page); ?>                                                           
+                            <?php $this->load->view('academics/faculty/'.$inner_page.'/'.$subpage); ?>                                                           
                         </div>
                     </div>

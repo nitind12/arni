@@ -11,15 +11,15 @@ class My_menu {
         // Academics
         $menu['academics'] = array(
             'faculty' => array(
-                "School of Art & Humanities" => 'art-and-humanities',
-                "School of Technology" => 'technology',
-                "School of Commerce & Business Management" => 'commerce-and-business-management',
-                "School of Pharmacy" => 'pharmacy',
-                "School of Computer Application" => 'computer-application',
-                "School of Life and Allied Science" => 'life-and-allied-science',
-                "School of Tourism & Hospitality Management" => 'tourism-and-hospitality-management',
-                "School of Physical Science" => 'physical-science',
-                "School of Skill Development & Vocational Studies" => 'skill-development-and-vocational-studies',
+                "School of Art & Humanities" => 'art-and-humanities/about',
+                "School of Commerce & Business Management" => 'commerce-and-business-management/about',
+                "School of Computer Application" => 'computer-application/about',
+                "School of Life and Allied Science" => 'life-and-allied-science/about',
+                "School of Pharmacy" => 'pharmacy/about',
+                "School of Physical Science" => 'physical-science/about',
+                "School of Skill Development & Vocational Studies" => 'skill-development-and-vocational-studies/about',
+                "School of Technology" => 'technology/about',
+                "School of Tourism & Hospitality Management" => 'tourism-and-hospitality-management/about',
                 "Our Mentors" => 'mentor'
             ),
             'facilities' => array(
@@ -126,100 +126,100 @@ Explaination for the format of the below functions --
 
     function art_and_humanities(){
         return array(
-            "Home" => array("", ""),
-            "About" => array("", ""),
-            "Department" => array("", ""),
-            "Syllabus" => array("", ""),
-            "Events" => array("", ""),
-            "Contact" => array("", ""),
+            "Home" => array("art_and_humanities/about", "about"),
+            "About" => array("art_and_humanities/about", "about"),
+            "Department" => array("art_and_humanities/department", "department"),
+            "Syllabus" => array("art_and_humanities/syllabus", "syllabus"),
+            "Events" => array("art_and_humanities/events", "events"),
+            "Contact" => array("art_and_humanities/contact", "contact"),
         );
     }
 
     function technology(){
         return array(
-            "Home" => array("", ""),
-            "About" => array("", ""),
-            "Department" => array("", ""),
-            "Syllabus" => array("", ""),
-            "Events" => array("", ""),
-            "Contact" => array("", ""),
+            "Home" => array("technology/about", "about"),
+            "About" => array("technology/about", "about"),
+            "Department" => array("technology/department", "department"),
+            "Syllabus" => array("technology/syllabus", "syllabus"),
+            "Events" => array("technology/events", "events"),
+            "Contact" => array("technology/contact", "contact"),
         );
     }
 
     function commerce_and_business_management(){
         return array(
-            "Home" => array("", ""),
-            "About" => array("", ""),
-            "Department" => array("", ""),
-            "Syllabus" => array("", ""),
-            "Events" => array("", ""),
-            "Contact" => array("", ""),
+            "Home" => array("commerce-and-business-management/about", "about"),
+            "About" => array("commerce-and-business-management/about", "about"),
+            "Department" => array("commerce-and-business-management/department", "department"),
+            "Syllabus" => array("commerce-and-business-management/syllabus", "syllabus"),
+            "Events" => array("commerce-and-business-management/events", "events"),
+            "Contact" => array("commerce-and-business-management/contact", "contact"),
         );
     }
 
     function pharmacy(){
         return array(
-            "Home" => array("", ""),
-            "About" => array("", ""),
-            "Department" => array("", ""),
-            "Syllabus" => array("", ""),
-            "Events" => array("", ""),
-            "Contact" => array("", ""),
+            "Home" => array("pharmacy/about", "about"),
+            "About" => array("pharmacy/about", "about"),
+            "Department" => array("pharmacy/department", "department"),
+            "Syllabus" => array("pharmacy/syllabus", "syllabus"),
+            "Events" => array("pharmacy/events", "events"),
+            "Contact" => array("pharmacy/contact", "contact"),
         );
     }
 
     function tourism_and_hospitality_management(){
         return array(
-            "Home" => array("", ""),
-            "About" => array("", ""),
-            "Department" => array("", ""),
-            "Syllabus" => array("", ""),
-            "Events" => array("", ""),
-            "Contact" => array("", ""),
+            "Home" => array("tourism-and-hospitality-management/about", "about"),
+            "About" => array("tourism-and-hospitality-management/about", "about"),
+            "Department" => array("tourism-and-hospitality-management/department", "department"),
+            "Syllabus" => array("tourism-and-hospitality-management/syllabus", "syllabus"),
+            "Events" => array("tourism-and-hospitality-management/events", "events"),
+            "Contact" => array("tourism-and-hospitality-management/contact", "contact"),
         );
     }
 
     function computer_application(){
         return array(
-            "Home" => array("", ""),
-            "About" => array("", ""),
-            "Department" => array("", ""),
-            "Syllabus" => array("", ""),
-            "Events" => array("", ""),
-            "Contact" => array("", ""),
+            "Home" => array("computer-application/about", "about"),
+            "About" => array("computer-application/about", "about"),
+            "Department" => array("computer-application/department", "department"),
+            "Syllabus" => array("computer-application/syllabus", "syllabus"),
+            "Events" => array("computer-application/events", "events"),
+            "Contact" => array("computer-application/contact", "contact"),
         );
     }
 
     function life_and_allied_science(){
         return array(
-            "Home" => array("", ""),
-            "About" => array("", ""),
-            "Department" => array("", ""),
-            "Syllabus" => array("", ""),
-            "Events" => array("", ""),
-            "Contact" => array("", ""),
+            "Home" => array("life-and-allied-science/about", "about"),
+            "About" => array("life-and-allied-science/about", "about"),
+            "Department" => array("life-and-allied-science/department", "department"),
+            "Syllabus" => array("life-and-allied-science/syllabus", "syllabus"),
+            "Events" => array("life-and-allied-science/events", "events"),
+            "Contact" => array("life-and-allied-science/contact", "contact"),
         );
     }
 
     function physical_science(){
         return array(
-            "Home" => array("", ""),
-            "About" => array("", ""),
-            "Department" => array("", ""),
-            "Syllabus" => array("", ""),
-            "Events" => array("", ""),
-            "Contact" => array("", ""),
+            "Home" => array("physical-science/about", "about"),
+            "About" => array("physical-science/about", "about"),
+            "Department" => array("physical-science/department", "department"),
+            "Syllabus" => array("physical-science/syllabus", "syllabus"),
+            "Events" => array("physical-science/events", "events"),
+            "Contact" => array("physical-science/contact", "contact"),
         );
     }
 
     function skill_development_and_vocational_studies(){
         return array(
-            "Home" => array("", ""),
-            "About" => array("", ""),
-            "Department" => array("", ""),
-            "Syllabus" => array("", ""),
-            "Events" => array("", ""),
-            "Contact" => array("", ""),
+            "Home" => array("skill-development-and-vocational-studies/about", "about"),
+            "About" => array("skill-development-and-vocational-studies/about", "about"),
+            "Department" => array("skill-development-and-vocational-studies/department", "department"),
+            "Syllabus" => array("skill-development-and-vocational-studies/syllabus", "syllabus"),
+            "Events" => array("skill-development-and-vocational-studies/events", "events"),
+            "Contact" => array("skill-development-and-vocational-studies/contact", "contact"),
         );
     }
 

@@ -9,21 +9,12 @@
                                         <h6><?php echo $breadcrumb; ?></h6>
                                         <h2 class="section-title wow fadeInDown" ><?php echo $title;?></h2>
                                         <div class="col-md-12" style="border: #fff solid 0px">
-                                            <p>Arni School of Arts & Humanties Humanities focuses on all aspects related to culture and creative life including most disciplines outside exact Sciences.</p>
-                                            <p><i>It sharpens your quantitative and analytical skills, there are many disciplines within the field of engineering, with potentially very different career paths.</i></p>                                        
+                                            <p>Arni School Of Commerce & Management Management degrees give students a broad foundation in topics relating to business, finance, economics and marketing.</p>                                     
                                         </div><!-- /.col-md-4 -->                               
                                     </div>
                                     <div class="col-md-5">
                                         <div class="col-md-12" style="border: #fff solid 0px">
-                                            <ul class="list-group">
-                                                <li class="list-group-item list-group-item-success" style="padding:5px!important;">Top Private Management College in Himachal Pradesh</li>
-                                                <li class="list-group-item list-group-item-danger" style="padding:5px!important;">AICTE Approved & Industry 4.0 Ready Program</li>
-                                                <li class="list-group-item list-group-item-success" style="padding:5px!important;">2-Time Notified By UGC</li>
-                                                <li class="list-group-item list-group-item-danger" style="padding:5px!important;">Excellent Placement Record</li>
-                                                <li class="list-group-item list-group-item-success" style="padding:5px!important;">Vibrant Campus Life</li>
-                                                <li class="list-group-item list-group-item-danger" style="padding:5px!important;">Nurturing Socially Responsible Students.</li>
-                                                <li class="list-group-item list-group-item-success" style="padding:5px!important;">Opportunity to Pursue Tech Management After 12th</li>
-                                            </ul>                                    
+                                            <?php $this->load->view('academics/faculty/features'); ?>        
                                         </div><!-- /.col-md-4 -->                               
                                     </div>
                                 
@@ -39,7 +30,7 @@
                                         </div><!--/.col-sm-6 -->
                                         <div class="col-sm-3 text-center experiance-tab-content wow fadeInLeft">
                                             <h2 class="advantage"><?php echo "4+";?></h2>
-                                            <p style="text-align:center">Departmets</p>
+                                            <p style="text-align:center">Departments</p>
                                         </div><!--/.col-sm-2 -->
                                         <div class="col-sm-3 text-center experiance-tab-content wow fadeInLeft">
                                             <h2 class="advantage"><?php echo "20+";?></h2>

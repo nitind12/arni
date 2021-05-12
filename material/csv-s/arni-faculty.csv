@@ -1,0 +1,87 @@
+1,1,Education,PROF. Dr. Mayank Pawar,Mathematics,Professor,admin,0
+2,1,Education,PROF. Dr. Surinder Paul,Physics,Assistant Professor,admin,0
+3,1,English,PROF. Dr. Vijay Mehta,English,Professor,admin,0
+4,1,Education,PROF. Dr.Vipin Kumar,Physics,Professor,admin,0
+5,1,Education,PROF. Mr. Amit Sharma,Material Science,Assistant Professor,admin,0
+6,1,Education,PROF. Mr. Nitin Mahajan,Maths,Assistant Professor,admin,0
+7,1,English,PROF. Mr. Rajinder Kumar,English,Assistant Professor,admin,0
+8,1,Education,PROF. Mr.Yash Pal,Physics,Assistant Professor,admin,0
+9,1,English,PROF. Mrs. Anjna Devi,English,Assistant Professor,admin,0
+10,1,Education,PROF. Mrs. Ashu Rani,Maths,Assistant Professor,admin,0
+11,1,Education,PROF. Mrs. Radhika,Economics,Assistant Professor,admin,0
+12,1,Education,PROF. Ms. Arpana Sharma,Economics,Assistant Professor,admin,0
+13,1,Education,PROF. Ms. Neelam Devi,Physics,Assistant Professor,admin,0
+14,1,Education,PROF. Ms. Ragini,Physics,Assistant Professor,admin,0
+15,1,English,PROF. Ms. Samiksha Sharma,English,Assistant Professor,admin,0
+16,1,Education,PROF. Ms. Sunita Devi,Maths,Assistant Professor,admin,0
+17,1,Education,PROF. Ms.Vijeta Salaria,Economics,Assistant Professor,admin,0
+18,2,Business Studies,PROF. Dr. Ashish Kumar,,Assistant Professor,admin,0
+19,2,Business Studies,PROF. Dr. Kalyan Kumar Sahoo,Management,Professor,admin,0
+20,2,Commerce,PROF. Dr.Ashutosh Dwivedi,Commerce,Professor,admin,0
+21,2,Business Studies,PROF. Dr.Jaiman Preet Kaur,Management,Assistant Professor,admin,0
+22,2,Journalism & Mass Communication,PROF. Dr.Shashi Bhushan,,Professor,admin,0
+23,2,Hotel Management & Catering,PROF. Mr. Ashish Parashar,Sales & Marketing,Assistant Professor,admin,0
+24,2,Hotel Management & Catering,PROF. Mr. Raj Kamal Gautam,HM,Assistant Professor,admin,0
+25,2,Business Studies,PROF. Mr. Shashi Karel,Finance & Marketing,Assistant Professor,admin,0
+26,2,Business Studies,PROF. Mr. Vikas Barnwal,Finance & Marketing,Assistant Professor,admin,0
+27,2,Hotel Management & Catering,PROF. Mr.Kuldeep Kumar,Tourism & HM,Assistant Professor,admin,0
+28,2,Business Studies,PROF. Ms. Alka Katoch,HR & Marketing,Assistant Professor,admin,0
+29,2,Business Studies,PROF. Ms. Meenakshi,HR & Marketing,Assistant Professor,admin,0
+30,2,Business Studies,PROF. Ms. Neety Kumari,Finance & Marketing,Assistant Professor,admin,0
+31,2,Journalism & Mass Communication,PROF. Ms. Ritika Puri,Media Reporting,Assistant Professor,admin,0
+32,2,Commerce,PROF. Ms. Samaily,Taxation,Assistant Professor,admin,0
+33,2,Business Studies,PROF. Ms. Srishti Sriya,MBA,Assistant Professor,admin,0
+34,2,Commerce,PROF. Ms.Deeksha,Commerce,Assistant Professor,admin,0
+35,2,Commerce,PROF. Ms.Priya,Commerce,Assistant Professor,admin,0
+36,2,Commerce,PROF. Ms.Shikha Sharma,Commerce,Assistant Professor,admin,0
+37,3,Computer Science & Applicaton,PROF. Dr. Sunita,CSA,Assistant Professor,admin,0
+38,3,Computer Science & Applicaton,PROF. Mr. Tushar Anthwal,CSA,Associate Professor,admin,0
+39,3,Computer Science & Applicaton,PROF. Mrs. Adity,CSA,Assistant Professor,admin,0
+40,3,Computer Science & Applicaton,PROF. Ms. Neha Sharmal,CSA,Assistant Professor,admin,0
+41,3,Computer Science & Applicaton,PROF. Ms. Ronika Devi,CSA,Assistant Professor,admin,0
+42,4,Life & Allied Science,PROF. Dr. Ekta,Botany,Assistant Professor,admin,0
+43,4,Life & Allied Science,PROF. Dr. Indu Kumari,Zoology,Assistant Professor,admin,0
+44,4,Life & Allied Science,PROF. Dr. Komal,Botany,Assistant Professor,admin,0
+45,4,Life & Allied Science,PROF. Dr. Neha Salaria,Bio Technology,Assistant Professor,admin,0
+46,4,Life & Allied Science,PROF. Dr. Sarika Sharma,Microbiology,Professor,admin,0
+47,4,Life & Allied Science,PROF. Ms. Abhilasha,Zoology,Assistant Professor,admin,0
+48,4,Life & Allied Science,PROF. Ms. Asha Devi,Botany,Assistant Professor,admin,0
+49,4,Life & Allied Science,PROF. Ms. Diksha Chopra,Zoology,Assistant Professor,admin,0
+50,4,Life & Allied Science,PROF. Ms. Jyoti,Zoology,Assistant Professor,admin,0
+51,4,Life & Allied Science,PROF. Ms.Bhawana,Botany,Assistant Professor,admin,0
+52,5,Pharmacy,PROF. M.s Shikha Dubey,Pharmacy,Assistant Professor,admin,0
+53,5,Pharmacy,PROF. Mr. Kushal Jit Singh,Pharmacy,Assistant Professor,admin,0
+54,5,Pharmacy,PROF. Mr. Raman Kalia,Pharmacy,Principal,admin,0
+55,5,Pharmacy,PROF. Mr. Sameer Gangal,Pharmacy,Assistant Professor,admin,0
+56,5,Pharmacy,PROF. Mrs Bhawana Sharma,Pharmacy,Assistant Professor,admin,0
+57,5,Pharmacy,PROF. Ms. Sushil Kumar,Pharmacology,Assistant Professor,admin,0
+58,5,Pharmacy,PROF. Ms.Priya Sharma,Pharmacy,Assistant Professor,admin,0
+59,6,Physical Science,PROF. Dr. Anuja Chouhan,Chemistry,Professor,admin,0
+60,6,Physical Science,PROF. Dr. Nisha Sharma,Chemistry,Assistant Professor,admin,0
+61,6,Physical Science,PROF. Dr. Ritu Jain,Chemistry,Assistant Professor,admin,0
+62,6,Physical Science,PROF. Mr.Saurabh Sharma,Chemistry,Assistant Professor,admin,0
+63,6,Physical Science,PROF. Mrs. Shivani Sharma,Chemistry,Assistant Professor,admin,0
+64,6,Physical Science,PROF. Mrs.Shivali Thakur,Chemistry,Assistant Professor,admin,0
+65,7,Mechanical Engineering,PROF. Dr. Amit Sharma,Electrical,Professor,admin,0
+66,7,Civil Engineering,PROF. Dr. O.P. Netula,Water Resources Engg.,Professor,admin,0
+67,7,Mechanical Engineering,PROF. Dr. Sanjeev Dahiya,Mechanical,Professor,admin,0
+68,7,Computer Science Engineering,PROF. Dr. Vivek Singh,CSE,Assistant Professor,admin,0
+69,7,Mechanical Engineering,PROF. Mr. Abhinav Dhiman,EEE,Assistant Professor,admin,0
+70,7,Mechanical Engineering,PROF. Mr. Anil Singh,Engineering Syst.,Assistant Professor,admin,0
+71,7,Computer Science Engineering,PROF. Mr. Ankur Sharma,CSE,Assistant Professor,admin,0
+72,7,Computer Science Engineering,PROF. Mr. Anurag Rana,CSE,Assistant Professor,admin,0
+73,7,Mechanical Engineering,PROF. Mr. Ashish Kumar,Mechanical,Assistant Professor,admin,0
+74,7,Mechanical Engineering,PROF. Mr. Harjit Singh Kainth,EEE,Assistant Professor,admin,0
+75,7,Civil Engineering,PROF. Mr. Himanshu Sharma,Structure Engg.(Civil),Assistant Professor,admin,0
+76,7,Civil Engineering,PROF. Mr. Narinder Kumar,Civil,Assistant Professor,admin,0
+77,7,Mechanical Engineering,PROF. Mr. Neeraj Kumar Sharma,ECE,Assistant Professor,admin,0
+78,7,Mechanical Engineering,PROF. Mr. Nishant,EEE(Electronics & Control),Assistant Professor,admin,0
+79,7,Mechanical Engineering,PROF. Mr. Onkar Singh,ECE,Assistant Professor,admin,0
+80,7,Computer Science Engineering,PROF. Mr. R.K. Mishra,Computer Engg.,Assistant Professor,admin,0
+81,7,Civil Engineering,PROF. Mr. Rajan Rana,Civil,Assistant Professor,admin,0
+82,7,Civil Engineering,PROF. Mr. Saurabh Gupta,Const. technology &Mgt.(Civil),Assistant Professor,admin,0
+83,7,Mechanical Engineering,PROF. Mr. Vikas Singh,ECE(VLSI DESIGN),Assistant Professor,admin,0
+84,7,Civil Engineering,PROF. Mr. Vivek Dhiman,,Assistant Professor,admin,0
+85,7,Computer Science Engineering,PROF. Mr.Rohit Kumar,CSE,Assistant Professor,admin,0
+86,7,Civil Engineering,PROF. Ms. Bindu Sharma,Civil,Assistant Professor,admin,0
+87,7,Mechanical Engineering,PROF. Ms. Tamanna,EEE,Assistant Professor,admin,0
