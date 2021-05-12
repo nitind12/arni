@@ -43,7 +43,7 @@
                                 <h2 class="section-title-dark wow fadeInDown" align="center">Courses</h2>
                                 <?php $idcreator = 1; ?>
                                 <?php foreach ($departments as $dept) { ?>
-                                <div class="panel-group col-md-6" id="accordion<?php echo $idcreator;?>">
+                                <div class="panel-group col-md-12" id="accordion<?php echo $idcreator;?>">
                                     <div class="panel panel-primary">
                                         <div class="panel-heading">
                                         <h4 class="panel-title">
@@ -51,10 +51,10 @@
                                             <?php echo $dept->DEPARTMENT; ?></a>
                                            </h4>
                                         </div>
-                                        <div id="collapse<?php echo $idcreator;?>" class="panel-collapse collapse in">
+                                        <div id="collapse<?php echo $idcreator;?>" class="panel-collapse collapse">
                                             <ul class = "list-group">
                                                 <?php foreach($school_courses as $course){?>
-                                                    <?php if($dept->DID == $course->DEPARTMENT){?>
+                                                    <?php if($dept->DID == $course->DID){?>
                                                     <li class = "list-group-item"><?php echo $course->COURSE;?></li>
                                                     <?php }?>
                                                 <?php } ?>
