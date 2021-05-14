@@ -51,13 +51,17 @@
   background: #bb0000;
   color: white;
 } 
+.instagram {
+  background: #ff5500;
+  color: white;
+} 
 </style>
 <!-- The social media icon bar -->
 <div class="icon-bar-social">
-  <a href="#" class="facebook"><i class="fa fa-facebook fa-1"></i></a>
-  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-  <a href="#" class="google"><i class="fa fa-google"></i></a>
-  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+  <a href="https://www.facebook.com/ARNI.Education" class="facebook" target="_blank"><i class="fa fa-facebook fa-1"></i></a>
+  <a href="https://twitter.com/ArniUniversity1" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+  <a href="https://www.linkedin.com/in/arni-university-590b54210/" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+  <!--a href="#" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a-->
+  <a href="https://www.instagram.com/arni.university/" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
 </div> 
 

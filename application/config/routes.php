@@ -69,16 +69,37 @@ $route['Arni/(:any)'] = 'RC';
 $route['about/(:any)'] = 'Arni/about/$1';
 $route['contact'] = 'Arni/contact';
 
+
+$route['art-and-humanities'] = 'Arni/academics/art_and_humanities/about';
 $route['art-and-humanities/(:any)'] = 'Arni/academics/art_and_humanities/$1';
+
+$route['technology'] = 'Arni/academics/technology/about';
 $route['technology/(:any)'] = 'Arni/academics/technology/$1';
+
+$route['commerce-and-business-management'] = 'Arni/academics/commerce_and_business_management/about';
 $route['commerce-and-business-management/(:any)'] = 'Arni/academics/commerce_and_business_management/$1';
+
+$route['pharmacy'] = 'Arni/academics/pharmacy/about';
 $route['pharmacy/(:any)'] = 'Arni/academics/pharmacy/$1';
+
+$route['tourism-and-hospitality-management'] = 'Arni/academics/tourism_and_hospitality_management/about';
 $route['tourism-and-hospitality-management/(:any)'] = 'Arni/academics/tourism_and_hospitality_management/$1';
+
+$route['computer-application'] = 'Arni/academics/computer_application/about';
 $route['computer-application/(:any)'] = 'Arni/academics/computer_application/$1';
+
+$route['life-and-allied-science'] = 'Arni/academics/life_and_allied_science/about';
 $route['life-and-allied-science/(:any)'] = 'Arni/academics/life_and_allied_science/$1';
+
+$route['physical-science'] = 'Arni/academics/physical_science/about';
 $route['physical-science/(:any)'] = 'Arni/academics/physical_science/$1';
+
+$route['skill-development-and-vocational-studies'] = 'Arni/academics/skill_development_and_vocational_studies/about';
 $route['skill-development-and-vocational-studies/(:any)'] = 'Arni/academics/skill_development_and_vocational_studies/$1';
+
+$route['technology'] = 'Arni/academics/technology/about';
 $route['technology/(:any)'] = 'Arni/academics/technology/$1';
+
 $route['mentor'] = 'Arni/academics/mentor';
 
 /*  redirection for 301 */

@@ -158,6 +158,10 @@ class Arni extends CI_Controller {
         $this->load->view('templates/footer');
     }
 
+    function admissions(){
+        
+    }
+
 // Common Methods
     function commondata(){
         $data_['activeblogs'] = $this->wm->get_active_blogs();

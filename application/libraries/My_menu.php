@@ -103,6 +103,9 @@ class My_menu {
             case 'mentor':
                 $data = $this->mentor();
                 break;
+            case 'admissions':
+                $data = $this->admissions();
+                break;
             default:
                 # code...
                 break;
@@ -126,18 +129,18 @@ Explaination for the format of the below functions --
 
     function art_and_humanities(){
         return array(
-            "Home" => array("art_and_humanities/about", "about"),
-            "About" => array("art_and_humanities/about", "about"),
-            "Department" => array("art_and_humanities/department", "department"),
-            "Syllabus" => array("art_and_humanities/syllabus", "syllabus"),
-            "Events" => array("art_and_humanities/events", "events"),
-            "Contact" => array("art_and_humanities/contact", "contact"),
+            "Home" => array("art-and-humanities", ""),
+            "About" => array("art-and-humanities/about", "about"),
+            "Department" => array("art-and-humanities/department", "department"),
+            "Syllabus" => array("art-and-humanities/syllabus", "syllabus"),
+            "Events" => array("art-and-humanities/events", "events"),
+            "Contact" => array("art-and-humanities/contact", "contact"),
         );
     }
 
     function technology(){
         return array(
-            "Home" => array("technology/about", "about"),
+            "Home" => array("technology", ""),
             "About" => array("technology/about", "about"),
             "Department" => array("technology/department", "department"),
             "Syllabus" => array("technology/syllabus", "syllabus"),
@@ -148,7 +151,7 @@ Explaination for the format of the below functions --
 
     function commerce_and_business_management(){
         return array(
-            "Home" => array("commerce-and-business-management/about", "about"),
+            "Home" => array("commerce-and-business-management", ""),
             "About" => array("commerce-and-business-management/about", "about"),
             "Department" => array("commerce-and-business-management/department", "department"),
             "Syllabus" => array("commerce-and-business-management/syllabus", "syllabus"),
@@ -159,7 +162,7 @@ Explaination for the format of the below functions --
 
     function pharmacy(){
         return array(
-            "Home" => array("pharmacy/about", "about"),
+            "Home" => array("pharmacy", ""),
             "About" => array("pharmacy/about", "about"),
             "Department" => array("pharmacy/department", "department"),
             "Syllabus" => array("pharmacy/syllabus", "syllabus"),
@@ -170,7 +173,7 @@ Explaination for the format of the below functions --
 
     function tourism_and_hospitality_management(){
         return array(
-            "Home" => array("tourism-and-hospitality-management/about", "about"),
+            "Home" => array("tourism-and-hospitality-management", ""),
             "About" => array("tourism-and-hospitality-management/about", "about"),
             "Department" => array("tourism-and-hospitality-management/department", "department"),
             "Syllabus" => array("tourism-and-hospitality-management/syllabus", "syllabus"),
@@ -181,7 +184,7 @@ Explaination for the format of the below functions --
 
     function computer_application(){
         return array(
-            "Home" => array("computer-application/about", "about"),
+            "Home" => array("computer-application", ""),
             "About" => array("computer-application/about", "about"),
             "Department" => array("computer-application/department", "department"),
             "Syllabus" => array("computer-application/syllabus", "syllabus"),
@@ -192,7 +195,7 @@ Explaination for the format of the below functions --
 
     function life_and_allied_science(){
         return array(
-            "Home" => array("life-and-allied-science/about", "about"),
+            "Home" => array("life-and-allied-science", ""),
             "About" => array("life-and-allied-science/about", "about"),
             "Department" => array("life-and-allied-science/department", "department"),
             "Syllabus" => array("life-and-allied-science/syllabus", "syllabus"),
@@ -203,7 +206,7 @@ Explaination for the format of the below functions --
 
     function physical_science(){
         return array(
-            "Home" => array("physical-science/about", "about"),
+            "Home" => array("physical-science", ""),
             "About" => array("physical-science/about", "about"),
             "Department" => array("physical-science/department", "department"),
             "Syllabus" => array("physical-science/syllabus", "syllabus"),
@@ -214,7 +217,7 @@ Explaination for the format of the below functions --
 
     function skill_development_and_vocational_studies(){
         return array(
-            "Home" => array("skill-development-and-vocational-studies/about", "about"),
+            "Home" => array("skill-development-and-vocational-studies", ""),
             "About" => array("skill-development-and-vocational-studies/about", "about"),
             "Department" => array("skill-development-and-vocational-studies/department", "department"),
             "Syllabus" => array("skill-development-and-vocational-studies/syllabus", "syllabus"),
@@ -234,4 +237,17 @@ Explaination for the format of the below functions --
         );
     }
 
+    function admissions(){
+        return array(
+            "Admission Offices" => array("", ""),
+            "Download Brochure" => array("", ""),
+            "Admission Form" => array("", ""),
+            "Admission Process" => array("", ""),
+            "Scholarship" => array("", ""),
+            "Bank Details" => array("", ""),
+            "Academic Calendar" => array("", ""),
+            "Security &amp; Discipline" => array("", ""),
+            "Pay Fee" => array("", ""),
+        );
+    }
 }

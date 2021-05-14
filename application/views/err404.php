@@ -89,23 +89,31 @@
                     </div>
                 </div>
                 <div class="row">
-                	<div class="col-xs-12 cols-md-6 col-sm-6">
+                	<div class="col-xs-12 cols-md-4 col-sm-4">
                 		<ul>
                 			<li class="gap__"><a href="<?php echo site_url('admissions');?>" class="popularlinks">Admissions</a></li>
-                			<li class="gap__"><a href="<?php echo site_url('faculty/ftca/courses');?>" class="popularlinks">Technology & Sciences Courses</a></li>
-                			<li class="gap__"><a href="<?php echo site_url('faculty/fhm/courses');?>" class="popularlinks">Hotel Management Courses</a></li>
-                			<li class="gap__"><a href="<?php echo site_url('faculty/fcbm/courses');?>" class="popularlinks">Management Courses</a></li>
-                			<li class="gap__"><a href="<?php echo site_url('faculty/fps/courses');?>" class="popularlinks">Pharmacy Courses</a></li>
-                			<li class="gap__"><a href="<?php echo site_url('placements');?>" class="popularlinks">Placements</a></li>
-                			<li class="gap__"><a href="<?php echo site_url('gallery');?>" class="popularlinks">Gallery</a></li>
-                			<li class="gap__"><a href="<?php echo site_url('alumni');?>" class="popularlinks">Alumni</a></li>
-                			<li class="gap__"><a href="<?php echo site_url('facilities/about');?>" class="popularlinks">Facilities</a></li>
+                			<li class="gap__"><a href="<?php echo site_url('art-and-humanities/about');?>" class="popularlinks">Art & Humanities</a></li>
+                			<li class="gap__"><a href="<?php echo site_url('commerce-and-business-management/about');?>" class="popularlinks">Commerce & Business Management</a></li>
+                			<li class="gap__"><a href="<?php echo site_url('computer-application/about');?>" class="popularlinks">Computer Applications</a></li>
+                			<li class="gap__"><a href="<?php echo site_url('life-and-allied-science/about');?>" class="popularlinks">Life and Allied Science</a></li>
+                			<li class="gap__"><a href="<?php echo site_url('pharmacy/about');?>" class="popularlinks">Pharmacy Courses</a></li>
+                			<li class="gap__"><a href="<?php echo site_url('physical-science/about');?>" class="popularlinks">Physical Science</a></li>
+                			<li class="gap__"><a href="<?php echo site_url('skill-development-and-vocational-studies/about');?>" class="popularlinks">Skill Development & Vocational Studies</a></li>
+                			<li class="gap__"><a href="<?php echo site_url('technology/about');?>" class="popularlinks">Technology</a></li>
+                			<li class="gap__"><a href="<?php echo site_url('tourism-and-hospitality-management/about');?>" class="popularlinks">Tourism & Hospitality Management</a></li>
                 		</ul>
                 	</div>
-                	<div class="col-xs-12 cols-md-6 col-sm-6">
+                	<div class="col-xs-12 cols-md-4 col-sm-4">
+                		<ul>
+	                		<li class="gap__"><a href="<?php echo site_url('gallery');?>" class="popularlinks">Gallery</a></li>
+	            			<li class="gap__"><a href="<?php echo site_url('alumni');?>" class="popularlinks">Alumni</a></li>
+	            			<li class="gap__"><a href="<?php echo site_url('facilities/about');?>" class="popularlinks">Facilities</a></li>
+            			</ul>
+                	</div>
+                	<div class="col-xs-12 cols-md-4 col-sm-4">
                 		<form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank" style="margin: 20px 0px">
-						<input name="sitesearch" type="hidden" value="amrapali.ac.in">
-						<input autocomplete="on" class="form-control search" name="q" placeholder="Search in amrapali.ac.in" required="required"  type="text">
+						<input name="sitesearch" type="hidden" value="arni.in">
+						<input autocomplete="on" class="form-control search" name="q" placeholder="Search in arni.in" required="required"  type="text">
 						<button class="btn btn-primary" type="submit" style="float: right; margin-top: 10px">Search</button>
 						</form>
                 	</div>
