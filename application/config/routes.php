@@ -100,7 +100,7 @@ $route['skill-development-and-vocational-studies/(:any)'] = 'Arni/academics/skil
 $route['technology'] = 'Arni/academics/technology/about';
 $route['technology/(:any)'] = 'Arni/academics/technology/$1';
 
-$route['mentor'] = 'Arni/academics/mentor';
+$route['faculty'] = 'Arni/academics/faculty';
 
 /*  redirection for 301 */
 /* -------------------- */

@@ -20,7 +20,7 @@ class My_menu {
                 "School of Skill Development & Vocational Studies" => 'skill-development-and-vocational-studies/about',
                 "School of Technology" => 'technology/about',
                 "School of Tourism & Hospitality Management" => 'tourism-and-hospitality-management/about',
-                "Our Mentors" => 'mentor'
+                "Our Faculty" => 'faculty'
             ),
             'facilities' => array(
                 "Library" => 'library',
@@ -100,8 +100,8 @@ class My_menu {
             case 'skill_development_and_vocational_studies':
                 $data = $this->skill_development_and_vocational_studies();
                 break;
-            case 'mentor':
-                $data = $this->mentor();
+            case 'faculty':
+                $data = $this->faculty();
                 break;
             case 'admissions':
                 $data = $this->admissions();
@@ -226,7 +226,7 @@ Explaination for the format of the below functions --
         );
     }
 
-    function mentor(){
+    function faculty(){
         return array(
             "Home" => array("", ""),
             "About" => array("", ""),

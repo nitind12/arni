@@ -162,11 +162,14 @@ class My_library {
             case 'art-and-humanities':
                 $title = "School of Art &amp; Humanities";
                 break;
-            
+            case 'faculty':
+                $title = "Faculty, Arni University";
+                break;
             default:
                 $title = "Arni University";
                 break;
         }
+    return $title;
     }
     function heading_for_page_($menu, $page){
         $data_['contact'] = 'office@arni.in, query@aarni.in, admission@arni.in';

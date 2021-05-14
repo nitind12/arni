@@ -34,17 +34,11 @@
 
                 <div class="footer-widget">
 
-                    <h3 class="wow fadeInDown">Brochures</h3>
+                    <h3 class="wow fadeInDown">Brochure</h3>
 
                     <ul class="wow fadeInDown">                        
 
-                        <li><!--a href="https://e-brochures.arni.in/ftca" target="_blank"-->Technology &amp; Computer Applications</a></li>
-
-                        <li><!--a href="https://e-brochures.arni.in/fhm" target="_blank"-->Hospitality Management<a/></li>
-
-                        <li><!--a href="https://e-brochures.arni.in/fcbm" target="_blank"-->Commerce &amp; Business Management</a></li>
-
-                        <li><!--a href="https://e-brochures.arni.in/fps" target="_blank"-->Pharmacy</a></li>
+                        <li><!--a href="https://e-brochures.arni.in/ftca" target="_blank"-->Arni University</a></li>
 
                     </ul>
 
