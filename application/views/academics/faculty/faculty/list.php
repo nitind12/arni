@@ -92,7 +92,7 @@
             <div class="row">
                 <?php $seperator = 1; ?>
                 <?php foreach($facultyData as $record){ ?>
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <div class="col-xs-10 col-sm-6 col-md-3 col-lg-3">
                     <a href="">
                         <div class="card-flyer">
                             <div class="text-box">
