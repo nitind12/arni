@@ -13,6 +13,10 @@
         <meta name="description" content="<?php echo $meta['description']; ?>" />
         <meta property="og:image" content="<?php echo base_url('assets/img/agi.png'); ?>" />
         <meta name="robots" content="follow"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+        <link rel="manifest" href="icon/site.webmanifest">
         <title><?php echo $meta['title']; ?></title>
         <style>
             h1{
