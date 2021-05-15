@@ -132,7 +132,7 @@ Explaination for the format of the below functions --
 
     function art_and_humanities(){
         return array(
-            "Home" => array("art-and-humanities", ""),
+            "Home" => array("art-and-humanities", "home"),
             "About" => array("art-and-humanities/about", "about"),
             "Department" => array("art-and-humanities/department", "department"),
             "Syllabus" => array("art-and-humanities/syllabus", "syllabus"),
@@ -143,7 +143,7 @@ Explaination for the format of the below functions --
 
     function technology(){
         return array(
-            "Home" => array("technology", ""),
+            "Home" => array("technology", "home"),
             "About" => array("technology/about", "about"),
             "Department" => array("technology/department", "department"),
             "Syllabus" => array("technology/syllabus", "syllabus"),
@@ -154,7 +154,7 @@ Explaination for the format of the below functions --
 
     function commerce_and_business_management(){
         return array(
-            "Home" => array("commerce-and-business-management", ""),
+            "Home" => array("commerce-and-business-management", "home"),
             "About" => array("commerce-and-business-management/about", "about"),
             "Department" => array("commerce-and-business-management/department", "department"),
             "Syllabus" => array("commerce-and-business-management/syllabus", "syllabus"),
@@ -165,7 +165,7 @@ Explaination for the format of the below functions --
 
     function pharmacy(){
         return array(
-            "Home" => array("pharmacy", ""),
+            "Home" => array("pharmacy", "home"),
             "About" => array("pharmacy/about", "about"),
             "Department" => array("pharmacy/department", "department"),
             "Syllabus" => array("pharmacy/syllabus", "syllabus"),
@@ -176,7 +176,7 @@ Explaination for the format of the below functions --
 
     function tourism_and_hospitality_management(){
         return array(
-            "Home" => array("tourism-and-hospitality-management", ""),
+            "Home" => array("tourism-and-hospitality-management", "home"),
             "About" => array("tourism-and-hospitality-management/about", "about"),
             "Department" => array("tourism-and-hospitality-management/department", "department"),
             "Syllabus" => array("tourism-and-hospitality-management/syllabus", "syllabus"),
@@ -187,7 +187,7 @@ Explaination for the format of the below functions --
 
     function computer_application(){
         return array(
-            "Home" => array("computer-application", ""),
+            "Home" => array("computer-application", "home"),
             "About" => array("computer-application/about", "about"),
             "Department" => array("computer-application/department", "department"),
             "Syllabus" => array("computer-application/syllabus", "syllabus"),
@@ -198,7 +198,7 @@ Explaination for the format of the below functions --
 
     function life_and_allied_science(){
         return array(
-            "Home" => array("life-and-allied-science", ""),
+            "Home" => array("life-and-allied-science", "home"),
             "About" => array("life-and-allied-science/about", "about"),
             "Department" => array("life-and-allied-science/department", "department"),
             "Syllabus" => array("life-and-allied-science/syllabus", "syllabus"),
@@ -209,7 +209,7 @@ Explaination for the format of the below functions --
 
     function physical_science(){
         return array(
-            "Home" => array("physical-science", ""),
+            "Home" => array("physical-science", "home"),
             "About" => array("physical-science/about", "about"),
             "Department" => array("physical-science/department", "department"),
             "Syllabus" => array("physical-science/syllabus", "syllabus"),
@@ -220,7 +220,7 @@ Explaination for the format of the below functions --
 
     function skill_development_and_vocational_studies(){
         return array(
-            "Home" => array("skill-development-and-vocational-studies", ""),
+            "Home" => array("skill-development-and-vocational-studies", "home"),
             "About" => array("skill-development-and-vocational-studies/about", "about"),
             "Department" => array("skill-development-and-vocational-studies/department", "department"),
             "Syllabus" => array("skill-development-and-vocational-studies/syllabus", "syllabus"),
@@ -231,7 +231,7 @@ Explaination for the format of the below functions --
 
     function faculty(){
         return array(
-            "Home" => array("", ""),
+            "Home" => array("", "home"),
             "About" => array("", ""),
             "Department" => array("", ""),
             "Syllabus" => array("", ""),
