@@ -93,9 +93,13 @@
                     <!-- #x-corp-carousel-->
                     <div style="clear: both;"><br></div>
                     <div class="container">
-                        <div class="content-wrapper">
+                        <div class="content-wrapper">                          
                             <section class="" style="display: inline;">
+                                <?php if($inner_page != 'faculty'){?>
                                 <?php $this->load->view('templates/submenu'); ?>
+                                <?php } else { ?>
+                                    <img src="<?php echo base_url('assets/arniImage/sarvepalliRadhakrishnanji.jpg');?>">
+                                <?php } ?>
                             </section>
                             <?php $this->load->view('academics/faculty/'.$inner_page.'/'.$subpage); ?>                                                    
                         </div>
