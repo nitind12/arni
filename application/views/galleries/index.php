@@ -76,7 +76,7 @@
                             <div class="topnav" id="myTopnav" style="border:#ff0000 solid 0px">
                               <a href="<?php echo site_url('gallery');?>" <?php if($active == 'overview'){ echo 'class="active"'; } ?>><img src="<?php echo base_url('assets/img/home.png');?>?version=1.2" style="width: 20px"></a>
                               <a href="<?php echo site_url('gallery/photos');?>" <?php if($active == 'photos'){ echo 'class="active"'; } ?>>Photo Gallery</a>
-                              <a href="<?php echo site_url('youtubeGallery');?>" <?php if($active == 'videos'){ echo 'class="active"'; } ?>>Video Gallery</a>
+                              <a href="<?php echo site_url('gallery/videos');?>" <?php if($active == 'videos'){ echo 'class="active"'; } ?>>Video Gallery</a>
                               <a href="<?php echo site_url('gallery/activities');?>" <?php if($active == 'activities'){ echo 'class="active"'; } ?>>Activities</a>
                               <a href="<?php echo site_url('gallery/expert-views');?>" <?php if($active == 'expert-views'){ echo 'class="active"'; } ?>>Expert's Views</a>
                               <!--a href="http://golive360.com/demo/amrpali05/all_files/virtual-tour/build.html" target="_blank">3D 360<sup>o</sup> Virtual Tour</a-->
@@ -87,9 +87,7 @@
                             <?php 
                               $data['menu_selected'] = $active;
                             ?>
-                            <div class="entry-content" style="overflow: hidden;border:#ff0000 solid 0px">
-                                <?php $this->load->view('galleries/mainslider', $data);  ?>
-                            </div>
+                            
                             <div class="entry-content" style="overflow: hidden;border:#ff0000 solid 0px">
                                   <div style="clear: both; height: 30px"></div>
                                   <?php $this->load->view('galleries/innerpages/'.$inner_page, $data); ?>

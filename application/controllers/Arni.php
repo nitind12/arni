@@ -206,47 +206,27 @@ class Arni extends CI_Controller
         $this->load->view('templates/footer');
     }
 
-    function gallery($page = 'x', $submenu = 'gallery') 
+    function gallery($page = 'x') 
     {
-        $data_['meta'] = $this->metainfo_for_web('academics', $page);
+        $data_['meta'] = $this->metainfo_for_web('gallery', $page);
         $data_['menu_active'] = 6;
         $data_['menu_all'] = $this->my_menu->site_menu();
-        $data_['submenu'] = $this->my_menu->submenu($page);
+        $data_['submenu'] = $this->my_menu->submenu('gallery');
         $data_['titleMain'] = "Gallery";
-        $data_['active'] = 'Gallery';
-        $data_['page'] = $page;
-        $data_['subpage'] = $submenu;
+        $data_['active'] = $page;
 
-        if ($page == 'art_and_humanities' || $page == 'art_and_humanities#') {
-            $data_['departments'] = $this->arni->school_wise_departments(1);
-            $data_['school_courses'] = $this->arni->school_wise_course_offered(1);
-            $clg = "School of Art and Humanities";
-            $data_['inner_page'] = $page;
-            $data_['title'] = 'School of Art and Humanities';
-            $data_['breadcrumb'] = 'Academics / School of Art and Humanities';
-        } else if ($page == 'commerce_and_business_management' || $page == 'commerce_and_business_management#') {
-            $data_['departments'] = $this->arni->school_wise_departments(2);
-            $data_['school_courses'] = $this->arni->school_wise_course_offered(2);
-            $clg = "School of Commerce and Business Management";
-            $data_['inner_page'] = $page;
-            $data_['title'] = $clg;
-            $data_['breadcrumb'] = 'Academics / ' . $clg;
-        } else if ($page == 'computer_application' || $page == 'computer_application#') {
-            $data_['departments'] = $this->arni->school_wise_departments(3);
-            $data_['school_courses'] = $this->arni->school_wise_course_offered(3);
-            $clg = "School of Computer Application";
-            $data_['inner_page'] = $page;
-            $data_['title'] = $clg;
-            $data_['breadcrumb'] = 'Academics / ' . $clg;
-        } else if ($page == 'life_and_allied_science' || $page == 'life_and_allied_science#') {
-            $data_['departments'] = $this->arni->school_wise_departments(4);
-            $data_['school_courses'] = $this->arni->school_wise_course_offered(4);
-            $clg = "School of Life and Allied Science";
-            $data_['inner_page'] = $page;
-            $data_['title'] = $clg;
-            $data_['breadcrumb'] = 'Academics / ' . $clg;
+        if ($page == 'expertviews' || $page == 'expertviews#') {
+            $data_['inner_page'] = 'expertviews';
+            $data_['breadcrumb'] = 'Gallery / Expert Views';
+        } else if ($page == 'videos' || $page == 'videos#') {
+            $data_['inner_page'] = 'videos';
+            $data_['breadcrumb'] = 'Gallery / Videos';
+        } else if ($page == 'activities' || $page == 'activities#') {
+            $data_['inner_page'] = 'activities';
+            $data_['breadcrumb'] = 'Gallery / Activities';
         } else {
-            //redirect('academics/technology');
+            $data_['inner_page'] = 'photos';
+            $data_['breadcrumb'] = 'Our Gallery';
         }
 
         $this->load->view('templates/header', $data_);

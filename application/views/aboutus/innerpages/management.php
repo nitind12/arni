@@ -1,6 +1,7 @@
 <section class="trusted-client-wrapper">
                                 
                                     <div class="col-md-8">
+                                    <?php $this->load->view('templates/breadcrumb'); ?>  
                                         <h2 class="section-title wow fadeInDown" >Management's talk</h2>
                                                                      
                                     </div>

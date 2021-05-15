@@ -20,10 +20,10 @@
 <?php
     
     $slider_ = array(
-        'P4.jpg'=>$breadcrumb,
-        'P1.jpg'=> $breadcrumb,
-        'P2.jpg'=>$breadcrumb,
-        'P3.jpg'=>$breadcrumb
+        'P4.jpg'=>$titleMain,
+        'P1.jpg'=> $titleMain,
+        'P2.jpg'=>$titleMain,
+        'P3.jpg'=>$titleMain
     );
 
     

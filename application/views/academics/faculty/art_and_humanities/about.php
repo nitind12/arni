@@ -6,7 +6,7 @@
 </style>
 <section class="trusted-client-wrapper">
                                     <div class="col-md-7">
-                                        <h6><?php echo $breadcrumb; ?></h6>
+                                    <?php $this->load->view('templates/breadcrumb'); ?>  
                                         <h2 class="section-title wow fadeInDown" ><?php echo $title;?></h2>
                                         <div class="col-md-12" style="border: #fff solid 0px">
                                             <p>Arni School of Arts & Humanties Humanities focuses on all aspects related to culture and creative life including most disciplines outside exact Sciences.</p>

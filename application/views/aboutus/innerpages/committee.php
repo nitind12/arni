@@ -1,5 +1,6 @@
 <section class="trusted-client-wrapper">
         <div class="col-md-12">
+        <?php $this->load->view('templates/breadcrumb'); ?>  
             <h2 class="section-title wow fadeInDown" >University Committees</h2>  
             <ul>                   
                 <li class="sky alert alert-success">      <a href="/UNIVERSITYCOMMITTEES/AntiRaggingCommittee">Anti-Ragging Committee   Contact Person :           Mobile:      EmailID: </a>                                                      </li>  
