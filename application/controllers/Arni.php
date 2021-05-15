@@ -155,8 +155,9 @@ class Arni extends CI_Controller
             $data_['inner_page'] = $page;
             $data_['title'] = $clg;
             $data_['breadcrumb'] = 'Academics / ' . $clg;
-        } else if ($page == 'mentor' || $page == 'mentor#') {
-            $clg = 'Mentor';
+        } else if ($page == 'faculty' || $page == 'faculty#') {
+            $data_['facultyData'] = $this->arni->faculty_list();
+            $clg = 'Our Faculty';
             $data_['inner_page'] = $page;
             $data_['title'] = $clg;
             $data_['breadcrumb'] = 'Academics / ' . $clg;
