@@ -32,12 +32,15 @@ class Arni_model extends CI_Model {
     }
 
     function faculty_list(){
-        $this->db->order_by('FULL_NAME');
-        $this->db->select('b.SNAME AS SCHOOL, c.DEPARTMENT,a.FULL_NAME, a.SPECIALIZATION, a.DESIGNATION, a.PIC');
+        $this->db->order_by('PRIORITY');
+        $this->db->order_by('a.FULL_NAME');
+        $this->db->select('d.PRIORITY, d.DID, b.SNAME AS SCHOOL, c.DEPARTMENT,a.FULL_NAME, a.SPECIALIZATION, d.DESIG as DESIGNATION, a.PIC');
         $this->db->from('_arni_faculty a');
         $this->db->join('_arni_school b', 'a.SCHOOL = b.SID');
         $this->db->join('_arni_departments c', 'a.DEPARTMENT=c.DID');
+        $this->db->join('_arni_designation d', 'a.DESIGNATION=d.DID');
         $query = $this->db->get();
+        //echo $this->db->last_query();
         return $query->result();
     }
 }
