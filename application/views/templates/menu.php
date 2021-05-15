@@ -72,7 +72,7 @@
                 </li>
                 
                 <?php foreach($menu_all['pics'] as $title => $path){?>
-                    <li class="<?php if($menu_active==6){echo 'active';}?>"><a href="<?php // echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                    <li class="<?php if($menu_active==6){echo 'active';}?>"><a href="<?php  echo site_url($path); ?>"><?php echo $title; ?></a></li>
                 <?php } ?>
                 <?php foreach($menu_all['alumni_menu'] as $title => $path){?>
                     <li class="<?php if($menu_active==7){echo 'active';}?>"><a href="<?php // echo site_url($path); ?>"><?php echo $title; ?></a></li>

@@ -48,7 +48,7 @@ class My_menu {
 
         // Gallery
         $menu['pics'] = array(
-            "Gallery" => "gallery"
+            "Gallery" => "gallery/index"
         );
 
         // Alumni
@@ -105,6 +105,9 @@ class My_menu {
                 break;
             case 'admissions':
                 $data = $this->admissions();
+                break;
+            case 'gallery':
+                $data =  $this->gallery();
                 break;
             default:
                 # code...
@@ -248,6 +251,15 @@ Explaination for the format of the below functions --
             "Academic Calendar" => array("", ""),
             "Security &amp; Discipline" => array("", ""),
             "Pay Fee" => array("", ""),
+        );
+    }
+
+    function gallery(){
+        return array(
+            "Photo Gallery" => array("", ""),
+            "Video Gallery" => array("", ""),
+            "Activities" => array("", ""),
+            "Expert View" => array("", ""),
         );
     }
 }
