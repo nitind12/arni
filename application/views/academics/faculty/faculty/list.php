@@ -1,6 +1,5 @@
 <style>
 
-
 /*----  Main Style  ----*/
 #cards_landscape_wrap-2{
   text-align: center;
@@ -28,8 +27,8 @@
   -moz-transition:all .9s ease; 
   -o-transition:all .9s ease;
   -ms-transition:all .9s ease; 
-  width: 80%;
-  height: 200px;
+  width: 150px;
+  max-height:150px;
 }
 #cards_landscape_wrap-2 .card-flyer:hover .image-box img{
   opacity: 0.7;
@@ -84,11 +83,10 @@
   color: #900000;
 }
 
-
 </style>
 <h2 class="section-title-dark wow fadeInDown" align="center">Our Intellectual Capital</h2>
 <div id="cards_landscape_wrap-2">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <?php $seperator = 1; ?>
                 <?php foreach($facultyData as $record){ ?>
