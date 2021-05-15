@@ -21,14 +21,16 @@
   overflow: hidden;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
   border-radius: 5px;
+  height:180px;
+  padding: .5em;
 }
 #cards_landscape_wrap-2 .card-flyer .image-box img{
   -webkit-transition:all .9s ease; 
   -moz-transition:all .9s ease; 
   -o-transition:all .9s ease;
   -ms-transition:all .9s ease; 
-  width: 150px;
-  max-height:150px;
+  width: 100%;
+  max-height:100%;
 }
 #cards_landscape_wrap-2 .card-flyer:hover .image-box img{
   opacity: 0.7;
@@ -47,6 +49,7 @@
 #cards_landscape_wrap-2 .card-flyer{
   background: #FFFFFF;
   margin-top: 50px;
+  min-height:390px;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
@@ -68,25 +71,24 @@
   margin-top: 10px;
   margin-bottom: 0px;
   padding-bottom: 0px; 
-  font-size: 14px;
-  letter-spacing: 1px;
+  font-size: 13px;
   color: #000000;
 }
 #cards_landscape_wrap-2 .card-flyer .text-box h4{
   margin-top: 0px;
   margin-bottom: 4px; 
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
   font-family: 'Roboto Black', sans-serif;
-  letter-spacing: 1px;
   color: #900000;
 }
 
 </style>
-<h2 class="section-title-dark wow fadeInDown" align="center">Our Intellectual Capital</h2>
+
 <div id="cards_landscape_wrap-2">
         <div class="container-fluid">
+        <h2 class="wow fadeInDown" align="center" style="color:#e67e22; margin-top:1em;">Our Intellectual Capital</h2>
             <div class="row">
                 <?php $seperator = 1; ?>
                 <?php foreach($facultyData as $record){ ?>
@@ -99,7 +101,7 @@
                                 </div>
                                 <div class="text-container">
                                     <h4><?php echo ucwords(strtolower($record->FULL_NAME)); ?></h4>
-                                    <span style="color:#0000AA"><?php echo ucwords(strtolower($record->DESIGNATION)); ?></span>
+                                    <span style="color:#0000AA;"><?php echo ucwords(strtolower($record->DESIGNATION)); ?></span>
                                     <p style="text-align: center;">
                                         <?php echo ucwords(strtolower($record->FULL_NAME)); ?> belongs to <?php echo $record->SCHOOL; ?> specialized in <?php echo $record->SPECIALIZATION;?>. 
                                     </p>
