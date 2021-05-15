@@ -64,15 +64,19 @@ class Arni extends CI_Controller
 
         if ($page == 'governance' || $page == 'governance#') {
             $data_['inner_page'] = 'governance';
+            $data_['subpage'] = 'governance';
             $data_['breadcrumb'] = 'About us / Governance';
         } else if ($page == 'management' || $page == 'management#') {
             $data_['inner_page'] = 'management';
+            $data_['subpage'] = 'management';
             $data_['breadcrumb'] = 'About us / Management Talk';
         } else if ($page == 'committee' || $page == 'committee#') {
             $data_['inner_page'] = 'committee';
+            $data_['subpage'] = 'committee';
             $data_['breadcrumb'] = 'About us / University Committee';
         } else {
             $data_['inner_page'] = 'aboutus';
+            $data_['subpage'] = 'aboutus';
             $data_['breadcrumb'] = 'About us / Why Arni?';
         }
 
@@ -216,6 +220,7 @@ class Arni extends CI_Controller
         $data_['titleMain'] = "Gallery";
         $data_['active'] = $page;
         $data_['gallery_category'] = $this->wm->get_gallery_category();   
+        $data_['subpage'] = $this->my_menu->submenu('gallery');
             
         if ($page == 'expertviews' || $page == 'expertviews#') {
             $data_['inner_page'] = 'expertviews';
