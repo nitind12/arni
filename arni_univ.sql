@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 15, 2021 at 08:30 AM
+-- Generation Time: May 15, 2021 at 01:25 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.8
 
@@ -574,6 +574,13 @@ CREATE TABLE `gallery` (
   `USERNAME_` varchar(40) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `gallery`
+--
+
+INSERT INTO `gallery` (`GL_ID`, `PHOTO_`, `TITLE_`, `WIDTH_`, `HEIGHT_`, `CATEG_ID`, `STATUS`, `USERNAME_`) VALUES
+(1, 'HD_Wallpapers_laptop_wallpapers_widescreen.jpg', 'x', 0, 0, 1, 1, 'nitin');
+
 -- --------------------------------------------------------
 
 --
@@ -608,8 +615,8 @@ CREATE TABLE `login` (
 --
 
 INSERT INTO `login` (`USERNAME_`, `PASSWORD_`, `USER_STATUS`, `DEPT_`, `COURSE`) VALUES
-('naveen', '123', 'adm', 'Arni University', 'AU'),
-('nitin', '123', 'adm', 'Arni University', 'AU');
+('naveen', '123', 'adm', 'Arni University', 'University'),
+('nitin', '123', 'adm', 'Arni University', 'University');
 
 -- --------------------------------------------------------
 
@@ -631,12 +638,10 @@ CREATE TABLE `menu_1` (
 
 INSERT INTO `menu_1` (`ID_`, `PRE_ICON`, `MENU`, `PATH_`, `PRIORITY_`) VALUES
 (1, 'fa fa-dropbox fa-fw', 'Dashboard', 'dashboard', 1),
-(2, 'fa fa-user fa-fw', 'Faculty Profile', 'faculty', 2),
 (3, 'fa fa-camera fa-fw', 'Manage Activities', 'activity', 3),
 (4, 'fa fa-camera fa-fw', 'News', 'newsevents', 4),
 (5, 'fa fa-camera fa-fw', 'Upcoming Events', 'upcoming', 5),
 (6, 'fa fa-camera fa-fw', 'Announcements', 'announcements', 6),
-(7, 'fa fa-user fa-fw', 'Faculty Sequence', 'faculty/sequence', 2),
 (8, 'fa fa-user fa-fw', 'Gallery', 'gallery', 7),
 (9, 'fa fa-user fa-fw', 'Blogs', 'blog', 8),
 (10, 'fa fa-user fa-fw', 'Notices', 'notices', 9);
@@ -862,19 +867,15 @@ CREATE TABLE `user_menu` (
 
 INSERT INTO `user_menu` (`ID`, `MENU`, `USER_`) VALUES
 (1, 1, 'adm'),
-(2, 2, 'adm'),
 (3, 3, 'adm'),
 (4, 4, 'adm'),
 (5, 5, 'adm'),
 (6, 6, 'adm'),
 (7, 1, 'dir'),
-(8, 2, 'dir'),
 (9, 3, 'dir'),
 (10, 4, 'dir'),
 (12, 1, 'ofc'),
 (13, 6, 'ofc'),
-(14, 7, 'adm'),
-(15, 7, 'dir'),
 (16, 8, 'adm'),
 (17, 8, 'dm'),
 (18, 1, 'dm'),
@@ -1125,6 +1126,30 @@ INSERT INTO `_arni_departments` (`DID`, `DEPARTMENT`, `USERNAME`, `DATE_`) VALUE
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `_arni_designation`
+--
+
+CREATE TABLE `_arni_designation` (
+  `DID` int(11) NOT NULL,
+  `DESIG` varchar(50) NOT NULL,
+  `PRIORITY` int(11) NOT NULL,
+  `ACTIVE` tinyint(1) NOT NULL DEFAULT 1
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `_arni_designation`
+--
+
+INSERT INTO `_arni_designation` (`DID`, `DESIG`, `PRIORITY`, `ACTIVE`) VALUES
+(1, 'Professor', 1, 1),
+(2, 'Associate Professor', 4, 1),
+(3, 'Assistant Professor', 5, 1),
+(4, 'Professor', 2, 1),
+(5, 'Principal', 3, 1);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `_arni_faculty`
 --
 
@@ -1134,7 +1159,7 @@ CREATE TABLE `_arni_faculty` (
   `DEPARTMENT` int(11) NOT NULL,
   `FULL_NAME` varchar(200) NOT NULL,
   `SPECIALIZATION` varchar(100) NOT NULL,
-  `DESIGNATION` varchar(100) NOT NULL,
+  `DESIGNATION` int(11) NOT NULL,
   `PIC` varchar(25) NOT NULL,
   `USERNAME` varchar(40) NOT NULL,
   `DATE_` timestamp NOT NULL DEFAULT current_timestamp(),
@@ -1146,93 +1171,93 @@ CREATE TABLE `_arni_faculty` (
 --
 
 INSERT INTO `_arni_faculty` (`FACID`, `SCHOOL`, `DEPARTMENT`, `FULL_NAME`, `SPECIALIZATION`, `DESIGNATION`, `PIC`, `USERNAME`, `DATE_`, `ACTIVE`) VALUES
-(1, 8, 11, 'PROF. Dr. Amit Sharma', 'Electrical', 'Professor', '1.png', 'admin', '0000-00-00 00:00:00', 1),
-(2, 6, 13, 'PROF. Dr. Anuja Chouhan', 'Chemistry', 'Professor', '2.png', 'admin', '0000-00-00 00:00:00', 1),
-(3, 2, 1, 'PROF. Dr. Ashish Kumar', '', 'Assistant Professor', '3.png', 'admin', '0000-00-00 00:00:00', 1),
-(4, 4, 10, 'PROF. Dr. Ekta', 'Botany', 'Assistant Professor', '4.png', 'admin', '0000-00-00 00:00:00', 1),
-(5, 4, 10, 'PROF. Dr. Indu Kumari', 'Zoology', 'Assistant Professor', '5.png', 'admin', '0000-00-00 00:00:00', 1),
-(6, 2, 1, 'PROF. Dr. Kalyan K Sahoo', 'Management', 'Professor', '6.png', 'admin', '0000-00-00 00:00:00', 1),
-(7, 4, 10, 'PROF. Dr. Komal', 'Botany', 'Assistant Professor', '7.png', 'admin', '0000-00-00 00:00:00', 1),
-(8, 1, 6, 'PROF. Dr. Mayank Pawar', 'Mathematics', 'Professor', '8.png', 'admin', '0000-00-00 00:00:00', 1),
-(9, 4, 10, 'PROF. Dr. Neha Salaria', 'Bio Technology', 'Assistant Professor', '9.png', 'admin', '0000-00-00 00:00:00', 1),
-(10, 6, 13, 'PROF. Dr. Nisha Sharma', 'Chemistry', 'Assistant Professor', '10.png', 'admin', '0000-00-00 00:00:00', 1),
-(11, 8, 2, 'PROF. Dr. O.P. Netula', 'Water Resources Engg.', 'Professor', '11.png', 'admin', '0000-00-00 00:00:00', 1),
-(12, 6, 13, 'PROF. Dr. Ritu Jain', 'Chemistry', 'Assistant Professor', '12.png', 'admin', '0000-00-00 00:00:00', 1),
-(13, 8, 11, 'PROF. Dr. Sanjeev Dahiya', 'Mechanical', 'Professor', '13.png', 'admin', '0000-00-00 00:00:00', 1),
-(14, 4, 10, 'PROF. Dr. Sarika Sharma', 'Microbiology', 'Professor', '14.png', 'admin', '0000-00-00 00:00:00', 1),
-(15, 3, 4, 'PROF. Dr. Sunita', 'CSA', 'Assistant Professor', '15.png', 'admin', '0000-00-00 00:00:00', 1),
-(16, 1, 6, 'PROF. Dr. Surinder Paul', 'Physics', 'Assistant Professor', '16.png', 'admin', '0000-00-00 00:00:00', 1),
-(17, 1, 7, 'PROF. Dr. Vijay Mehta', 'English', 'Professor', '17.png', 'admin', '0000-00-00 00:00:00', 1),
-(18, 8, 5, 'PROF. Dr. Vivek Singh', 'CSE', 'Assistant Professor', '18.png', 'admin', '0000-00-00 00:00:00', 1),
-(19, 2, 3, 'PROF. Dr.Ashutosh Dwivedi', 'Commerce', 'Professor', '19.png', 'admin', '0000-00-00 00:00:00', 1),
-(20, 2, 1, 'PROF. Dr.Jaiman Preet Kaur', 'Management', 'Assistant Professor', '20.png', 'admin', '0000-00-00 00:00:00', 1),
-(21, 2, 9, 'PROF. Dr.Shashi Bhushan', '', 'Professor', '21.png', 'admin', '0000-00-00 00:00:00', 1),
-(22, 1, 6, 'PROF. Dr.Vipin Kumar', 'Physics', 'Professor', '22.png', 'admin', '0000-00-00 00:00:00', 1),
-(23, 5, 12, 'PROF. M.s Shikha Dubey', 'Pharmacy', 'Assistant Professor', '23.png', 'admin', '0000-00-00 00:00:00', 1),
-(24, 8, 11, 'PROF. Mr. Abhinav Dhiman', 'EEE', 'Assistant Professor', '24.png', 'admin', '0000-00-00 00:00:00', 1),
-(25, 1, 6, 'PROF. Mr. Amit Sharma', 'Material Science', 'Assistant Professor', '25.png', 'admin', '0000-00-00 00:00:00', 1),
-(26, 8, 11, 'PROF. Mr. Anil Singh', 'Engineering Syst.', 'Assistant Professor', '26.png', 'admin', '0000-00-00 00:00:00', 1),
-(27, 8, 5, 'PROF. Mr. Ankur Sharma', 'CSE', 'Assistant Professor', '27.png', 'admin', '0000-00-00 00:00:00', 1),
-(28, 8, 5, 'PROF. Mr. Anurag Rana', 'CSE', 'Assistant Professor', '28.png', 'admin', '0000-00-00 00:00:00', 1),
-(29, 8, 11, 'PROF. Mr. Ashish Kumar', 'Mechanical', 'Assistant Professor', '29.png', 'admin', '0000-00-00 00:00:00', 1),
-(30, 2, 17, 'PROF. Mr. Ashish Parashar', 'Sales & Marketing', 'Assistant Professor', '30.png', 'admin', '0000-00-00 00:00:00', 1),
-(31, 8, 11, 'PROF. Mr. Harjit Singh Kainth', 'EEE', 'Assistant Professor', '31.png', 'admin', '0000-00-00 00:00:00', 1),
-(32, 8, 2, 'PROF. Mr. Himanshu Sharma', 'Structure Engg.(Civil)', 'Assistant Professor', '32.png', 'admin', '0000-00-00 00:00:00', 1),
-(33, 5, 12, 'PROF. Mr. Kushal Jit Singh', 'Pharmacy', 'Assistant Professor', '33.png', 'admin', '0000-00-00 00:00:00', 1),
-(34, 8, 2, 'PROF. Mr. Narinder Kumar', 'Civil', 'Assistant Professor', '34.png', 'admin', '0000-00-00 00:00:00', 1),
-(35, 8, 11, 'PROF. Mr. Neeraj Kumar Sharma', 'ECE', 'Assistant Professor', '35.png', 'admin', '0000-00-00 00:00:00', 1),
-(36, 8, 11, 'PROF. Mr. Nishant', 'EEE(Electronics & Control)', 'Assistant Professor', '36.png', 'admin', '0000-00-00 00:00:00', 1),
-(37, 1, 6, 'PROF. Mr. Nitin Mahajan', 'Maths', 'Assistant Professor', '37.png', 'admin', '0000-00-00 00:00:00', 1),
-(38, 8, 11, 'PROF. Mr. Onkar Singh', 'ECE', 'Assistant Professor', '38.png', 'admin', '0000-00-00 00:00:00', 1),
-(39, 8, 5, 'PROF. Mr. R.K. Mishra', 'Computer Engg.', 'Assistant Professor', '39.png', 'admin', '0000-00-00 00:00:00', 1),
-(40, 2, 17, 'PROF. Mr. Raj Kamal Gautam', 'HM', 'Assistant Professor', '40.png', 'admin', '0000-00-00 00:00:00', 1),
-(41, 8, 2, 'PROF. Mr. Rajan Rana', 'Civil', 'Assistant Professor', '41.png', 'admin', '0000-00-00 00:00:00', 1),
-(42, 1, 7, 'PROF. Mr. Rajinder Kumar', 'English', 'Assistant Professor', '42.png', 'admin', '0000-00-00 00:00:00', 1),
-(43, 5, 12, 'PROF. Mr. Raman Kalia', 'Pharmacy', 'Principal', '43.png', 'admin', '0000-00-00 00:00:00', 1),
-(44, 5, 12, 'PROF. Mr. Sameer Gangal', 'Pharmacy', 'Assistant Professor', '44.png', 'admin', '0000-00-00 00:00:00', 1),
-(45, 8, 2, 'PROF. Mr. Saurabh Gupta', 'Const. technology &Mgt.(Civil)', 'Assistant Professor', '45.png', 'admin', '0000-00-00 00:00:00', 1),
-(46, 2, 1, 'PROF. Mr. Shashi Karel', 'Finance & Marketing', 'Assistant Professor', '46.png', 'admin', '0000-00-00 00:00:00', 1),
-(47, 3, 4, 'PROF. Mr. Tushar Anthwal', 'CSA', 'Associate Professor', '47.png', 'admin', '0000-00-00 00:00:00', 1),
-(48, 2, 1, 'PROF. Mr. Vikas Barnwal', 'Finance & Marketing', 'Assistant Professor', '48.png', 'admin', '0000-00-00 00:00:00', 1),
-(49, 8, 11, 'PROF. Mr. Vikas Singh', 'ECE(VLSI DESIGN)', 'Assistant Professor', '49.png', 'admin', '0000-00-00 00:00:00', 1),
-(50, 8, 2, 'PROF. Mr. Vivek Dhiman', '', 'Assistant Professor', '50.png', 'admin', '0000-00-00 00:00:00', 1),
-(51, 2, 17, 'PROF. Mr.Kuldeep Kumar', 'Tourism & HM', 'Assistant Professor', '51.png', 'admin', '0000-00-00 00:00:00', 1),
-(52, 8, 5, 'PROF. Mr.Rohit Kumar', 'CSE', 'Assistant Professor', '52.png', 'admin', '0000-00-00 00:00:00', 1),
-(53, 6, 13, 'PROF. Mr.Saurabh Sharma', 'Chemistry', 'Assistant Professor', '53.png', 'admin', '0000-00-00 00:00:00', 1),
-(54, 1, 6, 'PROF. Mr.Yash Pal', 'Physics', 'Assistant Professor', '54.png', 'admin', '0000-00-00 00:00:00', 1),
-(55, 5, 12, 'PROF. Mrs Bhawana Sharma', 'Pharmacy', 'Assistant Professor', '55.png', 'admin', '0000-00-00 00:00:00', 1),
-(56, 3, 4, 'PROF. Mrs. Adity', 'CSA', 'Assistant Professor', '56.png', 'admin', '0000-00-00 00:00:00', 1),
-(57, 1, 7, 'PROF. Mrs. Anjna Devi', 'English', 'Assistant Professor', '57.png', 'admin', '0000-00-00 00:00:00', 1),
-(58, 1, 6, 'PROF. Mrs. Ashu Rani', 'Maths', 'Assistant Professor', '58.png', 'admin', '0000-00-00 00:00:00', 1),
-(59, 1, 6, 'PROF. Mrs. Radhika', 'Economics', 'Assistant Professor', '59.png', 'admin', '0000-00-00 00:00:00', 1),
-(60, 6, 13, 'PROF. Mrs. Shivani Sharma', 'Chemistry', 'Assistant Professor', '60.png', 'admin', '0000-00-00 00:00:00', 1),
-(61, 6, 13, 'PROF. Mrs.Shivali Thakur', 'Chemistry', 'Assistant Professor', '61.png', 'admin', '0000-00-00 00:00:00', 1),
-(62, 4, 10, 'PROF. Ms. Abhilasha', 'Zoology', 'Assistant Professor', '62.png', 'admin', '0000-00-00 00:00:00', 1),
-(63, 2, 1, 'PROF. Ms. Alka Katoch', 'HR & Marketing', 'Assistant Professor', '63.png', 'admin', '0000-00-00 00:00:00', 1),
-(64, 1, 6, 'PROF. Ms. Arpana Sharma', 'Economics', 'Assistant Professor', '64.png', 'admin', '0000-00-00 00:00:00', 1),
-(65, 4, 10, 'PROF. Ms. Asha Devi', 'Botany', 'Assistant Professor', '65.png', 'admin', '0000-00-00 00:00:00', 1),
-(66, 8, 2, 'PROF. Ms. Bindu Sharma', 'Civil', 'Assistant Professor', '66.png', 'admin', '0000-00-00 00:00:00', 1),
-(67, 4, 10, 'PROF. Ms. Diksha Chopra', 'Zoology', 'Assistant Professor', '67.png', 'admin', '0000-00-00 00:00:00', 1),
-(68, 4, 10, 'PROF. Ms. Jyoti', 'Zoology', 'Assistant Professor', '68.png', 'admin', '0000-00-00 00:00:00', 1),
-(69, 2, 1, 'PROF. Ms. Meenakshi', 'HR & Marketing', 'Assistant Professor', '69.png', 'admin', '0000-00-00 00:00:00', 1),
-(70, 1, 6, 'PROF. Ms. Neelam Devi', 'Physics', 'Assistant Professor', '70.png', 'admin', '0000-00-00 00:00:00', 1),
-(71, 2, 1, 'PROF. Ms. Neety Kumari', 'Finance & Marketing', 'Assistant Professor', '71.png', 'admin', '0000-00-00 00:00:00', 1),
-(72, 3, 4, 'PROF. Ms. Neha Sharmal', 'CSA', 'Assistant Professor', '72.png', 'admin', '0000-00-00 00:00:00', 1),
-(73, 1, 6, 'PROF. Ms. Ragini', 'Physics', 'Assistant Professor', '73.png', 'admin', '0000-00-00 00:00:00', 1),
-(74, 2, 9, 'PROF. Ms. Ritika Puri', 'Media Reporting', 'Assistant Professor', '74.png', 'admin', '0000-00-00 00:00:00', 1),
-(75, 3, 4, 'PROF. Ms. Ronika Devi', 'CSA', 'Assistant Professor', '75.png', 'admin', '0000-00-00 00:00:00', 1),
-(76, 2, 3, 'PROF. Ms. Samaily', 'Taxation', 'Assistant Professor', '76.png', 'admin', '0000-00-00 00:00:00', 1),
-(77, 1, 7, 'PROF. Ms. Samiksha Sharma', 'English', 'Assistant Professor', '77.png', 'admin', '0000-00-00 00:00:00', 1),
-(78, 2, 1, 'PROF. Ms. Srishti Sriya', 'MBA', 'Assistant Professor', '78.png', 'admin', '0000-00-00 00:00:00', 1),
-(79, 1, 6, 'PROF. Ms. Sunita Devi', 'Maths', 'Assistant Professor', '79.png', 'admin', '0000-00-00 00:00:00', 1),
-(80, 5, 12, 'PROF. Ms. Sushil Kumar', 'Pharmacology', 'Assistant Professor', '80.png', 'admin', '0000-00-00 00:00:00', 1),
-(81, 8, 11, 'PROF. Ms. Tamanna', 'EEE', 'Assistant Professor', '81.png', 'admin', '0000-00-00 00:00:00', 1),
-(82, 4, 10, 'PROF. Ms.Bhawana', 'Botany', 'Assistant Professor', '82.png', 'admin', '0000-00-00 00:00:00', 1),
-(83, 2, 3, 'PROF. Ms.Deeksha', 'Commerce', 'Assistant Professor', '83.png', 'admin', '0000-00-00 00:00:00', 1),
-(84, 2, 3, 'PROF. Ms.Priya', 'Commerce', 'Assistant Professor', '84.png', 'admin', '0000-00-00 00:00:00', 1),
-(85, 5, 12, 'PROF. Ms.Priya Sharma', 'Pharmacy', 'Assistant Professor', '85.png', 'admin', '0000-00-00 00:00:00', 1),
-(86, 2, 3, 'PROF. Ms.Shikha Sharma', 'Commerce', 'Assistant Professor', '86.png', 'admin', '0000-00-00 00:00:00', 1),
-(87, 1, 6, 'PROF. Ms.Vijeta Salaria', 'Economics', 'Assistant Professor', '87.png', 'admin', '0000-00-00 00:00:00', 1);
+(1, 8, 11, 'PROF. Dr. Amit Sharma', 'Electrical', 1, '1.png', 'admin', '0000-00-00 00:00:00', 1),
+(2, 6, 13, 'PROF. Dr. Anuja Chouhan', 'Chemistry', 4, '2.png', 'admin', '0000-00-00 00:00:00', 1),
+(3, 2, 1, 'PROF. Dr. Ashish Kumar', '', 3, '3.png', 'admin', '0000-00-00 00:00:00', 1),
+(4, 4, 10, 'PROF. Dr. Ekta', 'Botany', 3, '4.png', 'admin', '0000-00-00 00:00:00', 1),
+(5, 4, 10, 'PROF. Dr. Indu Kumari', 'Zoology', 3, '5.png', 'admin', '0000-00-00 00:00:00', 1),
+(6, 2, 1, 'PROF. Dr. Kalyan K Sahoo', 'Management', 1, '6.png', 'admin', '0000-00-00 00:00:00', 1),
+(7, 4, 10, 'PROF. Dr. Komal', 'Botany', 3, '7.png', 'admin', '0000-00-00 00:00:00', 1),
+(8, 1, 6, 'PROF. Dr. Mayank Pawar', 'Mathematics', 4, '8.png', 'admin', '0000-00-00 00:00:00', 1),
+(9, 4, 10, 'PROF. Dr. Neha Salaria', 'Bio Technology', 3, '9.png', 'admin', '0000-00-00 00:00:00', 1),
+(10, 6, 13, 'PROF. Dr. Nisha Sharma', 'Chemistry', 3, '10.png', 'admin', '0000-00-00 00:00:00', 1),
+(11, 8, 2, 'PROF. Dr. O. P. Netula', 'Water Resources Engg.', 4, '11.png', 'admin', '0000-00-00 00:00:00', 1),
+(12, 6, 13, 'PROF. Dr. Ritu Jain', 'Chemistry', 3, '12.png', 'admin', '0000-00-00 00:00:00', 1),
+(13, 8, 11, 'PROF. Dr. Sanjeev Dahiya', 'Mechanical', 4, '13.png', 'admin', '0000-00-00 00:00:00', 1),
+(14, 4, 10, 'PROF. Dr. Sarika Sharma', 'Microbiology', 4, '14.png', 'admin', '0000-00-00 00:00:00', 1),
+(15, 3, 4, 'PROF. Dr. Sunita', 'CSA', 3, '15.png', 'admin', '0000-00-00 00:00:00', 1),
+(16, 1, 6, 'PROF. Dr. Surinder Paul', 'Physics', 3, '16.png', 'admin', '0000-00-00 00:00:00', 1),
+(17, 1, 7, 'PROF. Dr. Vijay Mehta', 'English', 4, '17.png', 'admin', '0000-00-00 00:00:00', 1),
+(18, 8, 5, 'PROF. Dr. Vivek Singh', 'CSE', 3, '18.png', 'admin', '0000-00-00 00:00:00', 1),
+(19, 2, 3, 'PROF. Dr.Ashutosh Dwivedi', 'Commerce', 4, '19.png', 'admin', '0000-00-00 00:00:00', 1),
+(20, 2, 1, 'PROF. Dr.Jaiman Preet Kaur', 'Management', 3, '20.png', 'admin', '0000-00-00 00:00:00', 1),
+(21, 2, 9, 'PROF. Dr.Shashi Bhushan', '', 4, '21.png', 'admin', '0000-00-00 00:00:00', 1),
+(22, 1, 6, 'PROF. Dr.Vipin Kumar', 'Physics', 4, '22.png', 'admin', '0000-00-00 00:00:00', 1),
+(23, 5, 12, 'PROF. M.s Shikha Dubey', 'Pharmacy', 3, '23.png', 'admin', '0000-00-00 00:00:00', 1),
+(24, 8, 11, 'PROF. Mr. Abhinav Dhiman', 'EEE', 3, '24.png', 'admin', '0000-00-00 00:00:00', 1),
+(25, 1, 6, 'PROF. Mr. Amit Sharma', 'Material Science', 3, '25.png', 'admin', '0000-00-00 00:00:00', 1),
+(26, 8, 11, 'PROF. Mr. Anil Singh', 'Engineering Syst.', 3, '26.png', 'admin', '0000-00-00 00:00:00', 1),
+(27, 8, 5, 'PROF. Mr. Ankur Sharma', 'CSE', 3, '27.png', 'admin', '0000-00-00 00:00:00', 1),
+(28, 8, 5, 'PROF. Mr. Anurag Rana', 'CSE', 3, '28.png', 'admin', '0000-00-00 00:00:00', 1),
+(29, 8, 11, 'PROF. Mr. Ashish Kumar', 'Mechanical', 3, '29.png', 'admin', '0000-00-00 00:00:00', 1),
+(30, 2, 17, 'PROF. Mr. Ashish Parashar', 'Sales & Marketing', 3, '30.png', 'admin', '0000-00-00 00:00:00', 1),
+(31, 8, 11, 'PROF. Mr. Harjit Singh Kainth', 'EEE', 3, '31.png', 'admin', '0000-00-00 00:00:00', 1),
+(32, 8, 2, 'PROF. Mr. Himanshu Sharma', 'Structure Engg.(Civil)', 3, '32.png', 'admin', '0000-00-00 00:00:00', 1),
+(33, 5, 12, 'PROF. Mr. Kushal Jit Singh', 'Pharmacy', 3, '33.png', 'admin', '0000-00-00 00:00:00', 1),
+(34, 8, 2, 'PROF. Mr. Narinder Kumar', 'Civil', 3, '34.png', 'admin', '0000-00-00 00:00:00', 1),
+(35, 8, 11, 'PROF. Mr. Neeraj Kumar Sharma', 'ECE', 3, '35.png', 'admin', '0000-00-00 00:00:00', 1),
+(36, 8, 11, 'PROF. Mr. Nishant', 'EEE(Electronics & Control)', 3, '36.png', 'admin', '0000-00-00 00:00:00', 1),
+(37, 1, 6, 'PROF. Mr. Nitin Mahajan', 'Maths', 3, '37.png', 'admin', '0000-00-00 00:00:00', 1),
+(38, 8, 11, 'PROF. Mr. Onkar Singh', 'ECE', 3, '38.png', 'admin', '0000-00-00 00:00:00', 1),
+(39, 8, 5, 'PROF. Mr. R.K. Mishra', 'Computer Engg.', 3, '39.png', 'admin', '0000-00-00 00:00:00', 1),
+(40, 2, 17, 'PROF. Mr. Raj Kamal Gautam', 'HM', 3, '40.png', 'admin', '0000-00-00 00:00:00', 1),
+(41, 8, 2, 'PROF. Mr. Rajan Rana', 'Civil', 3, '41.png', 'admin', '0000-00-00 00:00:00', 1),
+(42, 1, 7, 'PROF. Mr. Rajinder Kumar', 'English', 3, '42.png', 'admin', '0000-00-00 00:00:00', 1),
+(43, 5, 12, 'PROF. Mr. Raman Kalia', 'Pharmacy', 5, '43.png', 'admin', '0000-00-00 00:00:00', 1),
+(44, 5, 12, 'PROF. Mr. Sameer Gangal', 'Pharmacy', 3, '44.png', 'admin', '0000-00-00 00:00:00', 1),
+(45, 8, 2, 'PROF. Mr. Saurabh Gupta', 'Const. technology &Mgt.(Civil)', 3, '45.png', 'admin', '0000-00-00 00:00:00', 1),
+(46, 2, 1, 'PROF. Mr. Shashi Karel', 'Finance & Marketing', 3, '46.png', 'admin', '0000-00-00 00:00:00', 1),
+(47, 3, 4, 'PROF. Dr. Tushar Anthwal', 'CSA', 2, '47.png', 'admin', '0000-00-00 00:00:00', 1),
+(48, 2, 1, 'PROF. Mr. Vikas Barnwal', 'Finance & Marketing', 3, '48.png', 'admin', '0000-00-00 00:00:00', 1),
+(49, 8, 11, 'PROF. Mr. Vikas Singh', 'ECE(VLSI DESIGN)', 3, '49.png', 'admin', '0000-00-00 00:00:00', 1),
+(50, 8, 2, 'PROF. Mr. Vivek Dhiman', '', 3, '50.png', 'admin', '0000-00-00 00:00:00', 1),
+(51, 2, 17, 'PROF. Mr.Kuldeep Kumar', 'Tourism & HM', 3, '51.png', 'admin', '0000-00-00 00:00:00', 1),
+(52, 8, 5, 'PROF. Mr.Rohit Kumar', 'CSE', 3, '52.png', 'admin', '0000-00-00 00:00:00', 1),
+(53, 6, 13, 'PROF. Mr.Saurabh Sharma', 'Chemistry', 3, '53.png', 'admin', '0000-00-00 00:00:00', 1),
+(54, 1, 6, 'PROF. Mr.Yash Pal', 'Physics', 3, '54.png', 'admin', '0000-00-00 00:00:00', 1),
+(55, 5, 12, 'PROF. Mrs Bhawana Sharma', 'Pharmacy', 3, '55.png', 'admin', '0000-00-00 00:00:00', 1),
+(56, 3, 4, 'PROF. Mrs. Adity', 'CSA', 3, '56.png', 'admin', '0000-00-00 00:00:00', 1),
+(57, 1, 7, 'PROF. Mrs. Anjna Devi', 'English', 3, '57.png', 'admin', '0000-00-00 00:00:00', 1),
+(58, 1, 6, 'PROF. Mrs. Ashu Rani', 'Maths', 3, '58.png', 'admin', '0000-00-00 00:00:00', 1),
+(59, 1, 6, 'PROF. Mrs. Radhika', 'Economics', 3, '59.png', 'admin', '0000-00-00 00:00:00', 1),
+(60, 6, 13, 'PROF. Mrs. Shivani Sharma', 'Chemistry', 3, '60.png', 'admin', '0000-00-00 00:00:00', 1),
+(61, 6, 13, 'PROF. Mrs.Shivali Thakur', 'Chemistry', 3, '61.png', 'admin', '0000-00-00 00:00:00', 1),
+(62, 4, 10, 'PROF. Ms. Abhilasha', 'Zoology', 3, '62.png', 'admin', '0000-00-00 00:00:00', 1),
+(63, 2, 1, 'PROF. Ms. Alka Katoch', 'HR & Marketing', 3, '63.png', 'admin', '0000-00-00 00:00:00', 1),
+(64, 1, 6, 'PROF. Ms. Arpana Sharma', 'Economics', 3, '64.png', 'admin', '0000-00-00 00:00:00', 1),
+(65, 4, 10, 'PROF. Ms. Asha Devi', 'Botany', 3, '65.png', 'admin', '0000-00-00 00:00:00', 1),
+(66, 8, 2, 'PROF. Ms. Bindu Sharma', 'Civil', 3, '66.png', 'admin', '0000-00-00 00:00:00', 1),
+(67, 4, 10, 'PROF. Ms. Diksha Chopra', 'Zoology', 3, '67.png', 'admin', '0000-00-00 00:00:00', 1),
+(68, 4, 10, 'PROF. Ms. Jyoti', 'Zoology', 3, '68.png', 'admin', '0000-00-00 00:00:00', 1),
+(69, 2, 1, 'PROF. Ms. Meenakshi', 'HR & Marketing', 3, '69.png', 'admin', '0000-00-00 00:00:00', 1),
+(70, 1, 6, 'PROF. Ms. Neelam Devi', 'Physics', 3, '70.png', 'admin', '0000-00-00 00:00:00', 1),
+(71, 2, 1, 'PROF. Ms. Neety Kumari', 'Finance & Marketing', 3, '71.png', 'admin', '0000-00-00 00:00:00', 1),
+(72, 3, 4, 'PROF. Ms. Neha Sharmal', 'CSA', 3, '72.png', 'admin', '0000-00-00 00:00:00', 1),
+(73, 1, 6, 'PROF. Ms. Ragini', 'Physics', 3, '73.png', 'admin', '0000-00-00 00:00:00', 1),
+(74, 2, 9, 'PROF. Ms. Ritika Puri', 'Media Reporting', 3, '74.png', 'admin', '0000-00-00 00:00:00', 1),
+(75, 3, 4, 'PROF. Ms. Ronika Devi', 'CSA', 3, '75.png', 'admin', '0000-00-00 00:00:00', 1),
+(76, 2, 3, 'PROF. Ms. Samaily', 'Taxation', 3, '76.png', 'admin', '0000-00-00 00:00:00', 1),
+(77, 1, 7, 'PROF. Ms. Samiksha Sharma', 'English', 3, '77.png', 'admin', '0000-00-00 00:00:00', 1),
+(78, 2, 1, 'PROF. Ms. Srishti Sriya', 'MBA', 3, '78.png', 'admin', '0000-00-00 00:00:00', 1),
+(79, 1, 6, 'PROF. Ms. Sunita Devi', 'Maths', 3, '79.png', 'admin', '0000-00-00 00:00:00', 1),
+(80, 5, 12, 'PROF. Ms. Sushil Kumar', 'Pharmacology', 3, '80.png', 'admin', '0000-00-00 00:00:00', 1),
+(81, 8, 11, 'PROF. Ms. Tamanna', 'EEE', 3, '81.png', 'admin', '0000-00-00 00:00:00', 1),
+(82, 4, 10, 'PROF. Ms.Bhawana', 'Botany', 3, '82.png', 'admin', '0000-00-00 00:00:00', 1),
+(83, 2, 3, 'PROF. Ms.Deeksha', 'Commerce', 3, '83.png', 'admin', '0000-00-00 00:00:00', 1),
+(84, 2, 3, 'PROF. Ms.Priya', 'Commerce', 3, '84.png', 'admin', '0000-00-00 00:00:00', 1),
+(85, 5, 12, 'PROF. Ms.Priya Sharma', 'Pharmacy', 3, '85.png', 'admin', '0000-00-00 00:00:00', 1),
+(86, 2, 3, 'PROF. Ms.Shikha Sharma', 'Commerce', 3, '86.png', 'admin', '0000-00-00 00:00:00', 1),
+(87, 1, 6, 'PROF. Ms.Vijeta Salaria', 'Economics', 3, '87.png', 'admin', '0000-00-00 00:00:00', 1);
 
 -- --------------------------------------------------------
 
@@ -1451,6 +1476,12 @@ ALTER TABLE `_arni_departments`
   ADD PRIMARY KEY (`DID`);
 
 --
+-- Indexes for table `_arni_designation`
+--
+ALTER TABLE `_arni_designation`
+  ADD PRIMARY KEY (`DID`);
+
+--
 -- Indexes for table `_arni_faculty`
 --
 ALTER TABLE `_arni_faculty`
@@ -1506,13 +1537,13 @@ ALTER TABLE `captcha`
 -- AUTO_INCREMENT for table `gallery`
 --
 ALTER TABLE `gallery`
-  MODIFY `GL_ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `GL_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `gallery_category`
 --
 ALTER TABLE `gallery_category`
-  MODIFY `CATEG_ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `CATEG_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `menu_1`
@@ -1579,6 +1610,12 @@ ALTER TABLE `_arni_course_type`
 --
 ALTER TABLE `_arni_departments`
   MODIFY `DID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT for table `_arni_designation`
+--
+ALTER TABLE `_arni_designation`
+  MODIFY `DID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `_arni_faculty`
