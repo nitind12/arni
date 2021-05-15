@@ -511,7 +511,7 @@ Customized Definitions --------------------->>>>>
 define('_SCHOOL_', "Amrapali Group of Institutes, Haldwani");
 define('_SCHOOL_ABREV_', "AGI");
 define('ADMIN___', 'https://www.agipanel.amrapali.ac.in');
-define('AGIPANEL___', 'https://www.agipanel.amrapali.ac.in');
+define('ARNIPANEL___', 'http://www.localhost/arni/dpanel');
 
 // Social Media Links
 define('_yt_', "https://www.youtube.com/channel/UCF8i_kuxpGG5DycApVK8xxg");

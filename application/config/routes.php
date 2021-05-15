@@ -69,6 +69,7 @@ $route['Arni/(:any)'] = 'RC';
 $route['about/(:any)'] = 'Arni/about/$1';
 
 $route['gallery/(:any)'] = 'Arni/gallery/$1';
+$route['imagePicsInner/(:any)'] = 'Arni/imagePicsInner/$1';
 
 $route['contact'] = 'Arni/contact';
 

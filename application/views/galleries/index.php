@@ -91,7 +91,7 @@
                         </a>
                     </div>
                     <!-- #x-corp-carousel-->
-                    <div style="clear: both;"><br></div>
+                    
                     <div class="container">
                         <div class="content-wrapper">
                             <section class="" style="display: inline;">
@@ -100,3 +100,4 @@
                             <?php $this->load->view('galleries/innerpages/'.$inner_page); ?>                                                           
                         </div>
                     </div>
+                    <div style="clear: both;"><br></div>

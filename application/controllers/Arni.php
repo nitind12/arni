@@ -219,25 +219,57 @@ class Arni extends CI_Controller
         $data_['submenu'] = $this->my_menu->submenu('gallery');
         $data_['titleMain'] = "Gallery";
         $data_['active'] = $page;
-        $data_['gallery_category'] = $this->wm->get_gallery_category();   
-        $data_['subpage'] = $this->my_menu->submenu('gallery');
+        $data_['gallery_category'] = $this->wm->get_all_gallery_category();   
             
         if ($page == 'expertviews' || $page == 'expertviews#') {
             $data_['inner_page'] = 'expertviews';
+            $data_['subpage'] = 'expertviews';
             $data_['breadcrumb'] = 'Gallery / Expert Views';
         } else if ($page == 'videos' || $page == 'videos#') {
             $data_['inner_page'] = 'videos';
+            $data_['subpage'] = 'videos';
             $data_['breadcrumb'] = 'Gallery / Videos';
         } else if ($page == 'activities' || $page == 'activities#') {
             $data_['inner_page'] = 'activities';
+            $data_['subpage'] = 'activities';
             $data_['breadcrumb'] = 'Gallery / Activities';
         } else {
             $data_['inner_page'] = 'photos';
-            $data_['breadcrumb'] = 'Our Gallery';
+            $data_['subpage'] = 'photos';
+            $data_['breadcrumb'] = 'Gallery / Photo Gallery';
         }
 
         $this->load->view('templates/header', $data_);
         $this->load->view('galleries/index', $data_);
         $this->load->view('templates/footer');
     }
+
+    function imagePicsInner($id__) {
+        $data_['meta'] = $this->metainfo_for_web('gallery');
+        $data_['menu_active'] = 6;
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['submenu'] = $this->my_menu->submenu('gallery');
+        $data_['titleMain'] = "Gallery";
+        $data_['inner_page'] = 'photos';
+        $data_['subpage'] = 'photos';
+        
+       
+
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['alumni'] = $this->ouralumni();
+         
+        $data_['gallery_category'] = $this->wm->get_gallery_categorybyID($id__);
+        foreach ($data_['gallery_category'] as $grp_item) {            
+            $data_['title'] = $grp_item->CATEGORY;
+            $data_['breadcrumb'] = 'Gallery / Photo Gallery / ' . $data_['title'];
+        }
+
+        
+        $data_['gallery_'] = $this->wm->get_gallery($id__);
+
+        $this->load->view('templates/header', $data_);
+        $this->load->view('galleries/innerpages/photos_inner', $data_);
+        $this->load->view('templates/footer');
+    }
+
 }

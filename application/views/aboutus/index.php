@@ -24,9 +24,7 @@
         'P1.jpg'=> $titleMain,
         'P2.jpg'=>$titleMain,
         'P3.jpg'=>$titleMain
-    );
-
-    
+    );   
 ?>
 <!--script>
     function addfavlink(loc, dispname, siteurl){
@@ -46,7 +44,6 @@
                         <?php $this->load->view('templates/menu'); ?>
                     </header>
 
-                    
                         <div id="x-corp-carousel" class="carousel slide hero-slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
