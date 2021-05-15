@@ -508,32 +508,9 @@ $config['proxy_ips'] = '';
 /*
 Customized Definitions --------------------->>>>>
 */
-define('_SCHOOL_', "Amrapali Group of Institutes, Haldwani");
+define('_SCHOOL_', "Arni University, Kangra");
 define('_SCHOOL_ABREV_', "AGI");
-define('ADMIN___', 'https://www.agipanel.amrapali.ac.in');
-define('ARNIPANEL___', 'http://www.localhost/arni/dpanel');
+define('ADMIN___', 'http://www.arni.teamfreelancers.com/dpanel');
+define('AGIPANEL___', 'http://localhost/arni/dpanel');
 
-// Social Media Links
-define('_yt_', "https://www.youtube.com/channel/UCF8i_kuxpGG5DycApVK8xxg");
-define('_yt_title', "Videos, Amrapali Group of Institutes");
 
-define('_f_', "https://www.facebook.com/AGI.HLD");
-define('_f_title', "Share on Facebook");
-
-define('_tw_', "https://twitter.com/agihld");
-define('_tw_title', "Share on Twitter");
-
-define('_blog_', "https://amrapali.ac.in/blog/");
-define('_blog_title', "Share on Blog");
-
-define('_insta_', "https://www.instagram.com/agihld/");
-define('_insta_title', "share on instagram");
-
-define('_in_', "https://www.linkedin.com/company/agihld");
-define('_in_title', "share on linkedin");
-
-define('_telegram_', "https://t.me/agihld");
-define('_telegram_title', "share on Telegram");
-/*
--------------------------------------------->>>>>
-*/
