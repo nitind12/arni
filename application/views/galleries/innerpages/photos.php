@@ -1,5 +1,5 @@
 <h3>Gallery</h3>
-<div <?php echo $class_;?>>
+<div <?php //echo $class_;?>>
 <p>
 <div class="row four-column">
                                 <div id="grid" style="text-align: center">

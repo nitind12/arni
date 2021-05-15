@@ -214,7 +214,8 @@ class Arni extends CI_Controller
         $data_['submenu'] = $this->my_menu->submenu('gallery');
         $data_['titleMain'] = "Gallery";
         $data_['active'] = $page;
-
+        $data_['gallery_category'] = $this->wm->get_gallery_category();   
+            
         if ($page == 'expertviews' || $page == 'expertviews#') {
             $data_['inner_page'] = 'expertviews';
             $data_['breadcrumb'] = 'Gallery / Expert Views';
