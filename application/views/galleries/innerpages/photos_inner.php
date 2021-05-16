@@ -105,7 +105,9 @@
 
                                     <?php $this->load->view('templates/breadcrumb');?>  
                                     <h2 class="section-title wow fadeInDown" >Gallery of <?php echo $title;?></h2>  
-                                    <a href="<?php echo site_url('gallery/photos');?>" style="color: #0000ff">&lt;&lt; Back</a>                         
+                                    <a href="<?php echo site_url('gallery/photos');?>" style="color: orange">&lArr; Back</a>  
+                                    <br><br>   
+                                                    
                                     <div class="row">
                                         <div id="grid">
                                             <?php foreach ($gallery_ as $item) { ?>
