@@ -511,6 +511,6 @@ Customized Definitions --------------------->>>>>
 define('_SCHOOL_', "Arni University, Kangra");
 define('_SCHOOL_ABREV_', "AGI");
 define('ADMIN___', 'http://www.arni.teamfreelancers.com/dpanel');
-define('AGIPANEL___', 'http://localhost/arni/dpanel');
+define('ARNIPANEL___', 'http://localhost/arni/dpanel');
 
 

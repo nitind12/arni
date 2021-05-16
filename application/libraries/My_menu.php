@@ -255,10 +255,10 @@ Explaination for the format of the below functions --
 
     function gallery(){
         return array(
-            "Photo Gallery" => array("gallery/photo", "photos"),
-            "Video Gallery" => array("gallery/video", "videos"),
+            "Photo Gallery" => array("gallery/photos", "photos"),
+            "Video Gallery" => array("gallery/videos", "videos"),
             "Activities" => array("gallery/activities", "activities"),
-            "Expert View" => array("gallery/expert", "expert"),
+            "Expert View" => array("gallery/expertviews", "expertviews"),
         );
     }
 }
