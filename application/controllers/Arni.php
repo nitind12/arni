@@ -85,6 +85,9 @@ class Arni extends CI_Controller
         $this->load->view('templates/footer');
     }
 
+    function admissions($page = 'x', $submenu = 'process'){
+
+    }
     function academics($page = 'x', $submenu = 'about')
     {
         $data_['meta'] = $this->metainfo_for_web('academics', $page);
@@ -170,7 +173,7 @@ class Arni extends CI_Controller
         }
 
         $this->load->view('templates/header', $data_);
-        $this->load->view('academics/fdp', $data_);
+        $this->load->view('academics/index', $data_);
         $this->load->view('templates/footer');
     }
 
