@@ -1,42 +1,40 @@
+<?php
+    $docs = array(
+        array("High School/HSC examination pass certificate and mark sheet (2 Copies)","success"),
+        array("Intermediate/SSC examination pass certificate and mark sheet (2 Copies)","success"),
+        array("Mark-sheet and pass certificate of the graduation course (2 Copies)","success"),
+        array("Age proof certificate (matriculation certificate)","info"),
+        array("Transfer Certificate/School Leaving Certificate in original","warning"),
+        array("Migration Certificate in original","warning"),
+        array("Character Certificate in original","warning"),
+        array("Certificate claiming reservation benefits (03 copies)","danger"),
+        array("Certificate of sports participation at University/State/National level (03 copies)","danger"),
+        array("Medical Fitness Certificate from Registered Medical Practitioner or CMO","light"),
+        array("Income Certificate","light"),
+        array("Passport size photograph (10 copies)","info"),
+        array("Gap Certificate (reasons for the gap year/years)","info"),
+        array("NCC/NSS/Sports Certificate","info"),
+    );
+?>
 <section class="trusted-client-wrapper">
                                     <div class="col-md-12">
                                     <?php $this->load->view('templates/breadcrumb'); ?>  
                                         <h2 class="section-title wow fadeInDown" ><?php echo $title;?></h2>
                                         <div class="col-md-12" style="border: #fff solid 0px">
-                                            <p>In case of withdrawal of Admission after Full/ Partial Fee Payment, the One-Time Admission charges (Inclusive of Security Amount) mentioned in the Fee Structure will be deducted by the University.</p>                                        
+                                            <p>List of Testimonial to be submitted by the applicant at the time of admission-</p>                                        
                                         </div>  
 
                                     </div>
                                     <div style="clear:both"></div>
                                     <div class="col-md-12">
                                         <div class="col-md-12">
-                                        <table class="table table-borderless">
-                                            <tr class="default">
-                                                <th>SNO</th>
-                                                <th>Percentage of Refund of Aggregate fee </th>
-                                                <th>Point of time when notice of withdrawal of admission is served to Head Admission Committee</th>
-                                            </tr>
-                                            <tr class="warning">
-                                                <td>1</td>
-                                                <td>100% (10% deduction as processing charges)</td>
-                                                <td>15 days before the formally noticed last date of admission.</td>
-                                            </tr>
-                                            <tr class="warning">
-                                                <td>2</td>
-                                                <td>80%</td>
-                                                <td>Not more than 15 days after the formally noticed last date of admission.</td>
-                                            </tr>
-                                            <tr class="warning">
-                                                <td>3</td>
-                                                <td>50%</td>
-                                                <td>More than 15 days but less than 30 days after formally noticed last date of admission</td>
-                                            </tr>
-                                            <tr class="warning">
-                                                <td>4</td>
-                                                <td>0%</td>
-                                                <td>More than 30 days after formally noticed last date of admission.</td>
-                                            </tr>
-                                        </table>
+                                        <ul class="list-group">
+                                                <?php foreach ($docs as $value) {?>
+                                                <li class="list-group-item list-group-item-<?php echo $value[1];?>" style="padding:5px!important;">
+                                                <?php echo $value[0];?>
+                                                </li>
+                                                <?php } ?>
+                                            </ul>
                                         </div>
                                     </div>
                                     <div style="clear:both"></div>
