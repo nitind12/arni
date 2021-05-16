@@ -106,6 +106,9 @@ $route['technology/(:any)'] = 'Arni/academics/technology/$1';
 
 $route['faculty'] = 'Arni/academics/faculty';
 
+$route['admissions'] = 'Arni/admissions/process';
+$route['admissions/(:any)'] = 'Arni/admissions/$1';
+
 /*  redirection for 301 */
 /* -------------------- */
 

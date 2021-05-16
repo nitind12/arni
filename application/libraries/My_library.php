@@ -197,8 +197,17 @@ class My_library {
                 $data_['abstract'] = 'Completed 12 years of excellence, and is a higly rated group of Uniervsities of Himanchal Pradesh';
                 $data_['keywords'] = 'Top engineering,Management,Hotel Management, Tourism, Pharmacy Unievrsity Kangra';
                 $data_['distribution'] = 'local';
-                $data_['author'] = 'Art and Humanities, Arni University';
-                $data_['description'] = "Arni School of Arts & Humanties Humanities focuses on all aspects related to culture and creative life including most disciplines outside exact Sciences.";
+                $data_['author'] = 'Arni University';
+                $data_['description'] = "Arni focuses on all aspects related to culture and creative life including most disciplines outside exact Sciences.";
+            break;
+
+            case 'admissions':
+                $data_['title'] = "Admissions, Arni University, Kangra";
+                $data_['abstract'] = 'Completed 12 years of excellence, and is a higly rated group of Uniervsities of Himanchal Pradesh';
+                $data_['keywords'] = 'Top engineering,Management,Hotel Management, Tourism, Pharmacy Unievrsity Kangra';
+                $data_['distribution'] = 'local';
+                $data_['author'] = 'Arni University';
+                $data_['description'] = "ARNI UNIVERSITY accepts admission form to Engineering, Technology, Science, Business Management, Pharmacy, Commerce, Hospitality, Humanities and Social Sciences. ";
             break;
 
             default:

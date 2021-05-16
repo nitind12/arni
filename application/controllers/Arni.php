@@ -85,8 +85,48 @@ class Arni extends CI_Controller
         $this->load->view('templates/footer');
     }
 
-    function admissions($page = 'x', $submenu = 'process'){
+    function admissions($page = 'x'){
+        $data_['meta'] = $this->metainfo_for_web('admissions', $page);
+        $data_['menu_active'] = 4;
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['submenu'] = $this->my_menu->submenu('admissions');
+        $data_['titleMain'] = "Admissions";
+        $data_['active'] = 'admissions';
+        $data_['page'] = $page;
+        $data_['subpage'] = $page; 
 
+        if ($page == 'process' || $page == 'process#') {
+            $str = "Admission Process";
+            $data_['inner_page'] = $page;
+            $data_['title'] = $str;
+            $data_['breadcrumb'] = 'Admissions Process';
+            $data_['program_in_numbers'] = $this->arni->number_of_courses();
+        } else if($page == 'form' || $page == 'form#'){
+            $str = "Admission Form";
+            $data_['inner_page'] = $page;
+            $data_['title'] = $str;
+            $data_['breadcrumb'] = 'Admission Form';
+        } else if($page == 'refund' || $page == 'refund#'){
+            $str = "Refund Policy";
+            $data_['inner_page'] = $page;
+            $data_['title'] = $str;
+            $data_['breadcrumb'] = 'Refund Policy';
+        } else if($page == 'documents' || $page == 'documents#'){
+            $str = "Documents Required";
+            $data_['inner_page'] = $page;
+            $data_['title'] = $str;
+            $data_['breadcrumb'] = $str;
+        } else {
+            $data_['page'] = 'process';
+            $str = "Admission Process";
+            $data_['inner_page'] = $page;
+            $data_['title'] = $str;
+            $data_['breadcrumb'] = 'Admissions / Process';
+        }
+
+        $this->load->view('templates/header', $data_);
+        $this->load->view('admissions/index', $data_);
+        $this->load->view('templates/footer');
     }
     function academics($page = 'x', $submenu = 'about')
     {

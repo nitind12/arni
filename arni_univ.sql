@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 15, 2021 at 01:25 PM
+-- Generation Time: May 16, 2021 at 12:39 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.8
 
@@ -967,7 +967,7 @@ CREATE TABLE `_arni_course_detail` (
 --
 
 INSERT INTO `_arni_course_detail` (`CRSDETID`, `SCHOOL`, `DEPARTMENT`, `COURSE_TYPE`, `COURSE`, `DURATION`, `ELIGIBILITY`, `FEE`, `USERNAME`, `DATE_`) VALUES
-(1, 1, 7, 1, 'M.Phil English', '2 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
+(1, 1, 7, 6, 'M.Phil English', '2 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
 (2, 1, 7, 1, 'Ph.D English', '5 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
 (3, 1, 9, 1, 'Ph.D Mass Communication', '5 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
 (4, 1, 9, 1, 'Ph.D General Arts', '5 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
@@ -982,9 +982,9 @@ INSERT INTO `_arni_course_detail` (`CRSDETID`, `SCHOOL`, `DEPARTMENT`, `COURSE_T
 (13, 1, 9, 3, 'BA (Journalism and Mass Communication)', '3 Years', 'x', '23625', 'admin', '0000-00-00 00:00:00'),
 (14, 2, 1, 4, 'Integrated Program-BBA & MBA (Pharmaceutical Chemistry)', '5 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
 (15, 2, 1, 4, 'Integrated Program-BBA & MBA', '5 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
-(16, 2, 1, 1, 'M.Phil Management', '2 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
+(16, 2, 1, 6, 'M.Phil Management', '2 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
 (17, 2, 1, 1, 'Ph.D Management', '5 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
-(18, 2, 3, 1, 'M.Phil Commerce', '2 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
+(18, 2, 3, 6, 'M.Phil Commerce', '2 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
 (19, 2, 3, 1, 'Ph.D Commerce', '5 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
 (20, 2, 1, 2, 'MBA (Travel & Tourism)', '2 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
 (21, 2, 1, 2, 'MBA', '2 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
@@ -996,13 +996,13 @@ INSERT INTO `_arni_course_detail` (`CRSDETID`, `SCHOOL`, `DEPARTMENT`, `COURSE_T
 (27, 2, 1, 3, 'BHA', '3 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
 (28, 2, 1, 3, 'BBA (Avaition)', '3 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
 (29, 2, 3, 3, 'B.Com', '3 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
-(30, 3, 4, 1, 'M.Phil Computer Application', '2 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
+(30, 3, 4, 6, 'M.Phil Computer Application', '2 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
 (31, 3, 4, 1, 'Ph.D Computer Application', '5 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
 (32, 3, 4, 2, 'MCA', '3 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
 (33, 3, 4, 3, 'BCA', '3 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
 (34, 3, 4, 3, 'Bsc (IT)', '3 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
-(35, 4, 10, 1, 'M.Phil Zoology', '2 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
-(36, 4, 10, 1, 'M.Phil Botany', '2 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
+(35, 4, 10, 6, 'M.Phil Zoology', '2 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
+(36, 4, 10, 6, 'M.Phil Botany', '2 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
 (37, 4, 10, 1, 'Ph.D Zoology', '5 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
 (38, 4, 10, 1, 'Ph.D Botany', '5 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
 (39, 4, 10, 2, 'Msc(Botany)', '2 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
@@ -1019,9 +1019,9 @@ INSERT INTO `_arni_course_detail` (`CRSDETID`, `SCHOOL`, `DEPARTMENT`, `COURSE_T
 (50, 5, 12, 4, 'PG Diploma in Clinic Diagnostics', '3 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
 (51, 5, 12, 4, 'PG Diploma in Clinic Pathology & Diagnostics', '3 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
 (52, 5, 12, 3, 'B.Pharmacy', '4 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
-(53, 6, 13, 1, 'M.Phil Physics', '2 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
-(54, 6, 13, 1, 'M.Phil Chemistry', '2 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
-(55, 6, 13, 1, 'M.Phil Maths', '2 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
+(53, 6, 13, 6, 'M.Phil Physics', '2 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
+(54, 6, 13, 6, 'M.Phil Chemistry', '2 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
+(55, 6, 13, 6, 'M.Phil Maths', '2 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
 (56, 6, 13, 1, 'Ph.D Chemistry', '5 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
 (57, 6, 13, 1, 'Ph.D Physics', '5 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
 (58, 6, 13, 1, 'Ph.D Math', '5 Years', 'x', '0', 'admin', '0000-00-00 00:00:00'),
@@ -1072,7 +1072,8 @@ INSERT INTO `_arni_course_detail` (`CRSDETID`, `SCHOOL`, `DEPARTMENT`, `COURSE_T
 
 CREATE TABLE `_arni_course_type` (
   `CID` int(11) NOT NULL,
-  `COURSE_TYPE` varchar(25) NOT NULL,
+  `COURSE_TYPE` varchar(120) NOT NULL,
+  `PRIORITY` int(11) NOT NULL,
   `USERNAME` varchar(40) NOT NULL DEFAULT 'admin',
   `DATE_` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -1081,11 +1082,13 @@ CREATE TABLE `_arni_course_type` (
 -- Dumping data for table `_arni_course_type`
 --
 
-INSERT INTO `_arni_course_type` (`CID`, `COURSE_TYPE`, `USERNAME`, `DATE_`) VALUES
-(1, 'Doctorate', 'admin', '2021-05-12 07:38:26'),
-(2, 'Post Graduate', 'admin', '2021-05-12 07:38:26'),
-(3, 'Under Graduate', 'admin', '2021-05-12 07:38:43'),
-(4, 'Diploma', 'admin', '2021-05-12 07:38:43');
+INSERT INTO `_arni_course_type` (`CID`, `COURSE_TYPE`, `PRIORITY`, `USERNAME`, `DATE_`) VALUES
+(1, 'Doctorate', 1, 'admin', '2021-05-12 07:38:26'),
+(2, 'Post Graduate', 3, 'admin', '2021-05-12 07:38:26'),
+(3, 'Under Graduate', 4, 'admin', '2021-05-12 07:38:43'),
+(4, 'Diploma', 5, 'admin', '2021-05-12 07:38:43'),
+(5, 'Certificate', 6, 'admin', '2021-05-12 07:38:43'),
+(6, 'Post Graduate (Acad. Research)', 2, 'admin', '2021-05-16 07:20:39');
 
 -- --------------------------------------------------------
 
@@ -1603,7 +1606,7 @@ ALTER TABLE `_arni_course_detail`
 -- AUTO_INCREMENT for table `_arni_course_type`
 --
 ALTER TABLE `_arni_course_type`
-  MODIFY `CID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `CID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `_arni_departments`

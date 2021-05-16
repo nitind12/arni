@@ -31,6 +31,16 @@ class Arni_model extends CI_Model {
     	return $query->result();
     }
 
+    function number_of_courses(){
+        $this->db->select('a.COURSE_TYPE, COUNT(b.COURSE_TYPE) as TOTAL');
+        $this->db->group_by('b.COURSE_TYPE');
+        $this->db->order_by('a.PRIORITY');
+        $this->db->from('_arni_course_type a');
+        $this->db->join('_arni_course_detail b', 'a.CID=b.COURSE_TYPE');
+        $query = $this->db->get();
+        return $query->result();
+    }
+
     function faculty_list(){
         $this->db->order_by('PRIORITY');
         $this->db->order_by('a.FULL_NAME');

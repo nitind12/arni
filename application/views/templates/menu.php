@@ -51,7 +51,7 @@
                     </div> <!-- /.submenu-wrapper -->
                 </li>
                 <?php foreach($menu_all['admissions'] as $title => $path){?>
-                    <li class="<?php if($menu_active==4){echo 'active';}?>"><a href="<?php // echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                    <li class="<?php if($menu_active==4){echo 'active';}?>"><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
                 <?php } ?>
                 <li class="dropdown <?php if($menu_active==5){echo 'active';}?>"><a href="#" >Examination <b class="caret"></b></a>
                     <!-- submenu-wrapper -->

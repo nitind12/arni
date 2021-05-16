@@ -29,6 +29,7 @@ class My_menu {
                 'FDP' => 'fdp'
             )
         );
+        
         // Admissions
         $menu['admissions'] = array(
             "Admissions" => "admissions",          
@@ -242,15 +243,13 @@ Explaination for the format of the below functions --
 
     function admissions(){
         return array(
-            "Admission Offices" => array("", ""),
-            "Download Brochure" => array("", ""),
-            "Admission Form" => array("", ""),
-            "Admission Process" => array("", ""),
-            "Scholarship" => array("", ""),
-            "Bank Details" => array("", ""),
-            "Academic Calendar" => array("", ""),
-            "Security &amp; Discipline" => array("", ""),
-            "Pay Fee" => array("", ""),
+            "Admission Process" => array("admissions/process", "process"),
+            "Documents Required" => array("admissions/documents", "documents"),
+            "Admission Form" => array("admissions/form", "form"),
+            "Admission Offices" => array("admissions/offices", "offices"),
+            "Refund Policy" => array("admissions/refund", "refund"),
+            "Download Brochure" => array("admissions/brochures", "brochure"),
+            "Scholarship" => array("admissions/scholarship", "scholarship"),
         );
     }
 
