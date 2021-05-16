@@ -112,7 +112,12 @@ class Arni extends CI_Controller
             $data_['title'] = $str;
             $data_['breadcrumb'] = 'Refund Policy';
         } else if($page == 'documents' || $page == 'documents#'){
-            $str = "Documents Required";
+            $str = "Admission: Documents Required";
+            $data_['inner_page'] = $page;
+            $data_['title'] = $str;
+            $data_['breadcrumb'] = $str;
+        } else if($page == 'brochure' || $page == 'brochure#'){
+            $str = "Admission: Brochure";
             $data_['inner_page'] = $page;
             $data_['title'] = $str;
             $data_['breadcrumb'] = $str;

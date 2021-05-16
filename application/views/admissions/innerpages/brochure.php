@@ -38,7 +38,6 @@
                                         </div><!--/.col-sm-2 -->
                                     </div><!-- /.col-md-4 -->  
                                 </div>
-                                <?php $this->load->view('academics/faculty/course'); ?>
 
                                 <div style="clear:both"></div>
                             </section>

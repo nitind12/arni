@@ -38,4 +38,17 @@
                                         </div>
                                     </div>
                                     <div style="clear:both"></div>
+                                    <div class="col-md-12">
+                                        <div class="col-md-12">
+                                            <p>
+                                                <b>Note</b>:
+                                                <ol style="padding: 0px 0px 0px 20px">
+                                                    <li>Original testimonials will be verified at the time of counseling or joining the Institute.</li>
+                                                    <li>Admission will be treated provisional till the production and verification of the original testimonials.</li>
+                                                </ol>
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
                                 </section>

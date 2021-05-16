@@ -246,10 +246,9 @@ Explaination for the format of the below functions --
             "Admission Process" => array("admissions/process", "process"),
             "Documents Required" => array("admissions/documents", "documents"),
             "Admission Form" => array("admissions/form", "form"),
-            "Admission Offices" => array("admissions/offices", "offices"),
             "Refund Policy" => array("admissions/refund", "refund"),
-            "Download Brochure" => array("admissions/brochures", "brochure"),
-            "Scholarship" => array("admissions/scholarship", "scholarship"),
+            "Download Brochure" => array("admissions/brochure", "brochure"),
+            /*"Scholarship" => array("admissions/scholarship", "scholarship"),*/
         );
     }
 
