@@ -121,6 +121,11 @@ class Arni extends CI_Controller
             $data_['inner_page'] = $page;
             $data_['title'] = $str;
             $data_['breadcrumb'] = $str;
+        } else if($page == 'scholarship' || $page == 'scholarship#'){
+            $str = "Scholarship";
+            $data_['inner_page'] = $page;
+            $data_['title'] = $str;
+            $data_['breadcrumb'] = $str;
         } else {
             $data_['page'] = 'process';
             $str = "Admission Process";
