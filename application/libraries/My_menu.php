@@ -48,8 +48,13 @@ class My_menu {
         );
 
         // Gallery
-        $menu['pics'] = array(
-            "Gallery" => "gallery/index"
+        $menu['glimpses'] = array(
+            "options" => array(
+                "Photo Gallery" => "gallery/index",
+                "Videos" => "gallery/videos",
+                "Activities" => "gallery/activities",
+                "Expert Views" => "gallery/expertviews"
+            )
         );
 
         // Alumni

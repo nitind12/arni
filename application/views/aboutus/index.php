@@ -35,7 +35,7 @@
     }
 </script-->
 <body>
-<?php $this->load->view('tagmanager'); ?>
+    <?php $this->load->view('tagmanager'); ?>
     <div id="st-container" class="st-container">
         <div class="st-pusher">
             <div class="st-content">
