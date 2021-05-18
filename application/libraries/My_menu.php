@@ -76,7 +76,12 @@ class My_menu {
         );
 
         $menu['lifeatarni'] = array(
-            "Life @ Arni" => 'life-at-arni',
+            "options" => array(
+                "Hostel & Dining" => "",
+                "Transport" => "",
+                "Library" => "",
+                "Gallery" => ""
+            ),
         );
         
         return $menu;
