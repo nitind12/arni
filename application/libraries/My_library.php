@@ -1,161 +1,6 @@
 <?php
 
 class My_library {
-    function fetchCollege($clg){
-        switch ($clg) {
-            case 'fhm':
-                $data['title'] = 'Faculty of Hospitality Management';
-                $data['college'] = $clg;
-                break;
-            case 'fcbm':
-                $data['title'] = 'Faculty of Commerce &amp; Business Management';
-                $data['college'] = $clg;
-                break;
-            case 'ftca':
-                $data['title'] = 'Faculty of Technology &amp; Computer Applications';
-                $data['college'] = $clg;
-                break;
-            case 'fps':
-                $data['title'] = 'Faculty of Pharmacy &amp; Sciences';
-                $data['college'] = $clg;
-                break;
-            case 'fe':
-                $data['title'] = 'Faculty of Education';
-                $data['college'] = $clg;
-                break;
-            case 'agi':
-                $data['title'] = 'Faculty';
-                $data['college'] = $clg;
-                break;
-            default:
-                # code...
-                break;
-        }
-        return $data;
-    }
-    function getTitleforFaculty($crs, $page){
-        if($crs == 'fcbm'){
-            switch ($page){
-                case 'about':
-                    $data['desc_'] = 'Pursue your MBA, BBA & B.Com from the best private institute of business management in Utatrakhand. To know course details, visit Amrapali website';
-                    $data['title'] = 'Best Private Institute of Business Management in Uttarakhand';
-                break;
-                case 'courses':
-                    $data['desc_'] = 'Join BBA, MBA and B.Com course from top ranked institute in Nanital. Find fee structure along with eligibility, approvals and affiliation from our website';
-                    $data['title'] = 'Amrapali BBA, MBA & B.Com Course in Haldwani, Uttarakhand';
-                break;
-                case 'infra':
-                    $data['desc_'] = 'Amrapali always keep physical resources that are necessarily required to enhance teaching and learning. Join best commerce collage in Nainital!';
-                    $data['title'] = 'Amrapali Infrastructure | Best B.COM, BBA, MBA Collage in Nainital';
-                break;
-                case 'whyus':
-                    $data['desc_'] = 'Still confused about joining Amrapali Institute? Explore our webpage to know more about the best educational institute near Uttarakhand and its certifications, projects and many more.';
-                    $data['title'] = 'Why Join Amrapali | BBA, MBA, B.COM Course in Haldwani, Uttarakhand';
-                break;
-                case 'alumni':
-                    $data['desc_'] = 'Amrapali - Best Private Institute of Business Management In Uttarakhand, always stay connected with its alumni. Join Amarapli and get to opportunity to meet our alumni!';
-                    $data['title'] = 'Amrapali B.COM, BBA, MCA Alumni | Best Commerce College in Nainital';
-                break;
-                case 'events':
-                    $data['desc_'] = 'Amrapali – best private institute in Nainital organizes special events for MBA, BBA and B.Com course students. To know more about the special events, browse our page!';
-                    $data['title'] = 'Amrapali Special Events | Top MBA, BBA, B.COM College in Nainital';
-                break;
-                case 'downloads':
-                    $data['desc_'] = 'Easily download syllabus  and forms of B.COM, BBA and MBA course of Amrapali Institute, Uttarakhand. Visit our sit and Join best commerce collage in Nainital today!';
-                    $data['title'] = 'Amrapali Syllabus & Forms Downloads | B.COM, BBA Course in Nainital';
-                break;
-                case 'news':
-                    $data['desc_'] = 'From our news section, get latest news such workshops’, industrial visits and many more for students covering B.COM, BBA and MBA course in Amrapali Institute, Nainital.';
-                    $data['title'] = 'Amrapali Latest News for B.COM, BBA, MBA Course Students in Nainital';
-                break;
-                default: 
-                    $data['desc_'] = 'Pursue your MBA, BBA & B.Com from the best private institute of business management in Utatrakhand. To know course details, visit Amrapali website';
-                    $data['title'] = 'Best Private Institute of Business Management in Uttarakhand';
-            }
-        } else if($crs == 'fhm'){
-            switch ($page){
-                case 'about':
-                    $data['desc_'] = 'Ranked amongst the top 10 private institute of hotel management in India by GHRDC survey. Explore today, for best hotel & hospitality management degree in Nanital!';
-                    $data['title'] = 'Best Private Hotel Management Institute in Nanital, Uttarakhand';
-                break;
-                case 'courses':
-                    $data['desc_'] = 'Amrapali best Hotel Management College offering DHMCT, BHMCT, BHM & DHA course in Nanital. For fee structure and eligibitly, visit website!';
-                    $data['title'] = 'Top Ranked DHMCT, BHMCT, BHM & DHA Courses in Nanital';
-                break;
-                default: 
-                    $data['desc_'] = 'Ranked amongst the top 10 private institute of hotel management in India by GHRDC survey. Explore today, for best hotel & hospitality management degree in Nanital!';
-                    $data['title'] = 'Best Private Hotel Management Institute in Nanital, Uttarakhand';
-            }
-        } else if($crs == 'ftca'){
-            switch ($page){
-                case 'about':
-                    $data['desc_'] = 'Amrapali - best private engineering and computer institute in Uttarakhand offers B.Tech, MCA and BCA courses.  Find Fee details along with eligibility  & Placement';
-                    $data['title'] = 'Amrapali Best Engineering & Computer College in Uttarakhand ';
-                break;
-                case 'courses':
-                    $data['desc_'] = 'Amrapali – best college in Uttarakhand for B.Tech, BCA, MCA, Polytechnic courses approved by AICTE. For Online Counseling & Support at 9759670200, 9759670500';
-                    $data['title'] = 'BCA, MCA, B.Tech Courses in Amrapali Institute, Haldwani';
-                break;
-                case 'infra':
-                    $data['desc_'] = 'Amrapali has best labs for all of its courses mechanical, computer, electrical and many more.  Join Best Private Educational Institute in Uttarakhand Today!';
-                    $data['title'] = 'Amrapali Infrastructure | Uttarakhand B.Tech, BCA, MCA College';
-                break;
-                case 'whyus':
-                    $data['desc_'] = 'Confused about joining Amrapali – Best engineering college near Uttarakhand? Go through our page and get to know about faculty, partners and certifications.';
-                    $data['title'] = 'Why Join Amrapali | B.Tech, BCA, MCA Course in Haldwani, Uttarakhand';
-                break;
-                case 'alumni':
-                    $data['desc_'] = 'Have a look at what Amrapali B.Tech, BCA, MCA alumni say about this best engineering college in Uttarakhand. Hurry up and be a part!';
-                    $data['title'] = 'Amrapali B.Tech, BCA, MCA Alumni | Best MCA Institute in Uttarakhand';
-                break;
-                case 'events':
-                    $data['desc_'] = 'Explore Amrapali – Best engineering collage near Uttarakhand events page and know more about our online and offline special events.';
-                    $data['title'] = 'Amrapali Events | B.Tech, MCA, BCA Course in Haldwani, Uttarakhand';
-                break;
-                case 'downloads':
-                    $data['desc_'] = 'Are you looking for Amrapali B.Tech, BCA and MCA Course Syllabus? Go through our technology and computer applications download page and easily find syllabus and forms. ';
-                    $data['title'] = 'B.Tech, BCA and MCA Course Syllabus – Amrapali in Haldwani, Uttarkhand';
-                break;
-                case 'news':
-                    $data['desc_'] = 'For latest Amrapali Institute news, visit our webpage. Our institute ranked aJmong the Best Institute of academic excellence in Uttarakhand. Do not Delay, Join Today!';
-                    $data['title'] = 'Amrapali News | Best Private Engineering College In Uttarakhand';
-                break;
-                default: 
-                    $data['desc_'] = 'Amrapali - best private engineering and computer institute in Uttarakhand offers B.Tech, MCA and BCA courses.  Find Fee details along with eligibility  & Placement';
-                    $data['title'] = 'Amrapali Best Engineering & Computer College in Uttarakhand ';
-            }
-        } else if($crs == 'fps'){
-            switch ($page){
-                case 'about':
-                    $data['desc_'] = 'Amrapali – best pharmacy college in Nanital offers B.Pharma, B.Pharma (LE) & D.Pharma courses approved by Pharmacy Council of India and AICTE. Visit today!';
-                    $data['title'] = 'Amrapali Best Pharmacy College in Nanital, Uttarakhand';
-                break;
-                case 'courses':
-                    $data['desc_'] = 'Amrapali best pharmacy college in Nanital, Uttarakhand offering B.Pharma, B.Pharma (LE) & D.Pharma courses. Explore website, to know fee structure & eligibility.';
-                    $data['title'] = 'Best D.Pharma & B.Pharma Courses in Haldwani, Uttarakhand';
-                break;
-                default: 
-                    $data['desc_'] = 'Amrapali – best pharmacy college in Nanital offers B.Pharma, B.Pharma (LE) & D.Pharma courses approved by Pharmacy Council of India and AICTE. Visit today!';
-                    $data['title'] = 'Amrapali Best Pharmacy College in Nanital, Uttarakhand';
-            }
-        } else if($crs == 'fe'){
-            switch ($page){
-                case 'about':
-                    $data['desc_'] = 'Amrapali is the top ranked and private institute for B.ED course in Haldwani, Uttarakhand.  Visit our website, to know fee structure, eligibility and many more';
-                    $data['title'] = 'Amrapali Faculty of Education | Nainital Best Private Institute';
-                break;
-                case 'courses':
-                    $data['desc_'] = 'Get admission in B.ED as Amrapali is the top ranked institute of Nanital, Uttarakhand. Find Fee Structure along with eligibility & affiliations';
-                    $data['title'] = 'Best B.ED Course in Haldwani, Uttarakhand – Amrapali Institute';
-                break;
-                default: 
-                    $data['desc_'] = 'Amrapali is the top ranked and private institute for B.ED course in Haldwani, Uttarakhand.  Visit our website, to know fee structure, eligibility and many more';
-                    $data['title'] = 'Amrapali Faculty of Education | Nainital Best Private Institute';
-            }
-        }
-
-        return $data;
-    }
 
     function findTitle($page = 'x'){
         switch ($page) {
@@ -186,25 +31,106 @@ class My_library {
             case 'about':
                 $data_['title'] = 'About Us';
                 $data_['abstract'] = 'Completed 12 years of excellence, and is a higly rated group of Uniervsities of Himanchal Pradesh';
-                $data_['keywords'] = 'Top engineering,Management,Hotel Management, Tourism, Pharmacy Unievrsity Kangra';
+                $data_['keywords'] = 'Top engineering, Management,Hotel Management, Tourism, Pharmacy Unievrsity Kangra';
                 $data_['distribution'] = 'local';
                 $data_['author'] = 'Arni University';
                 $data_['description'] = "Arni University (AU) came into existence by an Act No.23 of 2009 of Government of Himachal Pradesh and approved by the UGC, vide Notification No- F No 8-5/2010(CPP-1/PU), dated 03 Mar 2010, under Section 2 (f) of UGC Act, 1956 with the objective to promote inter-disciplinary Higher Education and Research in the needy areas of Himachal Pradesh, Punjab and J&K.";
             break;
 
-            case 'academics': // Art and Humanities
-                $data_['title'] = $this->findTitle($page);
+            case 'art_and_humanities': // 1
+                $data_['title'] = "School of Art and Humanities";
                 $data_['abstract'] = 'Completed 12 years of excellence, and is a higly rated group of Uniervsities of Himanchal Pradesh';
-                $data_['keywords'] = 'Top engineering,Management,Hotel Management, Tourism, Pharmacy Unievrsity Kangra';
+                $data_['keywords'] = 'Art and Humanities, Art, Humanities, BA, MA, M.Phill, Ph.D, B.Design, English, Education, Journalism & Mass Communication, Psychology, Fashion Design, Arni Unievrsity Kangra';
                 $data_['distribution'] = 'local';
                 $data_['author'] = 'Arni University';
-                $data_['description'] = "Arni focuses on all aspects related to culture and creative life including most disciplines outside exact Sciences.";
+                $data_['description'] = "Arni School of Arts & Humanties Humanities focuses on all aspects related to culture and creative life including most disciplines outside exact Sciences.";
+            break;
+
+            case 'commerce_and_business_management': // 2
+                $data_['title'] = "School of Commerce and Business Management";
+                $data_['abstract'] = 'Completed 12 years of excellence, and is a higly rated group of Uniervsities of Himanchal Pradesh';
+                $data_['keywords'] = 'Commerce and Business Management, Commerce, Business, Management, BBA, MBA, B.Com, M.Com, M.Phill, Ph.D, Business Studies, Commerce, Arni Unievrsity Kangra';
+                $data_['distribution'] = 'local';
+                $data_['author'] = 'Arni University';
+                $data_['description'] = "Arni School Of Commerce & Management Management degrees give students a broad foundation in topics relating to business, finance, economics and marketing.";
+            break;
+
+            case 'computer_application': // 3
+                $data_['title'] = "School of Computer Application";
+                $data_['abstract'] = 'Completed 12 years of excellence, and is a higly rated group of Uniervsities of Himanchal Pradesh';
+                $data_['keywords'] = 'Computer Application, Software, BCA, MCA, B.Sc, M.Phill, Ph.D, Computer Science & Applicaton, Arni Unievrsity Kangra';
+                $data_['distribution'] = 'local';
+                $data_['author'] = 'Arni University';
+                $data_['description'] = "Arni School Of Computer Application Basic research, also called pure research or fundamental research, is a type of scientific research with the aim of improving scientific theories for better understanding and prediction of natural or other phenomena.";
+            break;
+
+            case 'life_and_allied_science': // 4
+                $data_['title'] = "School of Life and Allied Science";
+                $data_['abstract'] = 'Completed 12 years of excellence, and is a higly rated group of Uniervsities of Himanchal Pradesh';
+                $data_['keywords'] = 'Life and Allied Science, Life, Allied Science, B.Sc., M.Sc, M.Phill, Ph.D, Life & Allied Science, Arni Unievrsity Kangra';
+                $data_['distribution'] = 'local';
+                $data_['author'] = 'Arni University';
+                $data_['description'] = "Arni School Of Life & Allied Science Life & Allied Science research, also called pure research or fundamental research, is a type of scientific research with the aim of improving scientific theories for better understanding and prediction of natural or other phenomena.";
+            break;
+
+            case 'pharmacy': // 5
+                $data_['title'] = "School of Pharmacy";
+                $data_['abstract'] = 'Completed 12 years of excellence, and is a higly rated group of Uniervsities of Himanchal Pradesh';
+                $data_['keywords'] = 'Pharmacy, Pharma, Chemistry, B. Pharma, D. Pharma, Diploma, PG Diploma, Arni Unievrsity Kangra';
+                $data_['distribution'] = 'local';
+                $data_['author'] = 'Arni University';
+                $data_['description'] = "Arni School of Pharmacy Graduates of pharmacy degree work right at the heart of human healthcare, taking on roles relating to the design and development of new treatments, prescription and care management, and advising on the range of medical options available.";
+            break;
+
+            case 'physical_science': // 6
+                $data_['title'] = "School of Physical Science";
+                $data_['abstract'] = 'Completed 12 years of excellence, and is a higly rated group of Uniervsities of Himanchal Pradesh';
+                $data_['keywords'] = 'Physical Science, Physical, Science, B. Voc, B.Sc, M.Sc, M.Phill, Ph.D, Arni Unievrsity Kangra';
+                $data_['distribution'] = 'local';
+                $data_['author'] = 'Arni University';
+                $data_['description'] = "Arni School of Physical Science Physical Science research, also called pure research or fundamental research, is a type of scientific research with the aim of improving scientific theories for better understanding and prediction of natural or other phenomena.";
+            break;
+
+            case 'skill_development_and_vocational_studies': // 7
+                $data_['title'] = "School of Skill Development and Vocational Studies";
+                $data_['abstract'] = 'Completed 12 years of excellence, and is a higly rated group of Uniervsities of Himanchal Pradesh';
+                $data_['keywords'] = 'Skill Development and Vocational Studies, Skill Development, vocational studies, Cabin Crew Training, Training, Certificate, Diploma, Beauty,Skin and Hair, BPO, Electroplanting, Fashion Design, inflight Operation, Yoga & Therpy, Hardware Engineering, Beauty Culture, Hair & Skin Care, Computer Applications, GST, House Wiring, Skill & Vocational Studies,  Arni Unievrsity Kangra';
+                $data_['distribution'] = 'local';
+                $data_['author'] = 'Arni University';
+                $data_['description'] = "Arni School Of SKILL DEVELOPMENT & VOCATIONAL STUDIES Management degrees give students a broad foundation in topics relating to business, finance, economics and marketing.";
+            break;
+
+            case 'technology': // 8
+                $data_['title'] = "School of Technology";
+                $data_['abstract'] = 'Completed 12 years of excellence, and is a higly rated group of Uniervsities of Himanchal Pradesh';
+                $data_['keywords'] = 'Technology, Top Engineering, Diploma, B.Tech, M.Tech, Ph.D, Civil Engineering, Computer Science Engineering, Mechanical Engineering, Arni Unievrsity Kangra';
+                $data_['distribution'] = 'local';
+                $data_['author'] = 'Arni University';
+                $data_['description'] = "An engineering degree equips you with the skills of creation. You have a broad range of practical abilities which can be utilized across a wide range of industries and sectors.";
+            break;
+
+            case 'tourism_and_hospitality_management': // 9
+                $data_['title'] = "School of Tourism and Hospitality Management";
+                $data_['abstract'] = 'Completed 12 years of excellence, and is a higly rated group of Uniervsities of Himanchal Pradesh';
+                $data_['keywords'] = 'Tourism and Hospitality Management, Tourism, Hospitality Management, BHMCT, Diploma, Bakery & Confectionary, Food and Bevrage Services, Food Production, Front Office Operations, Arni Unievrsity Kangra';
+                $data_['distribution'] = 'local';
+                $data_['author'] = 'Arni University';
+                $data_['description'] = "Arni School Of Tourism & Hospitality Management Management degrees give students a broad foundation in topics relating to business, finance, economics and marketing.";
+            break;
+
+            case 'faculty':
+                $data_['title'] = "Faculty";
+                $data_['abstract'] = 'Completed 12 years of excellence, and is a higly rated group of Uniervsities of Himanchal Pradesh';
+                $data_['keywords'] = '200+ Full time Faculty, Faculty, Mentor, Mentors, Intellectual Capital, Arni Unievrsity Kangra';
+                $data_['distribution'] = 'local';
+                $data_['author'] = 'Arni University';
+                $data_['description'] = "At Arni your dream begins with our respected Faculty who believes in you, who nurtures and leads you to the next dimension, sometimes poking you with a sharp stick called truth.";
             break;
 
             case 'admissions':
                 $data_['title'] = "Admissions, Arni University, Kangra";
                 $data_['abstract'] = 'Completed 12 years of excellence, and is a higly rated group of Uniervsities of Himanchal Pradesh';
-                $data_['keywords'] = 'Top engineering,Management,Hotel Management, Tourism, Pharmacy Unievrsity Kangra';
+                $data_['keywords'] = 'Top engineering, Management, Hospitality Management, Tourism, Pharmacy, Skill Development, Physical Science, Doctorate Programs, Post Graduate Programs, Under Graduate Programs, Diploma Programs, BA, MA, B.Design, B.Com, M.Com, M.Phill, B.Sc, M.Sc, BCA, MCA, BBA, MBA, B.Pharma, Diploma, Bakery & Confectionary, Food and Bevrage Services, Food Production, Front Office Operations, D.Pharma, BHMCT, Ph.D, Beauty,Skin and Hair, BPO, Electroplanting, Fashion Design, inflight Operation, Yoga & Therpy, Hardware Engineering, Beauty Culture, Hair & Skin Care, Computer Applications, GST, House Wiring, Skill & Vocational Studies, Arni Unievrsity Kangra';
                 $data_['distribution'] = 'local';
                 $data_['author'] = 'Arni University';
                 $data_['description'] = "ARNI UNIVERSITY accepts admission form to Engineering, Technology, Science, Business Management, Pharmacy, Commerce, Hospitality, Humanities and Social Sciences. ";

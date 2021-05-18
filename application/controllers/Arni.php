@@ -140,7 +140,6 @@ class Arni extends CI_Controller
     }
     function academics($page = 'x', $submenu = 'about')
     {
-        $data_['meta'] = $this->metainfo_for_web('academics', $page);
         $data_['menu_active'] = 3;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['submenu'] = $this->my_menu->submenu($page);
@@ -150,6 +149,7 @@ class Arni extends CI_Controller
         $data_['subpage'] = $submenu;
 
         if ($page == 'art_and_humanities' || $page == 'art_and_humanities#') {
+            $data_['meta'] = $this->metainfo_for_web('art_and_humanities', $page);
             $data_['departments'] = $this->arni->school_wise_departments(1);
             $data_['school_courses'] = $this->arni->school_wise_course_offered(1);
             $clg = "School of Art and Humanities";
@@ -157,6 +157,7 @@ class Arni extends CI_Controller
             $data_['title'] = 'School of Art and Humanities';
             $data_['breadcrumb'] = 'Academics / School of Art and Humanities';
         } else if ($page == 'commerce_and_business_management' || $page == 'commerce_and_business_management#') {
+            $data_['meta'] = $this->metainfo_for_web('commerce_and_business_management', $page);
             $data_['departments'] = $this->arni->school_wise_departments(2);
             $data_['school_courses'] = $this->arni->school_wise_course_offered(2);
             $clg = "School of Commerce and Business Management";
@@ -164,6 +165,7 @@ class Arni extends CI_Controller
             $data_['title'] = $clg;
             $data_['breadcrumb'] = 'Academics / ' . $clg;
         } else if ($page == 'computer_application' || $page == 'computer_application#') {
+            $data_['meta'] = $this->metainfo_for_web('computer_application', $page);
             $data_['departments'] = $this->arni->school_wise_departments(3);
             $data_['school_courses'] = $this->arni->school_wise_course_offered(3);
             $clg = "School of Computer Application";
@@ -171,6 +173,7 @@ class Arni extends CI_Controller
             $data_['title'] = $clg;
             $data_['breadcrumb'] = 'Academics / ' . $clg;
         } else if ($page == 'life_and_allied_science' || $page == 'life_and_allied_science#') {
+            $data_['meta'] = $this->metainfo_for_web('life_and_allied_science', $page);
             $data_['departments'] = $this->arni->school_wise_departments(4);
             $data_['school_courses'] = $this->arni->school_wise_course_offered(4);
             $clg = "School of Life and Allied Science";
@@ -178,6 +181,7 @@ class Arni extends CI_Controller
             $data_['title'] = $clg;
             $data_['breadcrumb'] = 'Academics / ' . $clg;
         } else if ($page == 'pharmacy' || $page == 'pharmacy#') {
+            $data_['meta'] = $this->metainfo_for_web('pharmacy', $page);
             $data_['departments'] = $this->arni->school_wise_departments(5);
             $data_['school_courses'] = $this->arni->school_wise_course_offered(5);
             $clg = "School of Pharmacy";
@@ -185,6 +189,7 @@ class Arni extends CI_Controller
             $data_['title'] = $clg;
             $data_['breadcrumb'] = 'Academics / ' . $clg;
         } else if ($page == 'physical_science' || $page == 'physical_science#') {
+            $data_['meta'] = $this->metainfo_for_web('physical_science', $page);
             $data_['departments'] = $this->arni->school_wise_departments(6);
             $data_['school_courses'] = $this->arni->school_wise_course_offered(6);
             $clg = 'School of Physical Science';
@@ -192,6 +197,7 @@ class Arni extends CI_Controller
             $data_['title'] = $clg;
             $data_['breadcrumb'] = 'Academics / ' . $clg;
         } else if ($page == 'skill_development_and_vocational_studies' || $page == 'skill_development_and_vocational_studies#') {
+            $data_['meta'] = $this->metainfo_for_web('skill_development_and_vocational_studies', $page);
             $data_['departments'] = $this->arni->school_wise_departments(7);
             $data_['school_courses'] = $this->arni->school_wise_course_offered(7);
             $clg = 'School of Skill Development and Vocational Studies';
@@ -199,6 +205,7 @@ class Arni extends CI_Controller
             $data_['title'] = $clg;
             $data_['breadcrumb'] = 'Academics / ' . $clg;
         } else if ($page == 'technology' || $page == 'technology#') {
+            $data_['meta'] = $this->metainfo_for_web('technology', $page);
             $data_['departments'] = $this->arni->school_wise_departments(8);
             $data_['school_courses'] = $this->arni->school_wise_course_offered(8);
             $clg = "School of Technology";
@@ -206,6 +213,7 @@ class Arni extends CI_Controller
             $data_['title'] = $clg;
             $data_['breadcrumb'] = 'Academics / ' . $clg;
         } else if ($page == 'tourism_and_hospitality_management' || $page == 'tourism_and_hospitality_management#') {
+            $data_['meta'] = $this->metainfo_for_web('tourism_and_hospitality_management', $page);
             $data_['departments'] = $this->arni->school_wise_departments(9);
             $data_['school_courses'] = $this->arni->school_wise_course_offered(9);
             $clg = "School of Tourism and Hospitality Management";
@@ -213,6 +221,7 @@ class Arni extends CI_Controller
             $data_['title'] = $clg;
             $data_['breadcrumb'] = 'Academics / ' . $clg;
         } else if ($page == 'faculty' || $page == 'faculty#') {
+            $data_['meta'] = $this->metainfo_for_web('faculty', $page);
             $data_['facultyData'] = $this->arni->faculty_list();
             $clg = 'Our Faculty';
             $data_['inner_page'] = $page;
