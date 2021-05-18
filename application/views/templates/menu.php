@@ -87,9 +87,23 @@
                         </div><!-- /.submenu-inner -->
                     </div> <!-- /.submenu-wrapper -->
                 </li>
-                <?php foreach($menu_all['alumni_menu'] as $title => $path){?>
-                    <li class="<?php if($menu_active==7){echo 'active';}?>"><a href="<?php // echo site_url($path); ?>"><?php echo $title; ?></a></li>
-                <?php } ?>
+                <li class="dropdown <?php if($menu_active==7){echo 'active';}?>"><a href="#" >Research <b class="caret"></b></a>
+                    <!-- submenu-wrapper -->
+                    <div class="submenu-wrapper submenu-wrapper-topbottom">
+                        <div class="submenu-inner  submenu-inner-topbottom">
+                            <div class='col-sm-12' style='width: auto; background: rgba(230,126,34,.9); padding:20px'>
+                                <div class='col-sm-8'>
+                                    <!--h3 style='color:#fff'>Faculty</h3-->
+                                    <ul class="dropdown-menu">
+                                        <?php foreach($menu_all['research']['options'] as $title => $path){?>
+                                            <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                        <?php } ?>
+                                    </ul>                                                                                                                                     
+                                </div>
+                            </div>                            
+                        </div><!-- /.submenu-inner -->
+                    </div> <!-- /.submenu-wrapper -->
+                </li>
                 <?php foreach($menu_all['contactus'] as $title => $path){?>
                     <li class="<?php if($menu_active==8){echo 'active';}?>"><a href="<?php  echo site_url($path); ?>"><?php echo $title; ?></a></li>
                 <?php } ?>

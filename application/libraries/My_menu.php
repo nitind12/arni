@@ -53,13 +53,21 @@ class My_menu {
                 "Photo Gallery" => "gallery/index",
                 "Videos" => "gallery/videos",
                 "Activities" => "gallery/activities",
-                "Expert Views" => "gallery/expertviews"
+                "Alumni" => 'alumni/connectprogramme',
+                "Expert Views" => "gallery/expertviews",
             )
         );
 
-        // Alumni
-        $menu['alumni_menu'] = array(
-            "Alumni" => 'alumni/connectprogramme',
+        // Research
+        $menu['research'] = array(
+            "options" => array(
+                "Research Policy" => "research/index",
+                "Dean Research" => "research/dean",
+                "Research Unit" => "research/unit",
+                "Projects Unit" => 'research/projectsunit',
+                "Other Services" => "research/services",
+                "BORS" => "research/bors",
+            )
         );
 
         //Contact Us
