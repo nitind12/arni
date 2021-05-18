@@ -75,8 +75,8 @@ class My_menu {
             "Contact Us" => "contact",
         );
 
-        $menu['erplogin'] = array(
-            "LOGIN" => 'login',
+        $menu['lifeatarni'] = array(
+            "Life @ Arni" => 'life-at-arni',
         );
         
         return $menu;
