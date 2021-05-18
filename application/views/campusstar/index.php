@@ -1,1 +1,0 @@
-<?php header('Location: https://docs.google.com/forms/d/e/1FAIpQLSeiqZMju4xi1_ND06FRE0rLu7yKLkSQzX-mgRSd91tcnbAg4w/viewform');?>

@@ -162,25 +162,25 @@ hr{
                                 <div class="row">
                                 <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
-                                            <a class="media-left" href="<?php //echo site_url('faculty/fhm/courses'); ?>">
+                                            <a class="media-left" href="<?php echo site_url('art-and-humanities'); ?>">
                                                 <img src="<?php echo base_url(). "assets/arniImage/aihm1.jpg"?>" title="AIHM" alt="AIHM" style="max-width: 140px;" class="img-responsive">
                                             </a>
                                             <div class="media-body">
-                                                <h3 class="media-heading"><a href="<?php //echo site_url('faculty/fhm/courses'); ?>">School of Art & Humanities</a></h3>
+                                                <h3 class="media-heading"><a href="<?php echo site_url('art-and-humanities'); ?>">School of Art & Humanities</a></h3>
                                                 <p>English<br>Education<br>Psychology<br>Journalism & Mass Communication<br>Fashion Design</p>
-                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php //echo site_url('faculty/fhm/courses'); ?>">Know More</a>
+                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('art-and-humanities'); ?>">Know More</a>
                                             </div> <!-- /.media-body -->
                                         </div> <!-- /.media -->
                                     </div> <!-- /.col-md-6 -->
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
-                                            <a class="media-left" href="<?php // echo site_url('faculty/ftca/courses'); ?>">
+                                            <a class="media-left" href="<?php  echo site_url('technology'); ?>">
                                                 <img src="<?php echo base_url(). "assets/arniImage/aits1.jpg"?>" title="AITS" alt="AITS" style="max-width: 120px;" class="img-responsive">
                                             </a>
                                             <div class="media-body">
-                                                <h3 class="media-heading"><a href="<?php //echo site_url('faculty/ftca/courses'); ?>">School of Technology</a></h3>
+                                                <h3 class="media-heading"><a href="<?php echo site_url('technology'); ?>">School of Technology</a></h3>
                                                 <p><b style='color: #FFC95C'>B.Tech. in</b> <br>Civil Engineering (CE)<br>Mechanical Engineering (ME)<br>Computer Science & Engineering (ECE)<br><br>
-                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php //echo site_url('faculty/ftca/courses'); ?>">Know More</a>
+                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('technology'); ?>">Know More</a>
                                             </div> <!-- /.media-body -->
                                         </div> <!-- /.media -->
                                     </div> <!-- /.col-md-6 -->
@@ -189,85 +189,85 @@ hr{
 
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
-                                            <a class="media-left" href="<?php //echo site_url('faculty/fps/courses'); ?>">
+                                            <a class="media-left" href="<?php echo site_url('pharmacy'); ?>">
                                                 <img src="<?php echo base_url(). "assets/arniImage/pharm1.jpg"?>" title="FPPS" style="max-width: 120px;" class="img-responsive" alt="Pharmacy and Sciences">
                                             </a>
                                             <div class="media-body">
-                                                <h3 class="media-heading"><a href="<?php //echo site_url('faculty/fps/courses'); ?>">School of Pharmacy</a></h3>
+                                                <h3 class="media-heading"><a href="<?php echo site_url('pharmacy'); ?>">School of Pharmacy</a></h3>
                                                 <p>Pharmacy</p>
-                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php //echo site_url('faculty/fps/courses'); ?>">Know More</a>
+                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('pharmacy'); ?>">Know More</a>
                                             </div> <!-- /.media-body -->
                                         </div> <!-- /.media -->
                                     </div> <!-- /.col-md-6 -->
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
-                                            <a class="media-left" href="<?php //echo site_url('faculty/fps/courses'); ?>">
-                                                <img src="<?php echo base_url(). "assets/arniImage/pharm1.jpg"?>" title="FPPS" style="max-width: 120px;" class="img-responsive" alt="Pharmacy and Sciences">
+                                            <a class="media-left" href="<?php echo site_url('life-and-allied-science'); ?>">
+                                                <img src="<?php echo base_url(). "assets/arniImage/pharm1.jpg"?>" title="FPPS" style="max-width: 120px;" class="img-responsive" alt="Life & Allied Science">
                                             </a>
                                             <div class="media-body">
-                                                <h3 class="media-heading"><a href="<?php //echo site_url('faculty/fps/courses'); ?>">School of Life & Allied Science</a></h3>
+                                                <h3 class="media-heading"><a href="<?php echo site_url('life-and-allied-science'); ?>">School of Life & Allied Science</a></h3>
                                                 <p>Life & Allied Science</p>
-                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php //echo site_url('faculty/fps/courses'); ?>">Know More</a>
+                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('life-and-allied-science'); ?>">Know More</a>
                                             </div> <!-- /.media-body -->
                                         </div> <!-- /.media -->
                                     </div> <!-- /.col-md-6 -->
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
-                                            <a class="media-left" href="<?php //echo site_url('faculty/fps/courses'); ?>">
-                                                <img src="<?php echo base_url(). "assets/arniImage/fcsa1.jpg"?>" title="FPPS" style="max-width: 120px;" class="img-responsive" alt="Pharmacy and Sciences">
+                                            <a class="media-left" href="<?php echo site_url('computer-application'); ?>">
+                                                <img src="<?php echo base_url(). "assets/arniImage/fcsa1.jpg"?>" title="FPPS" style="max-width: 120px;" class="img-responsive" alt="Computer Science & Applicaton">
                                             </a>
                                             <div class="media-body">
-                                                <h3 class="media-heading"><a href="<?php //echo site_url('faculty/fps/courses'); ?>">School of Computer Application</a></h3>
+                                                <h3 class="media-heading"><a href="<?php echo site_url('computer-application'); ?>">School of Computer Application</a></h3>
                                                 <p>Computer Science & Applicaton</p>
-                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php //echo site_url('faculty/fps/courses'); ?>">Know More</a>
+                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('computer-application'); ?>">Know More</a>
                                             </div> <!-- /.media-body -->
                                         </div> <!-- /.media -->
                                     </div> <!-- /.col-md-6 -->
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
-                                            <a class="media-left" href="<?php //echo site_url('faculty/fps/courses'); ?>">
-                                                <img src="<?php echo base_url(). "assets/arniImage/aihm1.jpg"?>" title="FPPS" style="max-width: 120px;" class="img-responsive" alt="Pharmacy and Sciences">
+                                            <a class="media-left" href="<?php echo site_url('tourism-and-hospitality-management'); ?>">
+                                                <img src="<?php echo base_url(). "assets/arniImage/aihm1.jpg"?>" title="FPPS" style="max-width: 120px;" class="img-responsive" alt="Tourism & Hospitality Management">
                                             </a>
                                             <div class="media-body">
-                                                <h3 class="media-heading"><a href="<?php //echo site_url('faculty/fps/courses'); ?>">School of Tourism & Hospitality Management</a></h3>
+                                                <h3 class="media-heading"><a href="<?php echo site_url('tourism-and-hospitality-management'); ?>">School of Tourism & Hospitality Management</a></h3>
                                                 <p>Tourism & Hospitality Management</p>
-                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php //echo site_url('faculty/fps/courses'); ?>">Know More</a>
+                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('tourism-and-hospitality-management'); ?>">Know More</a>
                                             </div> <!-- /.media-body -->
                                         </div> <!-- /.media -->
                                     </div> <!-- /.col-md-6 -->
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
-                                            <a class="media-left" href="<?php //echo site_url('faculty/fe/courses'); ?>">
+                                            <a class="media-left" href="<?php echo site_url('physical-science'); ?>">
                                                 <img src="<?php echo base_url(). "assets/arniImage/bed1.jpg"?>" title="BED" alt="BEd" style="min-width: 120px;max-width: 120px;" class="img-responsive">
                                             </a>
                                             <div class="media-body">
-                                                <h3 class="media-heading"><a href="<?php //echo site_url('faculty/fe/courses'); ?>">School of Physical Science</a></h3>
+                                                <h3 class="media-heading"><a href="<?php echo site_url('physical-science'); ?>">School of Physical Science</a></h3>
                                                 <p>Physical Science </p>
-                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php //echo site_url('faculty/fe/courses'); ?>">Know More</a>
+                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('physical-science'); ?>">Know More</a>
                                             </div> <!-- /.media-body -->
                                         </div> <!-- /.media -->
                                     </div> <!-- /.col-md-6 -->
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
-                                            <a class="media-left" href="<?php //echo site_url('faculty/fe/courses'); ?>">
+                                            <a class="media-left" href="<?php echo site_url('skill-development-and-vocational-studies'); ?>">
                                                 <img src="<?php echo base_url(). "assets/arniImage/bed1.jpg"?>" title="BED" alt="BEd" style="min-width: 120px;max-width: 120px;" class="img-responsive">
                                             </a>
                                             <div class="media-body">
-                                                <h3 class="media-heading"><a href="<?php //echo site_url('faculty/fe/courses'); ?>">School of Skill Development & Vocational Studies</a></h3>
+                                                <h3 class="media-heading"><a href="<?php echo site_url('skill-development-and-vocational-studies'); ?>">School of Skill Development & Vocational Studies</a></h3>
                                                 <p>Skill Development & Vocational Studies </p>
-                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php //echo site_url('faculty/fe/courses'); ?>">Know More</a>
+                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('skill-development-and-vocational-studies'); ?>">Know More</a>
                                             </div> <!-- /.media-body -->
                                         </div> <!-- /.media -->
                                     </div> <!-- /.col-md-6 -->
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
-                                            <a class="media-left" href="<?php //echo site_url('faculty/fcbm/courses'); ?>">
+                                            <a class="media-left" href="<?php echo site_url('commerce-and-business-management'); ?>">
                                                 <img src="<?php echo base_url(). "assets/arniImage/fcbm1.jpg"?>" title="FCBM" alt="FCBM" style="max-width: 120px;" class="img-responsive">
                                             </a>
                                             <div class="media-body">
-                                                <h3 class="media-heading"><a href="<?php //echo site_url('faculty/fcbm/courses'); ?>">School of Commerce &amp; Business Management</a></h3>
+                                                <h3 class="media-heading"><a href="<?php echo site_url('commerce-and-business-management'); ?>">School of Commerce &amp; Business Management</a></h3>
                                                 <p>Journalism & Mass Communication<br>Business Studies<br>Commerce</p>
-                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php //echo site_url('faculty/fps/courses'); ?>">Know More</a>
+                                                <a class="btn btn-primary btn-lg wow fadeInDown" href="<?php echo site_url('commerce-and-business-management'); ?>">Know More</a>
                                             </div> <!-- /.media-body -->
                                         </div> <!-- /.media -->
                                     </div> <!-- /.col-md-6 -->

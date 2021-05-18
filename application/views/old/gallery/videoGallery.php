@@ -1,1 +1,0 @@
-<?php header('Location: https://www.youtube.com/channel/UCF8i_kuxpGG5DycApVK8xxg/playlists'); ?>
