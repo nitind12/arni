@@ -21,7 +21,7 @@
     
     $slider_ = array(
         'P4.jpg'=>$title,
-        'P1.jpg'=> $title,
+        'P1.jpg'=>$title,
         'P2.jpg'=>$title,
         'P3.jpg'=>$title,
         'P5.jpg'=>$title,
@@ -55,6 +55,7 @@
                             <li data-target="#x-corp-carousel" data-slide-to="1"></li>
                             <li data-target="#x-corp-carousel" data-slide-to="2"></li>
                             <li data-target="#x-corp-carousel" data-slide-to="3"></li>
+                            <li data-target="#x-corp-carousel" data-slide-to="4"></li>
                         </ol>
 
                         <!-- Wrapper for slides -->

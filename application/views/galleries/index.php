@@ -61,7 +61,7 @@
                             <?php $loop1 = 0; $sliderno = mt_rand(0,count($slider_)-1);?>
                             <?php foreach($slider_ as $img=>$item){?>
                             <div class="item<?php if($loop1 == $sliderno) echo ' active';?>">
-                                <img src="<?php echo base_url('assets/arniImage/about/'.$img); ?>?version=2.2" alt="<?php echo $item; ?>">
+                                <img src="<?php echo base_url('assets/arniImage/gallery/'.$img); ?>?version=2.2" alt="<?php echo $item; ?>">
                                 <!--Slide Image-->
 
                                 <div class="container">
