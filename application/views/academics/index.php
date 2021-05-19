@@ -23,7 +23,8 @@
         'P4.jpg'=>$title,
         'P1.jpg'=> $title,
         'P2.jpg'=>$title,
-        'P3.jpg'=>$title
+        'P3.jpg'=>$title,
+        'P5.jpg'=>$title,
     );
 
     
@@ -61,7 +62,7 @@
                             <?php $loop1 = 0; $sliderno = mt_rand(0,count($slider_)-1);?>
                             <?php foreach($slider_ as $img=>$item){?>
                             <div class="item<?php if($loop1 == $sliderno) echo ' active';?>">
-                                <img src="<?php echo base_url('assets/arniImage/schools/'.$page.'/'.$img); ?>?version=2.2" alt="<?php echo $item; ?>">
+                                <img src="<?php echo base_url('assets/arniImage/schools/'.$page.'/'.$img); ?>?version=2.4" alt="<?php echo $item; ?>">
                                 <!--Slide Image-->
 
                                 <div class="container">
