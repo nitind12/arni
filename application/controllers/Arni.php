@@ -138,6 +138,7 @@ class Arni extends CI_Controller
         $this->load->view('admissions/index', $data_);
         $this->load->view('templates/footer');
     }
+    
     function academics($page = 'x', $submenu = 'about')
     {
         $data_['menu_active'] = 3;
