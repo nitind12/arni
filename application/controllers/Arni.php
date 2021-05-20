@@ -366,4 +366,35 @@ class Arni extends CI_Controller
         $this->load->view('templates/footer');
     }
 
+    function examination($page = 'x')
+    {
+        $data_['meta'] = $this->metainfo_for_web('home', 'home');
+        $data_['menu_active'] = 5;
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['submenu'] = $this->my_menu->submenu('examination');
+        $data_['titleMain'] = "Examination";
+        $data_['active'] = $page;
+
+        if ($page == 'result' || $page == 'result#') {
+            $data_['inner_page'] = 'result';
+            $data_['subpage'] = 'result';
+            $data_['breadcrumb'] = 'Examination / Result';
+            $data_['title'] = "Result";
+        } else if ($page == 'circulars' || $page == 'circulars#') {
+            $data_['inner_page'] = 'circulars';
+            $data_['subpage'] = 'circulars';
+            $data_['title'] = "Circular";
+            $data_['breadcrumb'] = 'Examination / Circular & Notices';
+        } else {
+            $data_['inner_page'] = 'datesheet';
+            $data_['subpage'] = 'datesheet';
+            $data_['title'] = "Datesheet";
+            $data_['breadcrumb'] = 'Examination / Datesheet';
+        }
+
+        $this->load->view('templates/header', $data_);
+        $this->load->view('examination/index', $data_);
+        $this->load->view('templates/footer');
+    }
+
 }

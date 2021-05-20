@@ -38,9 +38,9 @@ class My_menu {
         // Training & Placements
         $menu['exam'] = array(
             "Examination" => array(
-                "Results" => '#',
-                "Circular/ Notices " => '#',
-                "Datesheet" => "#",
+                "Results" => 'examination/result',
+                "Circular/ Notices " => 'examination/circulars',
+                "Datesheet" => "examination/datesheet",
                 "Online Education" => '#',
                 "Online Exam" => '#',
                 "Student Login" => '#'
@@ -130,6 +130,9 @@ class My_menu {
                 break;
             case 'lifeatarni':
                 $data =  $this->lifeatarni();
+                break;
+            case 'examination':
+                $data =  $this->examination();
                 break;
             default:
                 # code...
@@ -288,6 +291,17 @@ Explaination for the format of the below functions --
             "Transport" => array("lifeAtArni/Transport", "transport"),
             "Library" => array("lifeAtArni/Library", "library"),
             "Gallery" => array("gallery/photos", "photos"),
+        );
+    }
+
+    function examination(){
+        return array(
+            "Result" => array("examination/result", "result"),
+            "Circular / Notices" => array("examination/circulars", "circulars"),
+            "Datesheet" => array("examination/datesheet", "datesheet"),
+            "Online Education" => array("", ""),
+            "Online Exam" => array("", ""),
+            "Student Login" => array("", ""),
         );
     }
 }
