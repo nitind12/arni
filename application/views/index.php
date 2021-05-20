@@ -163,7 +163,7 @@ hr{
                                 <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
                                             <a class="media-left" href="<?php echo site_url('art-and-humanities'); ?>">
-                                                <img src="<?php echo base_url(). "assets/arniImage/aihm1.jpg"?>" title="AIHM" alt="AIHM" style="max-width: 140px;" class="img-responsive">
+                                                <img src="<?php echo base_url(). "assets/arniImage/aihm1.jpg"?>" title="School of art-and-humanities" alt="School of art-and-humanities" style="max-width: 140px;" class="img-responsive">
                                             </a>
                                             <div class="media-body">
                                                 <h3 class="media-heading"><a href="<?php echo site_url('art-and-humanities'); ?>">School of Art & Humanities</a></h3>
@@ -175,7 +175,7 @@ hr{
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
                                             <a class="media-left" href="<?php  echo site_url('technology'); ?>">
-                                                <img src="<?php echo base_url(). "assets/arniImage/aits1.jpg"?>" title="AITS" alt="AITS" style="max-width: 120px;" class="img-responsive">
+                                                <img src="<?php echo base_url(). "assets/arniImage/aits1.jpg"?>" title="School of Technology" alt="School of Technology" style="max-width: 120px;" class="img-responsive">
                                             </a>
                                             <div class="media-body">
                                                 <h3 class="media-heading"><a href="<?php echo site_url('technology'); ?>">School of Technology</a></h3>
@@ -190,7 +190,7 @@ hr{
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
                                             <a class="media-left" href="<?php echo site_url('pharmacy'); ?>">
-                                                <img src="<?php echo base_url(). "assets/arniImage/pharm1.jpg"?>" title="FPPS" style="max-width: 120px;" class="img-responsive" alt="Pharmacy and Sciences">
+                                                <img src="<?php echo base_url(). "assets/arniImage/pharm1.jpg"?>" title="School of Pharmacy" style="max-width: 120px;" class="img-responsive" alt="School of Pharmacy">
                                             </a>
                                             <div class="media-body">
                                                 <h3 class="media-heading"><a href="<?php echo site_url('pharmacy'); ?>">School of Pharmacy</a></h3>
@@ -202,7 +202,7 @@ hr{
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
                                             <a class="media-left" href="<?php echo site_url('life-and-allied-science'); ?>">
-                                                <img src="<?php echo base_url(). "assets/arniImage/pharm1.jpg"?>" title="FPPS" style="max-width: 120px;" class="img-responsive" alt="Life & Allied Science">
+                                                <img src="<?php echo base_url(). "assets/arniImage/pharm1.jpg"?>" title="School of Life & Allied Science" style="max-width: 120px;" class="img-responsive" alt="Life & Allied Science">
                                             </a>
                                             <div class="media-body">
                                                 <h3 class="media-heading"><a href="<?php echo site_url('life-and-allied-science'); ?>">School of Life & Allied Science</a></h3>
@@ -214,7 +214,7 @@ hr{
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
                                             <a class="media-left" href="<?php echo site_url('computer-application'); ?>">
-                                                <img src="<?php echo base_url(). "assets/arniImage/fcsa1.jpg"?>" title="FPPS" style="max-width: 120px;" class="img-responsive" alt="Computer Science & Applicaton">
+                                                <img src="<?php echo base_url(). "assets/arniImage/fcsa1.jpg"?>" title="School of Computer Science & Applicaton" style="max-width: 120px;" class="img-responsive" alt="School of Computer Science & Applicaton">
                                             </a>
                                             <div class="media-body">
                                                 <h3 class="media-heading"><a href="<?php echo site_url('computer-application'); ?>">School of Computer Application</a></h3>
@@ -226,7 +226,7 @@ hr{
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
                                             <a class="media-left" href="<?php echo site_url('tourism-and-hospitality-management'); ?>">
-                                                <img src="<?php echo base_url(). "assets/arniImage/aihm1.jpg"?>" title="FPPS" style="max-width: 120px;" class="img-responsive" alt="Tourism & Hospitality Management">
+                                                <img src="<?php echo base_url(). "assets/arniImage/aihm1.jpg"?>" title="School of Tourism & Hospitality Management" style="max-width: 120px;" class="img-responsive" alt="School of Tourism & Hospitality Management">
                                             </a>
                                             <div class="media-body">
                                                 <h3 class="media-heading"><a href="<?php echo site_url('tourism-and-hospitality-management'); ?>">School of Tourism & Hospitality Management</a></h3>
@@ -238,7 +238,7 @@ hr{
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
                                             <a class="media-left" href="<?php echo site_url('physical-science'); ?>">
-                                                <img src="<?php echo base_url(). "assets/arniImage/bed1.jpg"?>" title="BED" alt="BEd" style="min-width: 120px;max-width: 120px;" class="img-responsive">
+                                                <img src="<?php echo base_url(). "assets/arniImage/bed1.jpg"?>" title="School of Physical Science" alt="School of Physical Science" style="min-width: 120px;max-width: 120px;" class="img-responsive">
                                             </a>
                                             <div class="media-body">
                                                 <h3 class="media-heading"><a href="<?php echo site_url('physical-science'); ?>">School of Physical Science</a></h3>
@@ -250,7 +250,7 @@ hr{
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
                                             <a class="media-left" href="<?php echo site_url('skill-development-and-vocational-studies'); ?>">
-                                                <img src="<?php echo base_url(). "assets/arniImage/bed1.jpg"?>" title="BED" alt="BEd" style="min-width: 120px;max-width: 120px;" class="img-responsive">
+                                                <img src="<?php echo base_url(). "assets/arniImage/bed1.jpg"?>" title="School of Skill Development & Vocational Studies" alt="School of Skill Development & Vocational Studies" style="min-width: 120px;max-width: 120px;" class="img-responsive">
                                             </a>
                                             <div class="media-body">
                                                 <h3 class="media-heading"><a href="<?php echo site_url('skill-development-and-vocational-studies'); ?>">School of Skill Development & Vocational Studies</a></h3>
@@ -262,7 +262,7 @@ hr{
                                     <div class="col-md-6 wow fadeInRight">
                                         <div class="media">
                                             <a class="media-left" href="<?php echo site_url('commerce-and-business-management'); ?>">
-                                                <img src="<?php echo base_url(). "assets/arniImage/fcbm1.jpg"?>" title="FCBM" alt="FCBM" style="max-width: 120px;" class="img-responsive">
+                                                <img src="<?php echo base_url(). "assets/arniImage/fcbm1.jpg"?>" title="School of Commerce and Business Management" alt="School of Commerce and Business Management" style="max-width: 120px;" class="img-responsive">
                                             </a>
                                             <div class="media-body">
                                                 <h3 class="media-heading"><a href="<?php echo site_url('commerce-and-business-management'); ?>">School of Commerce &amp; Business Management</a></h3>
@@ -315,7 +315,7 @@ hr{
                                                 <div class="col-md-12 col-sm-7">
                                                     <div class="client-testimonial">
                                                         <p>
-                                                            <img align="left" style="max-width: 200px; margin:10px 10px;" src="<?PHP echo base_url() . 'assets/arniImage/mgmt/vivek.jpg'; ?>" alt="Arni Management" class="img-fluid rounded">
+                                                            <img align="left" style="max-width: 200px; margin:10px 10px;" src="<?PHP echo base_url() . 'assets/arniImage/mgmt/vivek.jpg'; ?>" alt="Chancellor Arni University" class="img-fluid rounded">
                                                             Universities of higher learning have always played an important role in the social and economic development of nations. With the quantum of human knowledge increasing at a rapid pace, the role of Arni University as centre of learning, teaching, research and excellence has become more critical. Arni takes a holistic view of education and inspires and empowers students through knowledge and skills to partake fully in the economic development of the country.
                                                         </p>
                                                         
@@ -329,7 +329,7 @@ hr{
                                                 <div class="col-md-12 col-sm-7">
                                                     <div class="client-testimonial">
                                                         <p>
-                                                            <img align="left" style="max-width: 200px; margin:10px 10px;" src="<?PHP echo base_url() . 'assets/arniImage/mgmt/manish.jpg'; ?>" alt="Arni Management" class="img-fluid rounded">
+                                                            <img align="left" style="max-width: 200px; margin:10px 10px;" src="<?PHP echo base_url() . 'assets/arniImage/mgmt/manish.jpg'; ?>" alt="CEO Arni University" class="img-fluid rounded">
                                                             ARNI University makes every effort to make its curriculum world class and deliver it in the most effective manner. It constantly scans the developments taking place in the business world and in the society and responds to the same by preparing professional talent that is able to meet the challenges that present themselves.
                                                         </p>
                                                         
@@ -343,7 +343,7 @@ hr{
                                                 <div class="col-md-12 col-sm-7">
                                                     <div class="client-testimonial">
                                                     <p>
-                                                            <img align="left" style="max-width: 200px; margin:10px 10px;" src="<?PHP echo base_url() . 'assets/arniImage/mgmt/kalyan.png'; ?>" alt="Arni Management" class="img-fluid rounded">
+                                                            <img align="left" style="max-width: 200px; margin:10px 10px;" src="<?PHP echo base_url() . 'assets/arniImage/mgmt/kalyan.png'; ?>" alt="Vice Chancellor Arni University" class="img-fluid rounded">
                                                             He has more than 23 years of service in teaching and academic administration. Prior joining Arni University, he was with, Professor and Dean, KK University, School of Commerce and Management from Feb. 2020 to Oct. 2020. He has Ph.D. and Masters in Business Administration from F.M.University, Odisha and Master in Journalism and Mass Communication from Utkal University, Odisha.
                                                         </p>
                                                         
@@ -357,7 +357,7 @@ hr{
                                                 <div class="col-md-12 col-sm-7">
                                                     <div class="client-testimonial">
                                                     <p>
-                                                            <img align="left" style="max-width: 200px; margin:10px 10px;" src="<?PHP echo base_url() . 'assets/arniImage/mgmt/rajinder.png'; ?>" alt="Arni Management" class="img-fluid rounded">
+                                                            <img align="left" style="max-width: 200px; margin:10px 10px;" src="<?PHP echo base_url() . 'assets/arniImage/mgmt/rajinder.png'; ?>" alt="Pro Vice Chancellor Arni University" class="img-fluid rounded">
                                                             What I believe is that Youth will become the future leaders. My people at ARNI and I, believe in the tagline "A university by the youth, for the youth".<br>
 
 We believe that education and the educators are the strongest pillars of a society. At ARNI we provide a world class infrastructure that brings students capability and creativity to a great extent. We are working towards the goal that Arni is the "University of Future".
@@ -373,7 +373,7 @@ We believe that education and the educators are the strongest pillars of a socie
                                                 <div class="col-md-12 col-sm-7">
                                                     <div class="client-testimonial">
                                                     <p>
-                                                            <img align="left" style="max-width: 200px; margin:10px 10px;" src="<?PHP echo base_url() . 'assets/arniImage/mgmt/jaiman.jpg'; ?>" alt="Arni Management" class="img-fluid rounded">
+                                                            <img align="left" style="max-width: 200px; margin:10px 10px;" src="<?PHP echo base_url() . 'assets/arniImage/mgmt/jaiman.jpg'; ?>" alt="Dean Academics Arni University" class="img-fluid rounded">
                                                             Welcome to our institution Arni University which signifies the first ray of the rising sun. It is a matter of sheer pride and joy to state that our University is situated in a pristine location surrounded by amazing scenic natural beauty representing the serene state of Himachal Pradesh. The bank of outrageously beautiful Beas River amidst green Forests is a wonderful backdrop for our campus.
                                                         </p>
                                                         
@@ -387,7 +387,7 @@ We believe that education and the educators are the strongest pillars of a socie
                                                 <div class="col-md-12 col-sm-7">
                                                     <div class="client-testimonial">
                                                     <p>
-                                                            <img align="left" style="max-width: 200px; margin:10px 10px;" src="<?PHP echo base_url() . 'assets/arniImage/mgmt/sarika.jpg'; ?>" alt="Arni Management" class="img-fluid rounded">
+                                                            <img align="left" style="max-width: 200px; margin:10px 10px;" src="<?PHP echo base_url() . 'assets/arniImage/mgmt/sarika.jpg'; ?>" alt="Dean R and D Arni University" class="img-fluid rounded">
                                                             The Arni University, Himachal Pradesh has envisioned itself to become a well-known name in Research and Development (R&D) activities. The University’s research program is built to explore the interdisciplinary potential of the faculty and researchers especially with respect to industry and societal aspect of Himachal Pradesh and nearby areas.
                                                         </p>
                                                         
