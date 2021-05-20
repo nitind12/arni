@@ -134,7 +134,7 @@
                                     <div class="mini-contact">
                                         <div class="col-md-12" style="background: #FFFAC1; border-radius: 5px; color: #000">
                                         <br>
-                                        <img src="<?php echo base_url('assets/arniImage/contact.jpg'); ?>" class="img-responsive" alt="Contact us, Amrapali Group of Institutes">  
+                                        <img src="<?php echo base_url('assets/arniImage/contact.jpg'); ?>" class="img-responsive" alt="Contact us, Arni University">  
                                         <br>
                                         <h3>Contact us for Admission</h3>
                                         <span style="color:#FF5733; font-size:1.4em">Toll-Free: 1800 891 8962 </span><br>
