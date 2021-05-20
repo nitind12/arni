@@ -94,6 +94,6 @@
                             <section class="" style="display: inline;">
                                 <?php $this->load->view('templates/submenu'); ?>
                             </section>
-                            <?php $this->load->view('aboutus/innerpages/'.$inner_page); ?>                                                           
+                            <?php $this->load->view('lifeArni/innerpages/'.$inner_page); ?>                                                           
                         </div>
                     </div>

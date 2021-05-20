@@ -264,7 +264,7 @@ class Arni extends CI_Controller
     function contact()
     {
         $data_['meta'] = $this->metainfo_for_web('home', 'home');
-        $data_['menu_active'] = 9;
+        $data_['menu_active'] = 10;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['titleMain'] = "Contact Us";
         $data_['breadcrumb'] = 'Contact us';
@@ -277,7 +277,7 @@ class Arni extends CI_Controller
     function gallery($page = 'x') 
     {
         $data_['meta'] = $this->metainfo_for_web('gallery', $page);
-        $data_['menu_active'] = 6;
+        $data_['menu_active'] = 8;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['submenu'] = $this->my_menu->submenu('gallery');
         $data_['titleMain'] = "Gallery";
@@ -309,7 +309,7 @@ class Arni extends CI_Controller
 
     function imagePicsInner($id__) {
         $data_['meta'] = $this->metainfo_for_web('gallery');
-        $data_['menu_active'] = 6;
+        $data_['menu_active'] = 8;
         $data_['menu_all'] = $this->my_menu->site_menu();
         $data_['submenu'] = $this->my_menu->submenu('gallery');
         $data_['titleMain'] = "Gallery";
@@ -332,6 +332,37 @@ class Arni extends CI_Controller
 
         $this->load->view('templates/header', $data_);
         $this->load->view('galleries/innerpages/photos_inner', $data_);
+        $this->load->view('templates/footer');
+    }
+
+    function lifeAtArni($page = 'x')
+    {
+        $data_['meta'] = $this->metainfo_for_web('home', 'home');
+        $data_['menu_active'] = 9;
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['submenu'] = $this->my_menu->submenu('lifeatarni');
+        $data_['titleMain'] = "Life @ Arni University";
+        $data_['active'] = $page;
+
+        if ($page == 'hostel' || $page == 'hostel#') {
+            $data_['inner_page'] = 'hostel';
+            $data_['subpage'] = 'hostel';
+            $data_['breadcrumb'] = 'Life @ Arni / Hostel & Dining';
+            $data_['title'] = "Hostel & Dining";
+        } else if ($page == 'transport' || $page == 'transport#') {
+            $data_['inner_page'] = 'transport';
+            $data_['subpage'] = 'transport';
+            $data_['title'] = "Transport";
+            $data_['breadcrumb'] = 'Life @ Arni / transport';
+        } else {
+            $data_['inner_page'] = 'library';
+            $data_['subpage'] = 'library';
+            $data_['title'] = "Library";
+            $data_['breadcrumb'] = 'Life @ Arni / library';
+        }
+
+        $this->load->view('templates/header', $data_);
+        $this->load->view('lifeArni/index', $data_);
         $this->load->view('templates/footer');
     }
 

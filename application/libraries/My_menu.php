@@ -77,10 +77,10 @@ class My_menu {
 
         $menu['lifeatarni'] = array(
             "options" => array(
-                "Hostel & Dining" => "",
-                "Transport" => "",
-                "Library" => "",
-                "Gallery" => ""
+                "Hostel & Dining" => "lifeAtArni/hostel",
+                "Transport" => "lifeAtArni/transport",
+                "Library" => "lifeAtArni/library",
+                "Gallery" => "gallery/photos"
             ),
         );
         
@@ -127,6 +127,9 @@ class My_menu {
                 break;
             case 'gallery':
                 $data =  $this->gallery();
+                break;
+            case 'lifeatarni':
+                $data =  $this->lifeatarni();
                 break;
             default:
                 # code...
@@ -276,6 +279,15 @@ Explaination for the format of the below functions --
             "Video Gallery" => array("gallery/videos", "videos"),
             "Activities" => array("gallery/activities", "activities"),
             "Expert View" => array("gallery/expertviews", "expertviews"),
+        );
+    }
+    
+    function lifeatarni(){
+        return array(
+            "Hostel & Dining" => array("lifeAtArni/Hostel", "hostel"),
+            "Transport" => array("lifeAtArni/Transport", "transport"),
+            "Library" => array("lifeAtArni/Library", "library"),
+            "Gallery" => array("gallery/photos", "photos"),
         );
     }
 }

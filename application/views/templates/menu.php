@@ -87,7 +87,7 @@
                         </div><!-- /.submenu-inner -->
                     </div> <!-- /.submenu-wrapper -->
                 </li>
-                <li class="dropdown <?php if($menu_active==6){echo 'active';}?>"><a href="#" >Glimpses <b class="caret"></b></a>
+                <li class="dropdown <?php if($menu_active==8){echo 'active';}?>"><a href="#" >Glimpses <b class="caret"></b></a>
                     <!-- submenu-wrapper -->
                     <div class="submenu-wrapper submenu-wrapper-topbottom">
                         <div class="submenu-inner  submenu-inner-topbottom">
@@ -104,7 +104,7 @@
                         </div><!-- /.submenu-inner -->
                     </div> <!-- /.submenu-wrapper -->
                 </li>
-                <li class="dropdown <?php if($menu_active==6){echo 'active';}?>"><a href="#" >Life @ Arni <b class="caret"></b></a>
+                <li class="dropdown <?php if($menu_active==9){echo 'active';}?>"><a href="#" >Life @ Arni <b class="caret"></b></a>
                     <!-- submenu-wrapper -->
                     <div class="submenu-wrapper submenu-wrapper-topbottom">
                         <div class="submenu-inner  submenu-inner-topbottom">
@@ -122,7 +122,7 @@
                     </div> <!-- /.submenu-wrapper -->
                 </li>
                 <?php foreach($menu_all['contactus'] as $title => $path){?>
-                    <li class="<?php if($menu_active==9){echo 'active';}?>"><a href="<?php  echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                    <li class="<?php if($menu_active==10){echo 'active';}?>"><a href="<?php  echo site_url($path); ?>"><?php echo $title; ?></a></li>
                 <?php } ?>
             </ul>
         </div><!-- /.navbar-collapse -->
