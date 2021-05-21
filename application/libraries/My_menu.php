@@ -62,7 +62,7 @@ class My_menu {
         $menu['research'] = array(
             "options" => array(
                 "About" => "research",
-                "Dean Research" => "research/dean",
+                //"Dean Research" => "research/dean",
                 "Research Policy" => "research/policy",
                 "Research Unit" => "research/unit",
                 "Projects Unit" => 'research/projectsunit',
@@ -312,7 +312,7 @@ Explaination for the format of the below functions --
     function research(){
         return array(
             "Home" => array("research", "about"),
-            "Dean Research" => array("research/dean","dean"),
+            //"Dean Research" => array("research/dean","dean"),
             "Research Policy" => array("research/policy","policy"),
             "Research Unit" => array("research/unit","unit"),
             "Projects Unit" => array("research/projectsunit","projectsunit"),
