@@ -61,12 +61,13 @@ class My_menu {
         // Research
         $menu['research'] = array(
             "options" => array(
-                "Research Policy" => "research/index",
+                "About" => "research",
                 "Dean Research" => "research/dean",
+                "Research Policy" => "research/policy",
                 "Research Unit" => "research/unit",
                 "Projects Unit" => 'research/projectsunit',
                 "Other Services" => "research/services",
-                "BORS" => "research/bors",
+                "Board of Research Studies" => "research/bors",
             )
         );
 
@@ -133,6 +134,9 @@ class My_menu {
                 break;
             case 'examination':
                 $data =  $this->examination();
+                break;
+            case 'research':
+                $data = $this->research();
                 break;
             default:
                 # code...
@@ -302,6 +306,18 @@ Explaination for the format of the below functions --
             "Online Education" => array("", ""),
             "Online Exam" => array("", ""),
             "Student Login" => array("", ""),
+        );
+    }
+
+    function research(){
+        return array(
+            "Home" => array("research", "about"),
+            "Dean Research" => array("research/dean","dean"),
+            "Research Policy" => array("research/policy","policy"),
+            "Research Unit" => array("research/unit","unit"),
+            "Projects Unit" => array("research/projectsunit","projectsunit"),
+            "Other Services" => array("research/services","services"),
+            "Board of Research Studies" => array("research/bors","bors"),
         );
     }
 }

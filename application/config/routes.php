@@ -77,6 +77,9 @@ $route['lifeAtArni/(:any)'] = 'Arni/lifeAtArni/$1';
 
 $route['examination/(:any)'] = 'Arni/examination/$1';
 
+$route['research'] = "Arni/research/about";
+$route['research/(:any)'] = "Arni/research/$1";
+
 $route['art-and-humanities'] = 'Arni/academics/art_and_humanities/about';
 $route['art-and-humanities/(:any)'] = 'Arni/academics/art_and_humanities/$1';
 

@@ -40,6 +40,70 @@ class Arni extends CI_Controller
     {
         redirect('');
     }
+
+    function research($page = 'x'){
+        $data_['meta'] = $this->metainfo_for_web('research', 'about');
+        $data_['menu_active'] = 6;
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['submenu'] = $this->my_menu->submenu('research');
+        $data_['titleMain'] = "Research";
+        $data_['active'] = $page;
+        
+        if ($page == 'about' || $page == 'about#') {
+            $str = "Office of the Dean Research (Research and Development)";
+            $data_['inner_page'] = $page;
+            $data_['subpage'] = $page;
+            $data_['title'] = $str;
+            $data_['breadcrumb'] = "About";
+        } else if ($page == 'policy' || $page == 'policy#') {
+            $str = "Research Policy";
+            $data_['inner_page'] = $page;
+            $data_['subpage'] = $page;
+            $data_['title'] = $str;
+            $data_['breadcrumb'] = "Research / " .$str;
+        } else if ($page == 'dean' || $page == 'dean#') {
+            $str = "Dean";
+            $data_['inner_page'] = $page;
+            $data_['subpage'] = $page;
+            $data_['title'] = $str;
+            $data_['breadcrumb'] = $str;
+        } else if ($page == 'unit' || $page == 'unit#') {
+            $str = "Research Unit";
+            $data_['inner_page'] = $page;
+            $data_['subpage'] = $page;
+            $data_['title'] = $str;
+            $data_['breadcrumb'] = $str;
+        } else if ($page == 'projectsunit' || $page == 'projecstunit#') {
+            $str = "Projects Unit";
+            $data_['inner_page'] = $page;
+            $data_['subpage'] = $page;
+            $data_['title'] = $str;
+            $data_['breadcrumb'] = "Research / " .$str;
+        } else if ($page == 'services' || $page == 'services#') {
+            $str = "Other Servies";
+            $data_['inner_page'] = $page;
+            $data_['subpage'] = $page;
+            $data_['title'] = $str;
+            $data_['breadcrumb'] = "Research / " .$str;
+        } else if ($page == 'bors' || $page == 'bors#') {
+            $str = "Board of Research Studies";
+            $data_['inner_page'] = $page;
+            $data_['subpage'] = $page;
+            $data_['title'] = $str;
+            $data_['breadcrumb'] = "Research / " .$str;
+        } else {
+            $str = "About";
+            $data_['inner_page'] = 'about';
+            $data_['subpage'] = 'about';
+            $data_['title'] = $str;
+            $data_['breadcrumb'] = "Research / " .$str;
+        }
+
+        $this->load->view('templates/header', $data_);
+        $this->load->view('research/index', $data_);
+        $this->load->view('templates/footer');
+    }
+
     function metainfo_for_web($menu = 'x', $page = 'x')
     {
         $metadata__ = $this->my_library->heading_for_page_($menu, $page);
@@ -99,13 +163,13 @@ class Arni extends CI_Controller
             $str = "Admission Process";
             $data_['inner_page'] = $page;
             $data_['title'] = $str;
-            $data_['breadcrumb'] = 'Admissions Process';
+            $data_['breadcrumb'] = $str;
             $data_['program_in_numbers'] = $this->arni->number_of_courses();
         } else if($page == 'form' || $page == 'form#'){
             $str = "Admission Form";
             $data_['inner_page'] = $page;
             $data_['title'] = $str;
-            $data_['breadcrumb'] = 'Admission Form';
+            $data_['breadcrumb'] = $str;
         } else if($page == 'refund' || $page == 'refund#'){
             $str = "Refund Policy";
             $data_['inner_page'] = $page;
