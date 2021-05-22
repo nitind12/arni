@@ -3,7 +3,7 @@
 </div>
 <div style="clear: both; padding: 3px 0px"></div>
 <div class="links-border">
-	<a href="<?php echo site_url('#');?>" class="a_">Admission Procedure</a>
+	<a href="<?php echo site_url('admissions');?>" class="a_">Admission Procedure</a>
 </div>
 <div style="clear: both; padding: 3px 0px"></div>
 <div class="links-border">
