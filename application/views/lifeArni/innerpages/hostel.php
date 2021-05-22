@@ -12,16 +12,16 @@
                                     <div class="col-sm-12">
                                         <div style="clear:both; height: 20px"></div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/lifeArni/hostel/hostel1.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel/hostel1.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/lifeArni/hostel/hostel2.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel/hostel2.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/lifeArni/hostel/hostel3.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel/hostel3.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/lifeArni/hostel/hostel4.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel/hostel4.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
                                         </div>
                                     </div>
                                     
@@ -37,16 +37,16 @@
                                     <div class="col-sm-12">
                                         <div style="clear:both; height: 20px"></div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/lifeArni/hostel/mess1.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel/mess1.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/lifeArni/hostel/mess2.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel/mess2.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/lifeArni/hostel/mess3.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel/mess3.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/lifeArni/hostel/mess4.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel/mess4.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
                                         </div>
                                     </div>
 
@@ -72,7 +72,7 @@
                                             </ul>
                                         </div>  
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/lifeArni/hostel/sport1.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel/sport1.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
                                         </div>                    
                                     </div>
                                     <div style="clear:both"></div>
@@ -80,13 +80,13 @@
                                         <div style="clear:both; height: 20px"></div>
                                         
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/lifeArni/hostel/sport2.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel/sport2.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/lifeArni/hostel/sport3.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel/sport3.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/lifeArni/hostel/sport4.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel/sport4.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
                                         </div>
                                     </div>
                                     
@@ -102,16 +102,16 @@
                                     <div class="col-sm-12">
                                         <div style="clear:both; height: 20px"></div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/lifeArni/hostel/gym1.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel/gym1.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/lifeArni/hostel/gym2.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel/gym2.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/lifeArni/hostel/gym3.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel/gym3.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/lifeArni/hostel/gym4.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel/gym4.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
                                         </div>
                                     </div>
 
@@ -127,10 +127,10 @@
                                     <div class="col-sm-12">
                                         <div style="clear:both; height: 20px"></div>
                                         <div class="col-md-6">
-                                            <img src="<?php echo base_url("/assets/arniImage/lifeArni/hostel/med1.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel/med1.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
                                         </div>
                                         <div class="col-md-6">
-                                            <img src="<?php echo base_url("/assets/arniImage/lifeArni/hostel/med2.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel/med2.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
                                         </div>
                                         
                                     </div>
