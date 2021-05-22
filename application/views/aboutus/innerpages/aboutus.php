@@ -98,7 +98,7 @@
                                         <div id="collapse2" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <div class="col-md-12">
-                                            <iframe src="<?php echo base_url('assets/arniDownload/StatutesofUniversity.pdf'); ?>" width="100%" height="500px"></iframe>
+                                            <iframe src="https://drive.google.com/file/d/19zg7DuJ91zeXeQ2oVyj997byjFqFpxGV/preview" width="100%" height="500px"></iframe>
                                             </div>
                                         </div>
                                         </div>
