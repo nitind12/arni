@@ -81,7 +81,7 @@ class My_menu {
                 "Hostel & Dining" => "lifeAtArni/hostel",
                 "Transport" => "lifeAtArni/transport",
                 "Library" => "lifeAtArni/library",
-                "Gallery" => "gallery/photos"
+               // "Gallery" => "gallery/photos"
             ),
         );
         
@@ -291,10 +291,10 @@ Explaination for the format of the below functions --
     
     function lifeatarni(){
         return array(
-            "Hostel & Dining" => array("lifeAtArni/Hostel", "hostel"),
-            "Transport" => array("lifeAtArni/Transport", "transport"),
-            "Library" => array("lifeAtArni/Library", "library"),
-            "Gallery" => array("gallery/photos", "photos"),
+            "Hostel & Dining" => array("lifeAtArni/hostel", "hostel"),
+            "Transport" => array("lifeAtArni/transport", "transport"),
+            "Library" => array("lifeAtArni/library", "library"),
+           // "Gallery" => array("gallery/photos", "photos"),
         );
     }
 
