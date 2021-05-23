@@ -12,16 +12,16 @@
                                     <div class="col-sm-12">
                                         <div style="clear:both; height: 20px"></div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/infra/hostel1.jpg"); ?>?version=2.2" alt="Arni Hostel Facilities" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel_n_dining/hostel1.jpg"); ?>?version=2.2" alt="Arni Hostel Facilities" class="img-thumbnail">
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/infra/hostel2.jpg"); ?>?version=2.2" alt="Arni Hostel Facilities" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel_n_dining/hostel2.jpg"); ?>?version=2.2" alt="Arni Hostel Facilities" class="img-thumbnail">
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/infra/hostel3.jpg"); ?>?version=2.2" alt="Arni Hostel Facilities" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel_n_dining/hostel3.jpg"); ?>?version=2.2" alt="Arni Hostel Facilities" class="img-thumbnail">
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/infra/hostel4.jpg"); ?>?version=2.2" alt="Arni Hostel Facilities" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel_n_dining/hostel4.jpg"); ?>?version=2.2" alt="Arni Hostel Facilities" class="img-thumbnail">
                                         </div>
                                     </div>
                                     
@@ -37,16 +37,16 @@
                                     <div class="col-sm-12">
                                         <div style="clear:both; height: 20px"></div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/infra/mess1.jpg"); ?>?version=2.2" alt="Arni Mess Facilities" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel_n_dining/mess1.jpg"); ?>?version=2.2" alt="Arni Mess Facilities" class="img-thumbnail">
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/infra/mess2.jpg"); ?>?version=2.2" alt="Arni Mess Facilities" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel_n_dining/mess2.jpg"); ?>?version=2.2" alt="Arni Mess Facilities" class="img-thumbnail">
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/infra/mess3.jpg"); ?>?version=2.2" alt="Arni Mess Facilities" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel_n_dining/mess3.jpg"); ?>?version=2.2" alt="Arni Mess Facilities" class="img-thumbnail">
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/infra/mess4.jpg"); ?>?version=2.2" alt="Arni Mess Facilities" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel_n_dining/mess4.jpg"); ?>?version=2.2" alt="Arni Mess Facilities" class="img-thumbnail">
                                         </div>
                                     </div>
 
@@ -72,7 +72,7 @@
                                             </ul>
                                         </div>  
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/infra/sport1.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel_n_dining/sport1.jpg"); ?>?version=2.2" alt="Arni Hostel" class="img-thumbnail">
                                         </div>                    
                                     </div>
                                     <div style="clear:both"></div>
@@ -80,13 +80,13 @@
                                         <div style="clear:both; height: 20px"></div>
                                         
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/infra/sport2.jpg"); ?>?version=2.2" alt="Arni Sports Facilities" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel_n_dining/sport2.jpg"); ?>?version=2.2" alt="Arni Sports Facilities" class="img-thumbnail">
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/infra/sport3.jpg"); ?>?version=2.2" alt="Arni Sports Facilities" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel_n_dining/sport3.jpg"); ?>?version=2.2" alt="Arni Sports Facilities" class="img-thumbnail">
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/infra/sport4.jpg"); ?>?version=2.2" alt="Arni Sports Facilities" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel_n_dining/sport4.jpg"); ?>?version=2.2" alt="Arni Sports Facilities" class="img-thumbnail">
                                         </div>
                                     </div>
                                     
@@ -102,16 +102,16 @@
                                     <div class="col-sm-12">
                                         <div style="clear:both; height: 20px"></div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/infra/gym1.jpg"); ?>?version=2.2" alt="Arni Gym Facilities" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel_n_dining/gym1.jpg"); ?>?version=2.2" alt="Arni Gym Facilities" class="img-thumbnail">
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/infra/gym2.jpg"); ?>?version=2.2" alt="Arni Gym Facilities" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel_n_dining/gym2.jpg"); ?>?version=2.2" alt="Arni Gym Facilities" class="img-thumbnail">
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/infra/gym3.jpg"); ?>?version=2.2" alt="Arni Gym Facilities" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel_n_dining/gym3.jpg"); ?>?version=2.2" alt="Arni Gym Facilities" class="img-thumbnail">
                                         </div>
                                         <div class="col-md-3">
-                                            <img src="<?php echo base_url("/assets/arniImage/infra/gym4.jpg"); ?>?version=2.2" alt="Arni Gym Facilities" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel_n_dining/gym4.jpg"); ?>?version=2.2" alt="Arni Gym Facilities" class="img-thumbnail">
                                         </div>
                                     </div>
 
@@ -127,10 +127,10 @@
                                     <div class="col-sm-12">
                                         <div style="clear:both; height: 20px"></div>
                                         <div class="col-md-6">
-                                            <img src="<?php echo base_url("/assets/arniImage/infra/med1.jpg"); ?>?version=2.2" alt="Arni Medical Facility" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel_n_dining/med1.jpg"); ?>?version=2.2" alt="Arni Medical Facility" class="img-thumbnail">
                                         </div>
                                         <div class="col-md-6">
-                                            <img src="<?php echo base_url("/assets/arniImage/infra/med2.jpg"); ?>?version=2.2" alt="Arni Medical Facility" class="img-thumbnail">
+                                            <img src="<?php echo base_url("/assets/arniImage/hostel_n_dining/med2.jpg"); ?>?version=2.2" alt="Arni Medical Facility" class="img-thumbnail">
                                         </div>
                                         
                                     </div>

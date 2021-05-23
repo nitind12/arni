@@ -408,7 +408,12 @@ class Arni extends CI_Controller
         $data_['titleMain'] = "Life @ Arni University";
         $data_['active'] = $page;
 
-        if ($page == 'hostel' || $page == 'hostel#') {
+        if ($page == 'hostel-n-dining' || $page == 'hostel-n-dining#') {
+            $data_['inner_page'] = 'hostel';
+            $data_['subpage'] = 'hostel';
+            $data_['breadcrumb'] = 'Life @ Arni / Hostel & Dining';
+            $data_['title'] = "Hostel & Dining";
+        } else if ($page == 'hostel' || $page == 'hostel#') {
             $data_['inner_page'] = 'hostel';
             $data_['subpage'] = 'hostel';
             $data_['breadcrumb'] = 'Life @ Arni / Hostel & Dining';

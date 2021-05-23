@@ -78,7 +78,7 @@ class My_menu {
 
         $menu['lifeatarni'] = array(
             "options" => array(
-                "Hostel & Dining" => "lifeAtArni/hostel",
+                "Hostel & Dining" => "lifeAtArni/hostel-n-dining",
                 "Transport" => "lifeAtArni/transport",
                 "Library" => "lifeAtArni/library",
                // "Gallery" => "gallery/photos"
@@ -291,7 +291,7 @@ Explaination for the format of the below functions --
     
     function lifeatarni(){
         return array(
-            "Hostel & Dining" => array("lifeAtArni/hostel", "hostel"),
+            "Hostel & Dining" => array("lifeAtArni/hostel-n-dining", "hostel"),
             "Transport" => array("lifeAtArni/transport", "transport"),
             "Library" => array("lifeAtArni/library", "library"),
            // "Gallery" => array("gallery/photos", "photos"),
