@@ -45,7 +45,7 @@
         </style>
         <script type="text/javascript">
             site_url_ = "<?php echo site_url(); ?>";
-            base_path = "<?php echo base_url(); ?>";
+            base_path_ = "<?php echo base_url(); ?>";
         </script>
         <!-- Bootstrap Core CSS -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">

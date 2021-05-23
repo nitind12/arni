@@ -115,7 +115,9 @@ $route['faculty'] = 'Arni/academics/faculty';
 $route['admissions'] = 'Arni/admissions/process';
 $route['admissions/(:any)'] = 'Arni/admissions/$1';
 
-$route['apply-now'] = 'Arni/applynow';
+$route['apply-now'] = 'Arni/admissions/apply-now';
+$route['getCourse'] = 'Arni/getCourse';
+$route['register'] = 'Registration/submit_registration';
 
 /*  redirection for 301 */
 /* -------------------- */

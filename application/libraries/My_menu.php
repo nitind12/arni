@@ -276,7 +276,7 @@ Explaination for the format of the below functions --
             "Admission Form" => array("admissions/form", "form"),
             "Refund Policy" => array("admissions/refund", "refund"),
             "Download Brochure" => array("admissions/brochure", "brochure"),
-            "Apply Now" => array('admissions/apply-now', "applynow"),
+            "Apply Now" => array('apply-now', "apply-now"),
             /*"Scholarship" => array("admissions/scholarship", "scholarship"),*/
         );
     }

@@ -370,6 +370,27 @@
 
 </div>
 
+<div id="myModalApplyNow" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Arni University Welcomes you</h5>
+            </div>
+            <div class="modal-body">
+                    <h4 style="text-align: center; color: #000090">
+                        <div style="color: #ff0000; font-size: 17px" id="applynow_name_here"></div>
+                    <span style="color: #009000; font-size: 17px">Your are successfully registered with us. <br></span><br>
+                    Thank you for chosing us. We will get back very soon.<br><br>
+                    <span style="color: #ff9000; font-size: 16px">"Stay Safe and healthy".</span>
+                    </h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary cmdApplyNowOK">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- jQuery -->
 
 <script src="<?php echo base_url('assets/js/jquery.js'); ?>"></script>
@@ -543,7 +564,7 @@
 
 <script src="<?php echo base_url('assets/js/scripts.js'); ?>?ver=1.3"></script>
 
-<script src="<?php echo base_url('assets/js/main.js'); ?>?ver=8.9"></script>
+<script src="<?php echo base_url('assets/js/arni.js'); ?>?ver=2.1"></script>
 
 <!--script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(103437)</script-->
 <!--Start of Tawk.to Script-->
