@@ -13,7 +13,7 @@
         closedir($handle);
     }
 
-    print_r($slider_);
+    //print_r($slider_);
 ?>
 <div id="x-corp-carousel" class="carousel slide hero-slide" data-ride="carousel">
                         <!-- Indicators -->

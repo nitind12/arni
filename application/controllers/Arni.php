@@ -148,7 +148,26 @@ class Arni extends CI_Controller
         $this->load->view('aboutus/index', $data_);
         $this->load->view('templates/footer');
     }
+    function applynow(){
+        $page = "onlineregistration";
+        $data_['meta'] = $this->metainfo_for_web('admissions', 'applynow');
+        $data_['menu_active'] = 4;
+        $data_['menu_all'] = $this->my_menu->site_menu();
+        $data_['submenu'] = $this->my_menu->submenu('admissions');
+        $data_['titleMain'] = "Admissions";
+        $data_['active'] = 'admissions';
+        $data_['page'] = $page;
+        $data_['subpage'] = $page;
 
+            $str = "Apply Now";
+            $data_['inner_page'] = 'apply-now';
+            $data_['title'] = $str;
+            $data_['breadcrumb'] = "Admissions / ".$str;
+            
+        $this->load->view('templates/header', $data_);
+        $this->load->view('admissions/onlineregistration', $data_);
+        $this->load->view('templates/footer');
+    }
     function admissions($page = 'x'){
         $data_['meta'] = $this->metainfo_for_web('admissions', $page);
         $data_['menu_active'] = 4;
@@ -185,6 +204,8 @@ class Arni extends CI_Controller
             $data_['inner_page'] = $page;
             $data_['title'] = $str;
             $data_['breadcrumb'] = $str;
+        } else if($page == 'apply-now' || $page == 'apply-now#'){
+            redirect('apply-now');
         } else if($page == 'scholarship' || $page == 'scholarship#'){
             $str = "Scholarship";
             $data_['inner_page'] = $page;
