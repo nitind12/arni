@@ -10,7 +10,7 @@ class Registration extends CI_Controller
     }
 
     function submit_registration(){
-    	$result = $this->arni->submit_registration();
+    	$resultDB = $this->arni->submit_registration();
 
     	/* Collecting data for email */
     	$data['message_email'] = "Thank you for registering with Arni.<br> You are requested to <b>pay Rs. 2000 within next 5 days</b>.<br> You can pay online at <br> <u>Bank Name</u>: ABC Bank <br> <u>Account number</u>: 00000000 <br> <u>Account Name</u>: XYZ <br> <u>IFSC code</u>:XXX0000AB. <br> <br> Also email the payment detail at <em>admission@arni.info</em> with receipt having reference/ transaction number. <br><br> <b>Best wihes,</b> <br><br>______________<br> Arni University,<br> Haldwani";
@@ -35,7 +35,7 @@ class Registration extends CI_Controller
     	$admission_result = $this->call_email_api_to_admission_cell($data);
     	/* ------------------------- */
     	
-    	echo $result;
+    	echo $resultDB;
     }
 
     function call_email_api_to_candidate($data){
