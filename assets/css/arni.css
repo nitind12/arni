@@ -1,14 +1,15 @@
 .applynowbutton{
 	border: #0000ff solid 0px;
+	border-bottom: #ffff00 solid 1px;
 	position: fixed;
 	top: 27%;	
 	background: #ff5230;
 	font-size: 14px;
 	width: auto;
 	height: 35px;
-	padding: 5px 6px 2px 6px;
+	padding: 7px 6px 2px 6px;
 	z-index: 99999;
-	left: -90px !important;
+	left: -85px !important;
 	margin: 0px;
 	text-align: center;
 	color: #ffffff !important;

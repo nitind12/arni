@@ -90,6 +90,7 @@ class Arni_model extends CI_Model {
     }
 
     function submit_registration(){
+        $state = explode("_", $this->input->post('cmbState'));
         $school = explode("_", htmlspecialchars($this->input->post('cmbSchool')));
         $degree = explode("_", htmlspecialchars($this->input->post('cmbDegreeDiploma')));
         $course = explode("_", htmlspecialchars($this->input->post('cmbAppliedCourse')));
@@ -98,7 +99,7 @@ class Arni_model extends CI_Model {
             'EMAIL' => htmlspecialchars($this->input->post('txtEmail')), 
             'MOBILE_1' => htmlspecialchars($this->input->post('txtMobile1')), 
             'MOBILE_2' => htmlspecialchars($this->input->post('txtMobile2')), 
-            'STATE' => htmlspecialchars($this->input->post('cmbState')), 
+            'STATE' => htmlspecialchars($state[1]), 
             'CITY' => htmlspecialchars($this->input->post('txtCity')), 
             'SCHOOL' => $school[1], 
             'COURSE_TYPE' => $degree[1], 
