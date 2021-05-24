@@ -104,9 +104,53 @@ class Arni_model extends CI_Model {
             'SCHOOL' => $school[1], 
             'COURSE_TYPE' => $degree[1], 
             'COURSE_APPLIED' => $course[1], 
-            'STATUS' => 1, 
+            'STATUS' => 0, 
         );
         $result = $this->db->insert('_arni_online_registrations', $data);
+        return $result;
+    }
+
+    function get_registrations($confirmed = '1'){
+        $this->db->where('STATUS', $confirmed);
+        $query = $this->db->get('_arni_online_registrations');
+        return $query->result();
+    }
+
+    function getRegistrationsCSV($bool_='x'){
+        $this->load->dbutil();
+        $this->db->order_by('REGID', 'desc');
+        if($bool_ != 'x'){
+            $this->db->where('STATUS', $bool_);
+        }
+
+        $this->db->select("`REGID`, `COURSE_APPLIED`, `NAME_`, `MOBILE_1`,`MOBILE_2`, `EMAIL`, `STATE`, `CITY`,  CONCAT('[',DATE_FORMAT(`DATE_`, '%d-%M-%Y'), ']') AS RegDate");
+
+        $query = $this->db->get('_arni_online_registrations');
+        //echo $this->db->last_query();
+        $yr__ = date('Y');
+        $delimiter = ",";
+        $newline = "\r\n";
+        if($bool_ == 0){
+            $filename = "Arni-Not-Confirmed-Registrations-" .$yr__. ".csv";
+        } else if($bool_ == 1){
+            $filename = "Arni-Confirmed-Registrations-" .$yr__. ".csv";
+        } else {
+            $filename = "Arni-All-Registrations-" .$yr__. ".csv";
+        }
+        $data = $this->dbutil->csv_from_result($query, $delimiter, $newline);
+        force_download($filename, $data);
+    }
+
+    function toggle_registrations(){
+        $status = $this->input->post('status');
+        $regid = $this->input->post('id_');
+
+        $data = array(
+            'STATUS' => $status
+        );
+        $this->db->where("REGID", $regid);
+        $result = $this->db->update('_arni_online_registrations', $data);
+        //echo $this->db->last_query();
         return $result;
     }
 }

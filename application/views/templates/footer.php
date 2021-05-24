@@ -551,7 +551,7 @@
 
 <script src="<?php echo base_url('assets/js/scripts.js'); ?>?ver=1.3"></script>
 
-<script src="<?php echo base_url('assets/js/arni.js'); ?>?ver=2.1"></script>
+<script src="<?php echo base_url('assets/js/arni.js'); ?>?ver=2.2"></script>
 
 <!--script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(103437)</script-->
 <!--Start of Tawk.to Script-->

@@ -68,4 +68,25 @@ $(function(){
 			$('#cmbAppliedCourse').html("");
 		}
 	}
+
+	$('body').on('click', '.confirm_notconfirm', function(){
+		var str = this.id;
+		var arr = str.split("_");
+		id_ = arr[1]; 
+		status_ = $('#'+str).attr("parameter");
+		var url_ = site_url_ + "toggle_registrations";
+		var data_ = "status="+status_+"&id_="+id_;
+		console.log(data_);
+		console.log(url_);
+		$.ajax({
+			type: "POST",
+			url: url_,
+			data: data_,
+			success: function(data){
+				if(data == 1) $("#rec_"+id_).css("display", "none");
+			}, error: function(xhr, status, error){
+				console.log(xhr.responseText);
+			}
+		})
+	});
 });

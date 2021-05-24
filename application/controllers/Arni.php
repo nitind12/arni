@@ -192,7 +192,13 @@ class Arni extends CI_Controller
             $data_['states'] = $this->arni->getstates();
             $data_['school'] = $this->arni->getschool();
             $data_['coursetype'] = $this->arni->coursetype();
-
+        } else if($page == 'leads' || $page == 'leads#'){
+            $str = "Candidates Regsitered Online";
+            $data_['inner_page'] = $page;
+            $data_['title'] = $str;
+            $data_['breadcrumb'] = $str;
+            $data_['registered'] = $this->arni->get_registrations('0');
+            $data_['confirmed'] = $this->arni->get_registrations('1');
         } else if($page == 'scholarship' || $page == 'scholarship#'){
             $str = "Scholarship";
             $data_['inner_page'] = $page;
@@ -477,4 +483,11 @@ class Arni extends CI_Controller
         $this->load->view('templates/footer');
     }
 
+    function getRegistrationsCSV($bool_){
+        $this->arni->getRegistrationsCSV($bool_);
+    }
+
+    function toggle_registrations(){
+        echo $this->arni->toggle_registrations();
+    }
 }

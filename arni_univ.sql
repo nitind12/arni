@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 23, 2021 at 07:40 PM
+-- Generation Time: May 24, 2021 at 02:39 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.8
 
@@ -1024,6 +1024,37 @@ CREATE TABLE `_arni_online_registrations` (
   `DATE_` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `_arni_online_registrations`
+--
+
+INSERT INTO `_arni_online_registrations` (`REGID`, `NAME_`, `EMAIL`, `MOBILE_1`, `MOBILE_2`, `STATE`, `CITY`, `SCHOOL`, `COURSE_TYPE`, `COURSE_APPLIED`, `STATUS`, `DATE_`) VALUES
+(1, 'Nitin Deepak', 'nitin.d12@amrapali.ac.in', '9760020667', '7895856094', 'Chandigarh', 'sd', 'School of Physical Science', 'Post Graduate', 'Msc(Chemistry)', 0, '2021-05-24 10:38:15'),
+(2, 'Nitin Deepak', 'nitin.d12@amrapali.ac.in', '9760020667', '7895856094', 'Chandigarh', 'sd', 'School of Physical Science', 'Post Graduate', 'Msc(Chemistry)', 0, '2021-05-24 10:41:40'),
+(3, 'Gagan Pant', 'nitin.d12@amrapali.ac.in', '9760020667', '7895856094', 'Chandigarh', 'sd', 'School of Physical Science', 'Post Graduate', 'Msc (Math)', 0, '2021-05-24 10:45:47'),
+(4, 'Ashish Gounda', 'ashish@amrapali.ac.in', '9760020667', '7895856094', 'Chandigarh', 'sd', 'School of Computer Application', 'Post Graduate', 'MCA', 1, '2021-05-24 10:46:27');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `_arni_online_registrations_log`
+--
+
+CREATE TABLE `_arni_online_registrations_log` (
+  `REGID` int(11) NOT NULL,
+  `NAME_` varchar(150) NOT NULL,
+  `EMAIL` varchar(100) NOT NULL,
+  `MOBILE_1` varchar(50) NOT NULL,
+  `MOBILE_2` varchar(50) NOT NULL DEFAULT 'X',
+  `STATE` varchar(150) NOT NULL,
+  `CITY` varchar(150) NOT NULL,
+  `SCHOOL` varchar(200) NOT NULL,
+  `COURSE_TYPE` varchar(50) NOT NULL,
+  `COURSE_APPLIED` varchar(150) NOT NULL,
+  `STATUS` tinyint(1) NOT NULL,
+  `DATE_` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 -- --------------------------------------------------------
 
 --
@@ -1460,7 +1491,7 @@ ALTER TABLE `_arni_faculty`
 -- AUTO_INCREMENT for table `_arni_online_registrations`
 --
 ALTER TABLE `_arni_online_registrations`
-  MODIFY `REGID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `REGID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `_arni_school`

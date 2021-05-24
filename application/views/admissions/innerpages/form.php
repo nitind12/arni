@@ -6,7 +6,7 @@
 </style>
 <section class="trusted-client-wrapper">
                                     <div class="col-md-7">
-                                        <h6><?php echo $breadcrumb; ?></h6>
+                                        <?php $this->load->view('templates/breadcrumb'); ?>  
                                         <h2 class="section-title wow fadeInDown" ><?php echo $title;?></h2>
                                         <div class="col-md-12" style="border: #fff solid 0px">
                                             <p>Text Here</i></p>                                        
