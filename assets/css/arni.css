@@ -1,0 +1,33 @@
+.applynowbutton{
+	border: #0000ff solid 0px;
+	position: fixed;
+	top: 27%;	
+	background: #ff5230;
+	font-size: 14px;
+	width: auto;
+	height: 35px;
+	padding: 5px 6px 2px 6px;
+	z-index: 99999;
+	left: -90px !important;
+	margin: 0px;
+	text-align: center;
+	color: #ffffff !important;
+	display: block;
+	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+
+	transform: rotate(-90deg);
+  	-webkit-transform: rotate(-90deg);
+  	-moz-transform: rotate(-90deg);
+  	-ms-transform: rotate(-90deg);
+  	-o-transform: rotate(-90deg);
+  
+}
+.applynowtext{
+	text-align: center;
+}
+.applynowbutton a{
+	transition: all 0.6s ease;
+	color: #ffffff !important;
+}

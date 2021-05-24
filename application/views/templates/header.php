@@ -67,6 +67,7 @@
         
         <link href="<?php echo base_url('assets/css/ticker.css'); ?>?ver=1.1" rel="stylesheet">
 
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/arni.css');?>?version=1.1">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
         <style>

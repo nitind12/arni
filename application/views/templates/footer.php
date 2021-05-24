@@ -333,19 +333,6 @@
 
 </style>
 
-
-<!--div id="myModal44" class="modal fade in" role="dialog" style="padding: 0px; !important">
-  <div class="modal-dialog" style="background: transparent">
-    <div class="modal-content" style="background: transparent;-webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border: #000000 solid 0px">
-      <div class="modal-body" style="background: #fff; padding: 0px; !important;z-index: 999999 !important; height:600px;" id="iframe_widget">
-        <div style="float: right; padding: 3px" id="closewidget"><img src="<?php echo base_url('assets/img/close.png');?>" style="width:30px; position: absolute; right: 4%"></div>
-        <iframe src="" style="width: 100%; height: 600px" frameborder="0" scrolling="0" marginheight="0" marginwidth="0" ></iframe>
-      </div>
-    </div>
-
-  </div>
-</div-->
-
 <!-- Preloader -->
 
 <div id="preloader">
@@ -585,7 +572,7 @@
 <?php $this->load->view('templates/sm'); ?>
 <!-- End of Social Media Links -->
 
-
+<div class="applynowbutton"><a href="<?php echo site_url('apply-now');?>"><div class="applynowtext">FOR ADMSSION APPLY HERE</div></a></div>
 </body>
 
 </html>

@@ -6,10 +6,12 @@
     }
 </style>
 <section class="trusted-client-wrapper">
+    <img src="<?php echo base_url('assets/arniImage/applynow-2.png');?>">
                                     <div class="col-md-12">
-                                    <?php $this->load->view('templates/breadcrumb'); ?>  
+                                    <?php $this->load->view('templates/breadcrumb'); ?> 
                                         <h2 class="section-title wow fadeInDown" ><?php echo $title;?></h2>
                                         <div class="col-md-12" style="border: #fff solid 0px">
+
                                             <div class="mini-contact" id="applynow_form">
                                                 <?PHP echo form_open('#','id=frmApplyNow name=frmApplyNow role=form'); ?>
                                                 <div class="form-group">

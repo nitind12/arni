@@ -185,7 +185,7 @@ class Arni extends CI_Controller
             $data_['title'] = $str;
             $data_['breadcrumb'] = $str;
         } else if($page == 'apply-now' || $page == 'apply-now#'){
-            $str = "Apply Now";
+            $str = "Apply Now for Session 2021-22";
             $data_['inner_page'] = $page;
             $data_['title'] = $str;
             $data_['breadcrumb'] = $str;
