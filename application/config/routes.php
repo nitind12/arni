@@ -122,6 +122,8 @@ $route['leads'] = 'Arni/admissions/leads';
 $route['downloadReg/(:any)'] = 'Arni/getRegistrationsCSV/$1'; 
 $route['toggle_registrations'] = 'Arni/toggle_registrations';
 
+$route['arnilogo'] = 'Arni/arnilogo';
+
 /*  redirection for 301 */
 /* -------------------- */
 

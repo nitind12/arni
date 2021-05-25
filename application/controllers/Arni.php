@@ -490,4 +490,8 @@ class Arni extends CI_Controller
     function toggle_registrations(){
         echo $this->arni->toggle_registrations();
     }
+
+    function arnilogo(){
+        echo "<img src='".base_url('assets/arniImage/logo_blue.jpg')."' width='100'>";
+    }
 }
