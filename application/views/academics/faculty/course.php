@@ -1,4 +1,9 @@
 <h2 class="section-title-dark wow fadeInDown" align="center">Courses</h2>
+<div style="clear: both"></div>
+<?php $coldata['cols'] = "col-md-6";?>
+<?php $this->load->view('academics/faculty/school_contact', $coldata); ?>
+
+<div style="clear: both; height: 20px"></div>
 <?php $idcreator = 1; ?>
                                 <?php foreach ($departments as $dept) { ?>
                                 <?php if(count($departments) == 1){?>

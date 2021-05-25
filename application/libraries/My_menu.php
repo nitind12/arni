@@ -155,7 +155,8 @@ Explaination for the format of the below functions --
             "Why Arni?"             => array("about/aboutus", "aboutus"),
             "Governance"            => array("about/governance", "governance"),
             "Management's Talk"     => array("about/management", "management"),
-            "University Committee"  => array("about/committee", "committee") 
+            "University Committee"  => array("about/committee", "committee"),
+            "Minutes of Meetings"  => array("about/minutes", "minutes") 
         );
     }
 

@@ -43,7 +43,21 @@ class Arni_model extends CI_Model {
     	$query = $this->db->get();
     	//echo $this->db->last_query();
     	return $query->result();
+    } 
+
+    function school_contact_dean($school = 'x'){
+        $this->db->where('SCHOOL', $school);
+        $this->db->where('PORTFOLIO', "DEAN");
+        $query = $this->db->get('_arni_school_contacts');
+        return $query->result();
     }
+    function school_contact_hod($school = 'x'){
+        $this->db->where('SCHOOL', $school);
+        $this->db->where('PORTFOLIO', "HOD");
+        $query = $this->db->get('_arni_school_contacts');
+        return $query->result();
+    }
+
     function school_wise_departments($school = 'x'){
     	$this->db->distinct();
     	$this->db->select('a.DID, a.DEPARTMENT');

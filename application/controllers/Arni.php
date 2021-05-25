@@ -130,6 +130,7 @@ class Arni extends CI_Controller
             $data_['inner_page'] = 'governance';
             $data_['subpage'] = 'governance';
             $data_['breadcrumb'] = 'About us / Governance';
+            $data_['gvrns'] = $this->aboutus->governance();
         } else if ($page == 'management' || $page == 'management#') {
             $data_['inner_page'] = 'management';
             $data_['subpage'] = 'management';
@@ -234,6 +235,7 @@ class Arni extends CI_Controller
             $data_['meta'] = $this->metainfo_for_web('art_and_humanities', $page);
             $data_['departments'] = $this->arni->school_wise_departments(1);
             $data_['school_courses'] = $this->arni->school_wise_course_offered(1);
+            $data_['school_contacts'] = $this->arni->school_contact_dean(1);
             $clg = "School of Art and Humanities";
             $data_['inner_page'] = $page;
             $data_['title'] = 'School of Art and Humanities';
@@ -242,6 +244,7 @@ class Arni extends CI_Controller
             $data_['meta'] = $this->metainfo_for_web('commerce_and_business_management', $page);
             $data_['departments'] = $this->arni->school_wise_departments(2);
             $data_['school_courses'] = $this->arni->school_wise_course_offered(2);
+            $data_['school_contacts'] = $this->arni->school_contact_dean(2);
             $clg = "School of Commerce and Business Management";
             $data_['inner_page'] = $page;
             $data_['title'] = $clg;
@@ -250,6 +253,7 @@ class Arni extends CI_Controller
             $data_['meta'] = $this->metainfo_for_web('computer_application', $page);
             $data_['departments'] = $this->arni->school_wise_departments(3);
             $data_['school_courses'] = $this->arni->school_wise_course_offered(3);
+            $data_['school_contacts'] = $this->arni->school_contact_dean(3);
             $clg = "School of Computer Application";
             $data_['inner_page'] = $page;
             $data_['title'] = $clg;
@@ -258,6 +262,7 @@ class Arni extends CI_Controller
             $data_['meta'] = $this->metainfo_for_web('life_and_allied_science', $page);
             $data_['departments'] = $this->arni->school_wise_departments(4);
             $data_['school_courses'] = $this->arni->school_wise_course_offered(4);
+            $data_['school_contacts'] = $this->arni->school_contact_dean(4);
             $clg = "School of Life and Allied Science";
             $data_['inner_page'] = $page;
             $data_['title'] = $clg;
@@ -266,6 +271,7 @@ class Arni extends CI_Controller
             $data_['meta'] = $this->metainfo_for_web('pharmacy', $page);
             $data_['departments'] = $this->arni->school_wise_departments(5);
             $data_['school_courses'] = $this->arni->school_wise_course_offered(5);
+            $data_['school_contacts'] = $this->arni->school_contact_dean(5);
             $clg = "School of Pharmacy";
             $data_['inner_page'] = $page;
             $data_['title'] = $clg;
@@ -274,6 +280,7 @@ class Arni extends CI_Controller
             $data_['meta'] = $this->metainfo_for_web('physical_science', $page);
             $data_['departments'] = $this->arni->school_wise_departments(6);
             $data_['school_courses'] = $this->arni->school_wise_course_offered(6);
+            $data_['school_contacts'] = $this->arni->school_contact_dean(6);
             $clg = 'School of Physical Science';
             $data_['inner_page'] = $page;
             $data_['title'] = $clg;
@@ -282,6 +289,7 @@ class Arni extends CI_Controller
             $data_['meta'] = $this->metainfo_for_web('skill_development_and_vocational_studies', $page);
             $data_['departments'] = $this->arni->school_wise_departments(7);
             $data_['school_courses'] = $this->arni->school_wise_course_offered(7);
+            $data_['school_contacts'] = $this->arni->school_contact_dean(7);
             $clg = 'School of Skill Development and Vocational Studies';
             $data_['inner_page'] = $page;
             $data_['title'] = $clg;
@@ -290,6 +298,7 @@ class Arni extends CI_Controller
             $data_['meta'] = $this->metainfo_for_web('technology', $page);
             $data_['departments'] = $this->arni->school_wise_departments(8);
             $data_['school_courses'] = $this->arni->school_wise_course_offered(8);
+            $data_['school_contacts'] = $this->arni->school_contact_dean(8);
             $clg = "School of Technology";
             $data_['inner_page'] = $page;
             $data_['title'] = $clg;
@@ -298,6 +307,7 @@ class Arni extends CI_Controller
             $data_['meta'] = $this->metainfo_for_web('tourism_and_hospitality_management', $page);
             $data_['departments'] = $this->arni->school_wise_departments(9);
             $data_['school_courses'] = $this->arni->school_wise_course_offered(9);
+            $data_['school_contacts'] = $this->arni->school_contact_dean(9);
             $clg = "School of Tourism and Hospitality Management";
             $data_['inner_page'] = $page;
             $data_['title'] = $clg;

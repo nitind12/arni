@@ -11,86 +11,24 @@
     <div style="clear:both"></div>
 
     <div class="panel-group" id="accordion">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                        Board of Governors</a>
-                    </h4>
-                </div>
-                <div id="collapse1" class="panel-collapse collapse">
-                <div class="panel-body">
-                    <p>Coming Soon</p>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                    Board of Management</a>
-                </h4>
-            </div>
-            <div id="collapse2" class="panel-collapse collapse">
-            <div class="panel-body">
-            <p>Coming Soon</p>
-            </div>
-            </div>
-        </div>
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                Academic Council</a>
-            </h4>
-            </div>
-            <div id="collapse3" class="panel-collapse collapse">
-                <div class="panel-body">
-                <p>Coming Soon</p>
+        <?php $counter = 1; ?>
+        <?php foreach ($gvrns['governance'] as $item) {?>
+            <?php if($item['status'] == true){ ?>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $counter;?>">
+                            <?php echo $item['heading'];?></a>
+                        </h4>
+                    </div>
+                    <div id="collapse<?php echo $counter;?>" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p><?php echo $item['content'];?></p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                Board of Examination</a>
-            </h4>
-            </div>
-            <div id="collapse4" class="panel-collapse collapse">
-                <div class="panel-body">
-                <p>Coming Soon</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
-                Board of Research</a>
-            </h4>
-            </div>
-            <div id="collapse5" class="panel-collapse collapse">
-                <div class="panel-body">
-                <p>Coming Soon</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-            <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
-                Organizational Structure</a>
-            </h4>
-            </div>
-            <div id="collapse6" class="panel-collapse collapse">
-                <div class="panel-body">
-                <p>Coming Soon</p>
-                </div>
-            </div>
-        </div>
+            <?php $counter++;?>
+            <?php } ?>
+        <?php } ?>
     </div>
 </section>
