@@ -34,6 +34,7 @@ hr{
                                 <source src="<?php echo base_url('assets/arniVideo.mp4');?>" type="video/mp4">
                                  <source src="/images/video/ai_video.ogg" type="video/ogg">
                               </video>
+                              <img src="<?php echo base_url(). "assets/arniImage/year12.png"?>" class="hidden-xs" style="top: 140px; right:50px; z-index: 0; position: absolute;max-width:200px;"/>
                             </div>
                             <div style="position: absolute; z-index: 999999"></div>
                         </header>
@@ -45,6 +46,9 @@ hr{
                         <div class="content-wrapper">
                             <section class="intro-wrapper"> 
                             <div class="row"> 
+                                    <div class="col-xs-12 hidden-md hidden-lg">
+                                    <img src="<?php echo base_url(). "assets/arniImage/year12_small.png"?>" class="hidden-lg hidden-md" style="max-height:100px;"/>
+                                    </div>
                                     <div class="col-lg-7 col-md-8"> 
                                         <h1 class="wow fadeInDown">Leading Indian University of higher education.</h1>
                                         <h3 class="wow fadeInDown">Bringing Ambition to Life</h3>
