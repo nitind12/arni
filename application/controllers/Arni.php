@@ -188,7 +188,7 @@ class Arni extends CI_Controller
             $str = "Apply Now for Session 2021-22";
             $data_['inner_page'] = $page;
             $data_['title'] = $str;
-            $data_['breadcrumb'] = $str;
+            $data_['breadcrumb'] = "Apply now";
             $data_['states'] = $this->arni->getstates();
             $data_['school'] = $this->arni->getschool();
             $data_['coursetype'] = $this->arni->coursetype();

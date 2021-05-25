@@ -10,7 +10,6 @@ $(function(){
 				if(data == 1){
 					$("#myModalApplyNow").modal('show');
 					$('#applynow_name_here').html("Dear " + $('#txtName').val());
-					// Now when modal dialog box closes then redirect to home page
 				} else {
 					alert("Some Server Error. Please try again");
 				}
@@ -83,7 +82,9 @@ $(function(){
 			url: url_,
 			data: data_,
 			success: function(data){
-				if(data == 1) $("#rec_"+id_).css("display", "none");
+				if(data == 1){
+					$("#rec_"+id_).css("display", "none");	
+				} 
 			}, error: function(xhr, status, error){
 				console.log(xhr.responseText);
 			}
