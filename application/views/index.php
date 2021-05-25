@@ -34,7 +34,7 @@ hr{
                                 <source src="<?php echo base_url('assets/arniVideo.mp4');?>" type="video/mp4">
                                  <source src="/images/video/ai_video.ogg" type="video/ogg">
                               </video>
-                              <img src="<?php echo base_url(). "assets/arniImage/year12.png"?>" style="top: 150px; right: 100px; z-index: 0; position: absolute;max-width:200px;"/>
+                              <img src="<?php echo base_url(). "assets/arniImage/year12.png"?>" class="hidden-xs" style="top: 140px; right:50px; z-index: 0; position: absolute;max-width:200px;"/>
                             </div>
                             <div style="position: absolute; z-index: 999999"></div>
                         </header>
