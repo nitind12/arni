@@ -29,10 +29,10 @@
                     <!-- submenu-wrapper -->
                     <div class="submenu-wrapper submenu-wrapper-topbottom">
                         <div class="submenu-inner  submenu-inner-topbottom">
-                            <div class='col-sm-12' style='width: 400px; background: rgba(230,126,34,.9); padding:20px'>
+                            <div class='col-sm-12' style='width: 400px; background: rgba(255,255,255,.9);  border-bottom: 3px solid #e67e22;padding:20px'>
                                 <div class='col-sm-8'>
                                     <!--h3 style='color:#fff'>Faculty</h3-->
-                                    <h3 style='color:#fff'>Faculty</h3>
+                                    <h3 style='color:#e67e22'>Faculty</h3>
                                     <ul class="dropdown-menu">
                                         <?php foreach($menu_all['academics']['faculty'] as $title => $path){?>
                                             <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
@@ -57,7 +57,7 @@
                     <!-- submenu-wrapper -->
                     <div class="submenu-wrapper submenu-wrapper-topbottom">
                         <div class="submenu-inner  submenu-inner-topbottom">
-                            <div class='col-sm-12' style='width: auto; background: rgba(230,126,34,.9); padding:20px'>
+                            <div class='col-sm-12' style='width: auto; background: rgba(255,255,255,.9); border-bottom: 3px solid #e67e22;padding:20px'>
                                 <div class='col-sm-8'>
                                     <!--h3 style='color:#fff'>Faculty</h3-->
                                     <ul class="dropdown-menu">
@@ -74,7 +74,7 @@
                     <!-- submenu-wrapper -->
                     <div class="submenu-wrapper submenu-wrapper-topbottom">
                         <div class="submenu-inner  submenu-inner-topbottom">
-                            <div class='col-sm-12' style='width: auto; background: rgba(230,126,34,.9); padding:20px'>
+                            <div class='col-sm-12' style='width: auto; background: rgba(255,255,255,.9); border-bottom: 3px solid #e67e22;padding:20px'>
                                 <div class='col-sm-8'>
                                     <!--h3 style='color:#fff'>Faculty</h3-->
                                     <ul class="dropdown-menu">
@@ -94,12 +94,13 @@
                     <!-- submenu-wrapper -->
                     <!--div class="submenu-wrapper submenu-wrapper-topbottom">
                         <div class="submenu-inner  submenu-inner-topbottom">
-                            <div class='col-sm-12' style='width: auto; background: rgba(230,126,34,.9); padding:20px'>
+                            <div class='col-sm-12' style='width: auto; background: rgba(255,255,255,.9); padding:20px'>
                                 <div class='col-sm-8'-->
                                     <!--h3 style='color:#fff'>Faculty</h3-->
                                     <!--ul class="dropdown-menu">
                                         <?php foreach($menu_all['glimpses']['options'] as $title => $path){?>
                                             <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                            
                                         <?php } ?>
                                     </ul>                                                                                                                                     
                                 </div>
@@ -111,7 +112,7 @@
                     <!-- submenu-wrapper -->
                     <div class="submenu-wrapper submenu-wrapper-topbottom">
                         <div class="submenu-inner  submenu-inner-topbottom">
-                            <div class='col-sm-12' style='width: auto; background: rgba(230,126,34,.9); padding:20px'>
+                            <div class='col-sm-12' style='width: auto; background: rgba(255,255,255,.9); border-bottom: 3px solid #e67e22;padding:20px'>
                                 <div class='col-sm-8'>
                                     <!--h3 style='color:#fff'>Faculty</h3-->
                                     <ul class="dropdown-menu">

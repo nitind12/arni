@@ -2170,21 +2170,22 @@ ul.joblist-link li a:hover {
     width: 100%;
     box-shadow: none;
     background:rgba(230,126,34,.0);
+    
     /*background: rgba(0, 0, 2, .5)*/
 }
 
 .nav.navbar-nav li ul.dropdown-menu li a {
     padding: 7px 20px;
     font-size: 14px;
-    color: #000;
+    color: #e67e22;
     line-height: 20px;
-    text-transform: capitalize
+    text-transform: capitalize;
 }
 
 .nav.navbar-nav li ul.dropdown-menu li a:focus,
 .nav.navbar-nav li ul.dropdown-menu li a:hover {
     background: 0 0;
-    color: #fff
+    color: #294364
 }
 
 .dropdown-menu>.active>a,
