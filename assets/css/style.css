@@ -362,14 +362,14 @@ blockquote::before {
 .navbar-default .navbar-nav>li>a {
     color: #e67e22;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 40px;
     font-weight: 500
 }
 
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
-    color: #010066;
+    color: #294364;
     background-color: transparent
 }
 
@@ -379,7 +379,7 @@ blockquote::before {
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>.open>a:focus,
 .navbar-default .navbar-nav>.open>a:hover {
-    color: #010066;
+    color: #294364;
     background-color: transparent
 }
 

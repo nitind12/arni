@@ -23,7 +23,19 @@
                         <?php } ?>
                     </ul>
                 </li>
-
+                <?php if(count($menu_all['alumni']) == 1){?>
+                <?php foreach($menu_all['alumni'] as $title => $path){?>
+                    <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                <?php } ?>
+                <?php } else {?>
+                <li><a href="#">Contact us <i class="fa fa-arrow-down"></i></a>
+                    <ul style="background: #444444">  
+                        <?php foreach($menu_all['alumni'] as $title => $path){?>
+                            <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                        <?php } ?>
+                    </ul>
+                <?php } ?>
+                </li>
                 <li><a href="#">Admission <i class="fa fa-arrow-down"></i></a>
                     <ul style="background: #444444">  
                         <?php foreach($menu_all['admissions'] as $title => $path){?>
@@ -32,22 +44,22 @@
                     </ul>
                 </li>
                 
-                <?php if(count($menu_all['contactus']) == 1){?>
-                <?php foreach($menu_all['contactus'] as $title => $path){?>
-                    <li><a href="<?php // echo site_url($path); ?>"><?php echo $title; ?></a></li>
-                <?php } ?>
-                <?php } else {?>
+                <?php //if(count($menu_all['contactus']) == 1){?>
+                <?php //foreach($menu_all['contactus'] as $title => $path){?>
+                    <!--li><a href="<?php // echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                <?php //} ?>
+                <?php //} else {?>
                 <li><a href="#">Contact us <i class="fa fa-arrow-down"></i></a>
                     <ul style="background: #444444">  
-                        <?php foreach($menu_all['contactus'] as $title => $path){?>
+                        <?php //foreach($menu_all['contactus'] as $title => $path){?>
                             <li><a href="<?php // echo site_url($path); ?>"><?php echo $title; ?></a></li>
-                        <?php } ?>
+                        <?php //} ?>
                     </ul>
-                <?php } ?>
-                </li>
-                <?php foreach($menu_all['erplogin'] as $title => $path){?>
-                    <li><a href="<?php echo $path; ?>" target="_blank"><?php echo $title; ?></a></li>
-                <?php } ?>
+                <?php //} ?>
+                </li-->
+                <?php //foreach($menu_all['erplogin'] as $title => $path){?>
+                    <!--li><a href="<?php //echo $path; ?>" target="_blank"><?php echo $title; ?></a></li-->
+                <?php //} ?>
                 <li><a href="#">...</a></li>
                 <li><a href="#">...</a></li>
             </ul>

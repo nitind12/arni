@@ -48,7 +48,7 @@ class My_menu {
         );
 
         // Gallery
-        $menu['glimpses'] = array(
+        /*$menu['glimpses'] = array(
             "options" => array(
                 "Photo Gallery" => "gallery/index",
                 "Videos" => "gallery/videos",
@@ -56,8 +56,11 @@ class My_menu {
                 "Alumni" => 'alumni/connectprogramme',
                 "Expert Views" => "gallery/expertviews",
             )
+        );*/
+        // Alumni
+        $menu['alumni'] = array(
+            "Our ALumni" => 'alumni/connectprogramme'
         );
-
         // Research
         $menu['research'] = array(
             "options" => array(
@@ -71,16 +74,20 @@ class My_menu {
             )
         );
 
-        //Contact Us
+        /*Contact Us
         $menu['contactus'] = array(
             "Contact Us" => "contact",
-        );
+        );*/
 
         $menu['lifeatarni'] = array(
             "options" => array(
-                "Hostel & Dining" => "lifeAtArni/hostel-n-dining",
+                /*"Hostel & Dining" => "lifeAtArni/hostel-n-dining",
                 "Transport" => "lifeAtArni/transport",
-                "Library" => "lifeAtArni/library",
+                "Library" => "lifeAtArni/library",*/
+                "Photo Gallery" => 'gallery/index',
+                "Vodeo Gallery" => 'gallery/video',
+                "Activities" => 'gallery/activities',
+
                // "Gallery" => "gallery/photos"
             ),
         );
