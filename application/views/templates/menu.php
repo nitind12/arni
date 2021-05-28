@@ -36,12 +36,14 @@
                                     <ul class="dropdown-menu">
                                         <?php foreach($menu_all['academics']['faculty'] as $title => $path){?>
                                             <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                            <hr style="width:270px;padding:0 20px 0 20px;margin-left:20px;margin-top:0px;margin-bottom:0px;border:0px;border-bottom:1px solid rgba(230, 126, 34, .3);">
                                         <?php } ?>
                                     </ul>    
                                     
                                     <ul class="dropdown-menu">
                                         <?php foreach($menu_all['academics']['facilities'] as $title => $path){?>
                                             <li><a href="<?php // echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                            <hr style="width:270px;padding:0 20px 0 20px;margin-left:20px;margin-top:0px;margin-bottom:0px;border:0px;border-bottom:1px solid rgba(230, 126, 34, .3);">
                                         <?php } ?>                                        
                                     </ul>                                                                                                                                          
                                 </div>
@@ -63,6 +65,7 @@
                                     <ul class="dropdown-menu">
                                         <?php foreach($menu_all['exam']['Examination'] as $title => $path){?>
                                             <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                            <hr style="width:100px;padding:0 20px 0 20px;margin-left:20px;margin-top:0px;margin-bottom:0px;border:0px;border-bottom:1px solid rgba(230, 126, 34, .3);">
                                         <?php } ?>
                                     </ul>                                                                                                                                     
                                 </div>
@@ -80,6 +83,7 @@
                                     <ul class="dropdown-menu">
                                         <?php foreach($menu_all['research']['options'] as $title => $path){?>
                                             <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                            <hr style="width:150px;padding:0 20px 0 20px;margin-left:20px;margin-top:0px;margin-bottom:0px;border:0px;border-bottom:1px solid rgba(230, 126, 34, .3);">
                                         <?php } ?>
                                     </ul>                                                                                                                                     
                                 </div>
@@ -118,6 +122,7 @@
                                     <ul class="dropdown-menu">
                                         <?php foreach($menu_all['lifeatarni']['options'] as $title => $path){?>
                                             <li><a href="<?php echo site_url($path); ?>"><?php echo $title; ?></a></li>
+                                            <hr style="width:auto;padding:0 20px 0 20px;margin-left:20px;margin-top:0px;margin-bottom:0px;border:0px;border-bottom:1px solid rgba(230, 126, 34, .3);">
                                         <?php } ?>
                                     </ul>                                                                                                                                     
                                 </div>
