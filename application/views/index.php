@@ -289,7 +289,7 @@ hr{
                                     <div class="inner">
                                         <ul>
                                     <?PHP for ($loop = 1; $loop <= 45; $loop++) { ?>
-                                        <li class="wow zoomIn"><img class="img-responsive thumb" src="<?PHP echo base_url() . 'assets/img/cmpLogos/' . $loop . '.png'; ?>" alt="Amrapali Recruiters Logo"></li> 
+                                        <li class="wow zoomIn"><img class="img-responsive thumb" src="<?PHP echo base_url() . 'assets/arniImg/cmpLogos/' . $loop . '.png'; ?>" alt="Amrapali Recruiters Logo"></li> 
                                     <?PHP } ?>
                                 </ul>  
                                     </div>
