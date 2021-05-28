@@ -31,8 +31,8 @@ hr{
                     <header style="overflow: hidden; position: relative; height: auto">
                             <div class="video-test"style="position: sticky; overflow: hidden; min-height: 25%; height: 100%">
                               <video preload="auto" style="width:100%; height:auto;" autoplay="autoplay" loop="loop" muted="">
-                                <source src="<?php echo base_url('assets/arniVideo.mp4');?>" type="video/mp4">
-                                 <source src="/images/video/ai_video.ogg" type="video/ogg">
+                                <source src="<?php echo base_url('assets/arniVideo1.mp4');?>" type="video/mp4">
+                                 <source src="/images/video/arniVideo.ogg" type="video/ogg">
                               </video>
                               <img src="<?php echo base_url(). "assets/arniImage/year12.png"?>" class="hidden-xs" style="top: 140px; right:50px; z-index: 0; position: absolute;max-width:200px;"/>
                             </div>
@@ -155,7 +155,7 @@ hr{
                                     <h2 class="section-title wow fadeInDown" style="color:#f2f2f2">Video Tour</h2>
                                     <div class="info-in-short">                                        
                                         <div class="member-info">                                            
-                                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/jHauc0qb0_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/jHauc0qb0_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                         </div>                                        
                                     </div>
                                 </div>
