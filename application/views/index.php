@@ -49,11 +49,20 @@ hr{
                                     <div class="col-xs-12 hidden-md hidden-lg">
                                     <img src="<?php echo base_url(). "assets/arniImage/year12_small.png"?>" class="hidden-lg hidden-md" style="max-height:100px;"/>
                                     </div>
-                                    <div class="col-lg-7 col-md-8"> 
-                                        <h1 class="wow fadeInDown">Leading Indian University of higher education.</h1>
+                                    <div class="col-lg-10">
+                                    <h1 class="wow fadeInDown">Leading Indian University of higher education.</h1>
                                         <h3 class="wow fadeInDown">Bringing Ambition to Life</h3>
                                         <p class="wow fadeInDown">At Arni, we don't just teach theory. Our experiential learning and interdisciplinary orientation is our strength. Learn with us & live your own ideas professionally.</p>
-
+                                    </div>
+                                    <div class="col-sm-5">
+                                    
+                                            <div class="col-md-12" style="border: #fff solid 0px;">
+                                                <div class="info-in-short">                                        
+                                                    <?php $this->load->view('templates/newsevents'); ?>                                        
+                                                </div>
+                                            </div><!-- /.col-md-4 -->    
+                                    </div>
+                                    <div class="col-lg-6 col-md-8"> 
                                         <div class="typography-page-tab" role="tabpanel" style="height: auto; min-height: 350px">
                                             <!-- Nav tabs -->
                                             <style>
@@ -120,9 +129,7 @@ hr{
                                             </div>               
                                         </div>
                                     </div>
-                                    <div style="background: <?php echo base_url('');?>" class="col-sm-5">
-                                        <!--img src="<?php //echo base_url('assets/img/covid-19.jpg');?>?version=1.1"-->
-                                    </div>
+                                   
                                 </div><!-- /.row -->
                             </section><!-- /.intro-wrapper -->
 

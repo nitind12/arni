@@ -554,7 +554,7 @@ h1.logo {
     padding: 8px 20px;
     line-height: normal;
     border: 0;
-    font-size: 18px;
+    /*font-size: 18px;*/
     font-weight: 700;
     color: #fff;
     border-radius: 3px
