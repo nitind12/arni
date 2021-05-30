@@ -54,13 +54,14 @@ hr{
                                         <h3 class="wow fadeInDown">Bringing Ambition to Life</h3>
                                         <p class="wow fadeInDown">At Arni, we don't just teach theory. Our experiential learning and interdisciplinary orientation is our strength. Learn with us & live your own ideas professionally.</p>
                                     </div>
+                                    <div class="col-md-12" style="clear: both"></div>
                                     <div class="col-sm-5">
-                                    
                                             <div class="col-md-12" style="border: #fff solid 0px;">
                                                 <div class="info-in-short">                                        
                                                     <?php $this->load->view('templates/newsevents'); ?>                                        
                                                 </div>
                                             </div><!-- /.col-md-4 -->    
+                                            <div class="col-md-12" style="clear: both; padding: 10px 0px"></div>
                                     </div>
                                     <div class="col-lg-6 col-md-8"> 
                                         <div class="typography-page-tab" role="tabpanel" style="height: auto; min-height: 350px">
@@ -143,31 +144,7 @@ hr{
                                     </div><!-- /.row -->                                        
                                 </div><!-- /.css-tab -->
                             </section>
-                            <section class="trusted-client-wrapper" style="background: url(<?php echo base_url().'assets//arniImage/intro-bg2.jpg'?>) no-repeat top left #0e283a;">
-                                <div class="col-md-6">
-                                    <div class="col-md-12">
-                                        <h2 class="section-title wow fadeInDown" style="color:#f2f2f2">News & Events</h2>
-                                        <div class="col-md-12" style="border: #fff solid 0px">
-                                            <div class="info-in-short">                                        
-                                                <?php $this->load->view('templates/newsevents'); ?>                                        
-                                            </div>
-                                        </div><!-- /.col-md-4 -->                               
-                                    </div>
-                                    <div class="col-md-12" style="clear: both"></div>
-                                    
-                                    <div class="col-md-12" style="clear: both; padding: 10px 0px"></div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <h2 class="section-title wow fadeInDown" style="color:#f2f2f2">Video Tour</h2>
-                                    <div class="info-in-short">                                        
-                                        <div class="member-info">                                            
-                                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/jHauc0qb0_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>                                        
-                                    </div>
-                                </div>
-                                <div style="clear:both"></div>
-                            </section>
+                            
                             <section class="service-wrapper">
                                 <h2 class="section-title wow fadeInDown">Schools</h2>
                                 <div class="row">
@@ -283,7 +260,31 @@ hr{
                                         </div> <!-- /.media -->
                                     </div> <!-- /.col-md-6 -->
                                 </div> <!-- /.row -->
-                            </section>                                                               
+                            </section>     
+                            
+                            <section class="trusted-client-wrapper" style="background: url(<?php echo base_url().'assets//arniImage/intro-bg2.jpg'?>) no-repeat top left #0e283a;">
+                                
+
+                                <div class="col-md-6">
+                                    <h2 class="section-title wow fadeInDown" style="color:#f2f2f2">Video Tour</h2>
+                                    <div class="info-in-short">                                        
+                                        <div class="member-info">                                            
+                                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/jHauc0qb0_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>                                        
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="col-md-12">
+                                                                    
+                                    </div>
+                                    <div class="col-md-12" style="clear: both"></div>
+                                    
+                                    <div class="col-md-12" style="clear: both; padding: 10px 0px"></div>
+                                </div>
+                                <div style="clear:both"></div>
+                            </section>
+                            
                             <section class="trusted-client-wrapper">
                                 <link href="<?php echo base_url().'assets/1/thumbnail-slider.css'?>" rel="stylesheet" />
                                 <script src="<?php echo base_url().'assets/1/thumbnail-slider.js'?>" type="text/javascript"></script>
