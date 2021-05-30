@@ -284,7 +284,7 @@ hr{
                                 </div>
                                 <div style="clear:both"></div>
                             </section>
-                            
+
                             <section class="trusted-client-wrapper">
                                 <link href="<?php echo base_url().'assets/1/thumbnail-slider.css'?>" rel="stylesheet" />
                                 <script src="<?php echo base_url().'assets/1/thumbnail-slider.js'?>" type="text/javascript"></script>
