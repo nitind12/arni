@@ -55,14 +55,6 @@ hr{
                                         <p class="wow fadeInDown">At Arni, we don't just teach theory. Our experiential learning and interdisciplinary orientation is our strength. Learn with us & live your own ideas professionally.</p>
                                     </div>
                                     <div class="col-md-12" style="clear: both"></div>
-                                    <div class="col-sm-5">
-                                            <div class="col-md-12" style="border: #fff solid 0px;">
-                                                <div class="info-in-short">                                        
-                                                    <?php $this->load->view('templates/newsevents'); ?>                                        
-                                                </div>
-                                            </div><!-- /.col-md-4 -->    
-                                            <div class="col-md-12" style="clear: both; padding: 10px 0px"></div>
-                                    </div>
                                     <div class="col-lg-6 col-md-8"> 
                                         <div class="typography-page-tab" role="tabpanel" style="height: auto; min-height: 350px">
                                             <!-- Nav tabs -->
@@ -130,7 +122,14 @@ hr{
                                             </div>               
                                         </div>
                                     </div>
-                                   
+                                   <div class="col-sm-5">
+                                            <div class="col-md-12" style="border: #fff solid 0px;">
+                                                <div class="info-in-short">                                        
+                                                    <?php $this->load->view('templates/newsevents'); ?>                                        
+                                                </div>
+                                            </div><!-- /.col-md-4 -->    
+                                            <div class="col-md-12" style="clear: both; padding: 10px 0px"></div>
+                                    </div>
                                 </div><!-- /.row -->
                             </section><!-- /.intro-wrapper -->
 
